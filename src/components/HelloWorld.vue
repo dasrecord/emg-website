@@ -15,14 +15,18 @@ defineProps({
 </template>
 
 <style>
-h1 {
+h1  {
   font-weight: 800;
   font-size: 4.6rem;
   position: relative;
   top: -10px;
 }
 
-h2 h3 {
+h2 {
+  text-align: center;
+}
+
+h3 {
   font-size: 1.2rem;
 }
 
@@ -31,7 +35,7 @@ h2 h3 {
   text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 768) {
   .greetings h1,
   .greetings h3 {
     text-align: left;
