@@ -4,6 +4,7 @@ import AboutView from '../views/AboutView.vue'
 import IntakeView from '../views/IntakeView.vue'
 import DemosView from '../views/DemosView.vue'
 import TeamView from '../views/TeamView.vue'
+import ContactView from '../views/ContactView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,6 +36,11 @@ const router = createRouter({
       path : '/team',
       name : 'team',
       component : TeamView 
+    },
+    {
+      path : '/contact',
+      name : 'contact',
+      component : ContactView
     }
   ]
 })
