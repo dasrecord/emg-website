@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>About</h1>
+  <div class="blocktext">
+    <!-- <h1>About</h1> -->
     <p>{{ content }}</p>
   </div>
 </template>
@@ -13,7 +13,7 @@ export default {
     };
   },
   created() {
-    fetch('/path/to/answer.txt')
+    fetch('/src/stores/about_us.txt')
       .then(response => response.text())
       .then(data => {
         this.content = data;
