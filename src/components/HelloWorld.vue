@@ -20,10 +20,14 @@ h1  {
   font-size: 4.6rem;
   position: relative;
   top: -10px;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
 }
 
 h2 {
   text-align: center;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
 }
 
 h3 {

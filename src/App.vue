@@ -61,9 +61,9 @@ nav a:first-of-type {
   border: 0;
 }
 
-.embed {
+.typeform-embed {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
   }
 
 
