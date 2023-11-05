@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h1>Our Team</h1>
+    <!-- <h2>Our Team</h2> -->
     <ul>
       <WelcomeItem v-for="member in team" :key="member.id">
+        <img :src="member.image" :alt=member.name>
         <h2>{{ member.name }}</h2>
         <p>{{ member.role }}</p>
         <p>{{ member.location }}</p>

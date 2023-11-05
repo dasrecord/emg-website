@@ -9,10 +9,16 @@ import HelloWorld from './components/HelloWorld.vue'
     <div>
       <HelloWorld msg="EVOLVED MUSIC GROUP" />
 
-      <!-- <nav>
+      <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav> -->
+        <RouterLink to="/about">About Us</RouterLink>
+        <RouterLink to="/intake">Artist Intake</RouterLink>
+        <RouterLink to="/demos">Submit Demos</RouterLink>
+        <RouterLink to="/team">OurTeam</RouterLink>
+        <RouterLink to="/roster">Our Roster</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
+        
+      </nav>
     </div>
   </header>
   <RouterView />
@@ -47,7 +53,7 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: inline-block;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   border-left: 1px solid var(--color-border);
 }
 
@@ -92,9 +98,8 @@ nav a:first-of-type {
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
 
     padding: 1rem 0;
     margin-top: 1rem;
