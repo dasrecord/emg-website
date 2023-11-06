@@ -33,9 +33,6 @@ ul {
   text-align: center;
   justify-content: center;
   padding: 1rem;
-
-  /* padding: 1rem; */
-
   /* margin-top: 3rem; */
   /* min-width: 300px; */
 

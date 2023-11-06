@@ -14,9 +14,11 @@
 /* ROW STYLE */
 .team {
   margin-top: 2rem;
+  /* position: relative; */
   display: flex;
   flex-direction: row;
   position: relative;
+  line-height: 2.5;
   border: 1px solid var(--color-border);
 }
 
