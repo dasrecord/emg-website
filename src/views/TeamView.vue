@@ -12,6 +12,14 @@
   </div>
 </template>
 
+<style>
+
+h2 {
+  font-weight: 800;
+  color: var(--color-heading);
+}
+</style>
+
 <script>
 import teamData from '@/stores/team.json'
 import WelcomeItem from '@/components/WelcomeItem.vue'
