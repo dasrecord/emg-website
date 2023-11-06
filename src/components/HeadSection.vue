@@ -1,6 +1,10 @@
 <script setup>
 defineProps({
-  msg: {
+  site_name : {
+    type: String,
+    required: true
+  },
+  tagline : {
     type: String,
     required: true
   }
@@ -10,7 +14,7 @@ defineProps({
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
-    <h2>Home of the world's most talented upcoming artists.</h2>
+    <h2> class="green">{{ tagline }}</h2>
   </div>
 </template>
 

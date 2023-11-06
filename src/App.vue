@@ -1,13 +1,14 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import HeadSection from './components/HeadSection.vue';
 </script>
 
 <template>
   <header>
     <img alt="EMG logo" class="logo" src="@\assets\emg_logo.png" width="125" height="125" />
     <div>
-      <HelloWorld msg="EVOLVED MUSIC GROUP" />
+      <HeadSection site_name="EVOLVED MUSIC GROUP" />
+      <HeadSection tagline="Home of the world's most talented upcoming artists." />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
