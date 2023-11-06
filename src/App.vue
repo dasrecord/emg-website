@@ -40,10 +40,12 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  /* color: var(--color-heading); */
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color : hsla(160, 100%, 37%, 1)
+
 }
 
 nav a.router-link-exact-active:hover {
@@ -53,7 +55,8 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: inline-block;
   padding: 1rem 1rem;
-  border-left: 1px solid var(--color-border);
+  color: var(--color-heading);
+  border-left: 1px solid var(--color-text);
 }
 
 nav a:first-of-type {
@@ -96,7 +99,6 @@ nav a:first-of-type {
   nav {
     text-align: center;
     font-size: 1.2rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }
