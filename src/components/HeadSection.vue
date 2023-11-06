@@ -14,7 +14,7 @@ defineProps({
 <template>
   <div class="greetings">
     <h1 class="green">{{ site_name }}</h1>
-    <h2 class="">{{ tagline }}</h2>
+    <h2> {{ tagline }}</h2>
   </div>
 </template>
 
@@ -32,7 +32,7 @@ h2 {
   text-align: center;
   margin-top: -1rem;
   margin-bottom: -1rem;
-  
+  color: var(--color-heading);
 }
 
 h3 {
