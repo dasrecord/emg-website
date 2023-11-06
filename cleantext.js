@@ -6,7 +6,7 @@ fs.readFile('src/stores/about_us.txt', 'utf8', function(err, data) {
     }
     let result = data.replace(/\[.*?\]/g, '');
 
-    fs.writeFile('src/stores/about_us.txt', result, 'utf8', function(err) {
+    fs.writeFile('public/about_us.txt', result, 'utf8', function(err) {
         if (err) return console.log(err);
     });
 });

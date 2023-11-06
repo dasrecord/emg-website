@@ -13,7 +13,7 @@ export default {
     };
   },
   created() {
-    fetch('/src/stores/about_us.txt')
+    fetch('/about_us.txt')
       .then(response => response.text())
       .then(data => {
         this.content = data;
