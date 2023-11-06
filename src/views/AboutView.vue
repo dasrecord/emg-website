@@ -9,15 +9,15 @@
 export default {
   data() {
     return {
-      content: '',
-    };
+      content: ''
+    }
   },
   created() {
     fetch('/about_us.txt')
-      .then(response => response.text())
-      .then(data => {
-        this.content = data;
-      });
-  },
-};
+      .then((response) => response.text())
+      .then((data) => {
+        this.content = data
+      })
+  }
+}
 </script>

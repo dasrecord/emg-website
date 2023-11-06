@@ -33,14 +33,14 @@ const router = createRouter({
       component: DemosView
     },
     {
-      path : '/team',
-      name : 'team',
-      component : TeamView 
+      path: '/team',
+      name: 'team',
+      component: TeamView
     },
     {
-      path : '/contact',
-      name : 'contact',
-      component : ContactView
+      path: '/contact',
+      name: 'contact',
+      component: ContactView
     }
   ]
 })

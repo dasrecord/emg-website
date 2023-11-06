@@ -14,10 +14,9 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About Us</RouterLink>
         <RouterLink to="/intake">Artist Intake</RouterLink>
         <RouterLink to="/demos">Submit Demos</RouterLink>
-        <RouterLink to="/team">OurTeam</RouterLink>
+        <RouterLink to="/team">Our Team</RouterLink>
         <RouterLink to="/roster">Our Roster</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
-        
       </nav>
     </div>
   </header>
@@ -25,7 +24,6 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style>
-
 header {
   line-height: 1.5;
   max-height: 80vh;
@@ -62,22 +60,19 @@ nav a:first-of-type {
 }
 
 .typeform-embed {
-    width: 100vw;
-    height: 100%;
-  }
-
+  width: 100vw;
+  height: 100%;
+}
 
 .video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
-  } 
-
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
 
 @media (min-width: 1024px) {
   header {
@@ -104,6 +99,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-
 }
 </style>

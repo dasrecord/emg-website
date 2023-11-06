@@ -15,7 +15,7 @@ defineProps({
 </template>
 
 <style>
-h1  {
+h1 {
   font-weight: 800;
   font-size: 4.6rem;
   position: relative;

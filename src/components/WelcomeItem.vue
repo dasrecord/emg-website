@@ -29,7 +29,7 @@ i {
   place-items: center;
   place-content: center;
   width: 1rem;
-  height: 1rem;
+  height: ;
   color: var(--color-text);
 }
 
