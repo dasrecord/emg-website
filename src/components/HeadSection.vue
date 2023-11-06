@@ -13,8 +13,8 @@ defineProps({
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h2> class="green">{{ tagline }}</h2>
+    <h1 class="green">{{ site_name }}</h1>
+    <h2 class="">{{ tagline }}</h2>
   </div>
 </template>
 
