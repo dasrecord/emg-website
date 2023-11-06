@@ -40,7 +40,7 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
-  /* color: var(--color-heading); */
+  color: var(--color-heading);
 }
 
 nav a.router-link-exact-active {

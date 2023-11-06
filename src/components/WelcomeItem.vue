@@ -30,7 +30,7 @@ i {
   place-items: center;
   place-content: center;
   width: 1rem;
-  height: ;
+  height: 1rem;
   color: var(--color-text);
 }
 
