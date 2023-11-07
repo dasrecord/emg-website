@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView, } from 'vue-router'
 import HeadSection from './components/HeadSection.vue'
 </script>
 
@@ -8,9 +8,9 @@ import HeadSection from './components/HeadSection.vue'
     <img alt="EMG logo" class="logo" src="@\assets\emg_logo.png" width="125" height="125" />
     <div>
       <HeadSection site_name="EVOLVED MUSIC GROUP" />
-      <HeadSection tagline="Home of the world's most talented upcoming artists." />
+      <HeadSection tagline="Empowering Musical Growth" />
 
-      <nav>
+      <nav v-if="$route.path != '/'">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About Us</RouterLink>
         <RouterLink to="/intake">Artist Intake</RouterLink>
@@ -28,11 +28,12 @@ import HeadSection from './components/HeadSection.vue'
 header {
   line-height: 1.5;
   max-height: 80vh;
+  margin: 2rem;
 }
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin-bottom: 20px;
 }
 
 nav {

@@ -1,21 +1,12 @@
 <template>
-    <div id='timeline-embed' style="width: 100%; height: 100%"></div>
+    <div id="timeline-embed"></div>
 </template>
 
 <script>
 export default {
-    props: {
-        dataUrl: {
-            type: String,
-            required: true
-        }
-    },
     mounted() {
-        new TL.Timeline('timeline-embed', this.dataUrl)
+        // Use the TL object
+        var timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml');
     }
 }
 </script>
-
-<style scoped>
-/* Add your styles here */
-</style>

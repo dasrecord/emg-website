@@ -7,7 +7,9 @@
         <p>{{ member.sector }}</p>
         <p>{{ member.url }}</p>
         <template #link>
-          <router-link :to="{ name: 'roster-member', params: { id: member.id } }">{{ member.artist_alias }}</router-link>
+          <router-link :to="{ name: 'roster-member', params: { id: member.id } }">{{
+            member.artist_alias
+          }}</router-link>
         </template>
       </TeamItem>
     </ul>
