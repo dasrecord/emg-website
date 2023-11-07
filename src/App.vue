@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HeadSection from './components/HeadSection.vue';
+import HeadSection from './components/HeadSection.vue'
 </script>
 
 <template>
@@ -30,7 +30,6 @@ header {
   max-height: 80vh;
 }
 
-
 .logo {
   display: block;
   margin: 0 auto 2rem;
@@ -45,8 +44,7 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color : hsla(160, 100%, 37%, 1)
-
+  color: hsla(160, 100%, 37%, 1);
 }
 
 nav a.router-link-exact-active:hover {
@@ -84,7 +82,6 @@ nav a:first-of-type {
     display: flex;
     flex-direction: column;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
   }
 
   .logo {

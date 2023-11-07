@@ -10,7 +10,6 @@
 </template>
 
 <style scoped>
-
 /* ROW STYLE */
 .team {
   margin-top: 2rem;
@@ -33,10 +32,10 @@
 } */
 
 h3 {
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.4rem;
-  color: var(--color-heading)
+  color: var(--color-heading);
 }
 
 @media (min-width: 1024px) {
@@ -54,7 +53,7 @@ h3 {
     width: 50px;
     height: 50px;
   }
-  
+
   .item:first-of-type:before {
     display: none;
   }

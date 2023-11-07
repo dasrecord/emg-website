@@ -1,0 +1,110 @@
+[
+  {
+    "first_name": "AJ",
+    "last_name": "Gibson",
+    "email": "ajgibsonmusic@gmail.com",
+    "url": "",
+    "sector": "DJ",
+    "artist_alias": "",
+    "job_title": "Artist"
+  },
+  {
+    "first_name": "Robert",
+    "last_name": "Snajder",
+    "email": "rs@robertsnajder.com",
+    "url": "",
+    "sector": "Producer",
+    "artist_alias": "",
+    "job_title": "Artist"
+  },
+  {
+    "first_name": "Simon",
+    "last_name": "Kaye",
+    "email": "hideandseekofficial2019@gmail.com",
+    "url": "",
+    "sector": "Producer",
+    "artist_alias": "",
+    "job_title": "Artist"
+  },
+  {
+    "first_name": "MJ",
+    "last_name": "Smallman",
+    "email": "mjsmofficial@outlook.com",
+    "url": "",
+    "sector": "Producer",
+    "artist_alias": "",
+    "job_title": "Artist"
+  },
+  {
+    "first_name": "Kathy",
+    "last_name": "Muir",
+    "email": "info@kathymuir.com",
+    "url": "",
+    "sector": "Singer",
+    "artist_alias": "",
+    "job_title": "Artist"
+  },
+  {
+    "first_name": "Mark",
+    "last_name": "",
+    "email": "mark@bluebirdwoodenterprises.com",
+    "url": "",
+    "sector": "",
+    "artist_alias": "",
+    "job_title": ""
+  },
+  {
+    "first_name": "Daley",
+    "last_name": "Young",
+    "email": "gxdmusic@outlook.com",
+    "url": "",
+    "sector": "Producer / DJ",
+    "artist_alias": "GDX",
+    "job_title": "Artist"
+  },
+  {
+    "first_name": "Riell",
+    "last_name": "Phillipos",
+    "email": "riell@iamriell.com",
+    "url": "",
+    "sector": "Singer",
+    "artist_alias": "Riell",
+    "job_title": "Artist"
+  },
+  {
+    "first_name": "Chris",
+    "last_name": "Kabs",
+    "email": "realchriskabs@gmail.com",
+    "url": "",
+    "sector": "",
+    "artist_alias": "",
+    "job_title": "Artist"
+  },
+  {
+    "first_name": "",
+    "last_name": "",
+    "email": "norskodemusic@gmail.com",
+    "url": "https://open.spotify.com/artist/4YBFnWJNrVZoUU6U30LaLY?si=zzRCHypoRmaQdVZNhuIONA",
+    "sector": "Producer / DJ",
+    "artist_alias": "norskode",
+    "job_title": ""
+  },
+  {
+    "first_name": "",
+    "last_name": "",
+    "email": "jeyvazzcontact@gmail.com",
+    "url": "",
+    "sector": "Electronic Dance Music",
+    "artist_alias": "Jey Vazz",
+    "job_title": ""
+  },
+  {
+    "first_name": "",
+    "last_name": "",
+    "email": "unrefinedofficial@gmail.com",
+    "url": "",
+    "sector": "Electronic Dance Music",
+    "artist_alias": "UNREFINED",
+    "job_title": ""
+  }
+]

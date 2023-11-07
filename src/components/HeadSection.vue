@@ -1,10 +1,10 @@
 <script setup>
 defineProps({
-  site_name : {
+  site_name: {
     type: String,
     required: true
   },
-  tagline : {
+  tagline: {
     type: String,
     required: true
   }
@@ -14,7 +14,7 @@ defineProps({
 <template>
   <div class="greetings">
     <h1 class="green">{{ site_name }}</h1>
-    <h2> {{ tagline }}</h2>
+    <h2>{{ tagline }}</h2>
   </div>
 </template>
 

@@ -5,6 +5,7 @@ import IntakeView from '../views/IntakeView.vue'
 import DemosView from '../views/DemosView.vue'
 import TeamView from '../views/TeamView.vue'
 import ContactView from '../views/ContactView.vue'
+import RosterView from '../views/RosterView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,6 +38,16 @@ const router = createRouter({
       name: 'team',
       component: TeamView
     },
+    {
+      path: '/roster',
+      name: 'roster',
+      component: RosterView
+    },
+    // {
+    //   path: '/roster/:id',
+    //   name: 'roster-member',
+    //   component: () => import(/* webpackChunkName: "roster-member" */ '../views/RosterMemberView.vue')
+    // },
     {
       path: '/contact',
       name: 'contact',
