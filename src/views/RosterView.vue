@@ -2,11 +2,13 @@
   <div>
     <ul>
       <TeamItem v-for="member in roster" :key="member.id" class="roster-member">
-        <!-- <i><slot name="icon"></slot></i> -->
         <img :src="member.image" :alt="member.name" />
         <h2>{{ `${member.first_name} ${member.last_name}` }}</h2>
         <p>{{ member.sector }}</p>
-        <!-- <p>{{ member.url }}</p> -->
+        <p>{{ member.url }}</p>
+        <template #link>
+          <router-link :to="{ name: 'roster-member', params: { id: member.id } }">{{ member.artist_alias }}</router-link>
+        </template>
       </TeamItem>
     </ul>
   </div>
@@ -34,7 +36,7 @@ ul {
   /* justify-content: center; */
   padding: 1rem;
   /* margin-top: 3rem; */
-  /* min-width: 300px; */
+  min-width: 300px;
 }
 </style>
 

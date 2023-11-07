@@ -4,7 +4,7 @@
       <h3>
         <slot name="heading"></slot>
       </h3>
-      <slot></slot>
+      <slot name="link"></slot>
     </div>
   </div>
 </template>
@@ -13,12 +13,13 @@
 /* ROW STYLE */
 .team {
   margin-top: 2rem;
-  /* position: relative; */
+  position: relative;
   display: flex;
   flex-direction: row;
   position: relative;
   line-height: 2.5;
   border: 1px solid var(--color-border);
+  padding-inline-start: 0;
 }
 
 /* GRID STLYE */
@@ -41,7 +42,7 @@ h3 {
 @media (min-width: 1024px) {
   .item {
     margin-top: 0;
-    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
+    padding: 0.40rem 0 1rem calc(var(--section-gap) / 2);
   }
 
   i {
