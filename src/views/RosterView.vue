@@ -31,7 +31,6 @@ ul {
   gap: 2rem;
   /* justify-content: space-evenly; */
   /* flex-wrap: wrap; */
-  /* align-items: center; */
   /* max-width: 100px; */
 }
 .roster-member {
