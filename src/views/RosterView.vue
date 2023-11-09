@@ -3,13 +3,14 @@
     <ul>
       <TeamItem v-for="member in roster" :key="member.id" class="roster-member">
         <img :src="member.image" :alt="member.name" />
-        <h2>{{ `${member.first_name} ${member.last_name}` }}</h2>
-        <p>{{ member.sector }}</p>
-        <p>{{ member.url }}</p>
+        <template #name>
+            <router-link :to="{ name: 'roster-member', params: { id: member.id } }">{{ member.artist_alias }}</router-link>          
+        </template>
+        <template #role>
+          <p>{{ member.sector }}</p>
+        </template>
         <template #link>
-          <router-link :to="{ name: 'roster-member', params: { id: member.id } }">{{
-            member.artist_alias
-          }}</router-link>
+          {{ `${member.first_name} ${member.last_name}` }}    
         </template>
       </TeamItem>
     </ul>
@@ -34,11 +35,12 @@ ul {
 .roster-member {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  /* justify-content: center; */
   padding: 1rem;
-  /* margin-top: 3rem; */
-  min-width: 300px;
+  margin-top: 3rem;
 }
 </style>
 

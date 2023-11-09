@@ -18,7 +18,6 @@
 
 <style scoped>
 h2 {
-  /* font-size: 3rem; */
   font-weight: 800;
   color: var(--color-heading);
 }
