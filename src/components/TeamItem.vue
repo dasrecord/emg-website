@@ -1,10 +1,13 @@
 <template>
   <div class="team">
     <div class="team-member">
+      <h2>
+        <slot name="name"></slot>
+      </h2>
       <h3>
-        <slot name="heading"></slot>
+        <slot name="role"></slot>
       </h3>
-      <slot name="link"></slot>
+      <!-- <slot name="link"></slot> -->
     </div>
   </div>
 </template>
@@ -32,7 +35,7 @@
   border: 1px solid var(--color-border);
 } */
 
-h3 {
+h2 h3 {
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.4rem;

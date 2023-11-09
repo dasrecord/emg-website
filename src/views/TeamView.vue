@@ -2,11 +2,15 @@
   <div>
     <ul>
       <TeamItem v-for="member in team" :key="member.id" class="team-member">
-        <!-- <i><slot name="icon"></slot></i> -->
-        <img :src="member.image" :alt="member.name" />
-        <h2>{{ member.name }}</h2>
-        <p>{{ member.role }}</p>
-        <p>{{ member.location }}</p>
+        <template #name>
+          {{ member.name }}
+        </template>
+        <template #role>
+         <a href="member.link">{{ member.role }}</a>
+        </template>
+        <template #link>
+          <a :href="member.link">View Profile</a>
+        </template>
       </TeamItem>
     </ul>
   </div>
@@ -14,6 +18,7 @@
 
 <style scoped>
 h2 {
+  /* font-size: 3rem; */
   font-weight: 800;
   color: var(--color-heading);
 }
@@ -30,17 +35,19 @@ ul {
 .team-member {
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
   padding: 1rem;
-  /* margin-top: 3rem; */
-  /* min-width: 300px; */
+  margin-top: 3rem;
 }
 </style>
 
 <script>
 import teamData from '@/stores/team.json'
 import TeamItem from '@/components/TeamItem.vue'
+console.log(TeamItem)
 
 export default {
   data() {
