@@ -4,8 +4,10 @@
       <TeamItem v-for="member in roster" :key="member.id" class="roster-member">
         <img :src="member.image" :alt="member.name" />
         <template #name>
-            <router-link :to="{ name: 'roster-member', params: { id: member.id } }">{{ member.artist_alias }}</router-link>          
-        </template>
+          <RouterLink :to="{ name: 'roster-member', params: { id: member.id } }">
+            {{ member.artist_alias }}
+          </RouterLink>
+          </template>
         <template #role>
           <p>{{ member.sector }}</p>
         </template>

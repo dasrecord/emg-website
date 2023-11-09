@@ -8,9 +8,9 @@
         <template #role>
          <a href="member.link">{{ member.role }}</a>
         </template>
-        <template #link>
+        <!-- <template #link>
           <a :href="member.link">View Profile</a>
-        </template>
+        </template> -->
       </TeamItem>
     </ul>
   </div>
