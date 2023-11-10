@@ -4,6 +4,7 @@ import AboutIcon from './icons/IconAbout.vue'
 import IntakeIcon from './icons/IconIntake.vue'
 import DemosIcon from './icons/IconDemos.vue'
 import TeamIcon from './icons/IconTeam.vue'
+import RosterIcon from './icons/IconRoster.vue'
 import ContactIcon from './icons/IconContact.vue'
 </script>
 
@@ -39,6 +40,14 @@ import ContactIcon from './icons/IconContact.vue'
     </template>
     <template #heading>OUR TEAM</template>
     Meet the team behind the agency. <RouterLink to="/team">Get to know us.</RouterLink>
+  </WelcomeItem>
+
+  <WelcomeItem>
+    <template #icon>
+      <RosterIcon />
+    </template>
+    <template #heading>OUR ROSTER</template>
+    Want to book on of our talented artists? <RouterLink to="/roster">Check them out.</RouterLink>
   </WelcomeItem>
 
   <WelcomeItem>
