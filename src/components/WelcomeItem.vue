@@ -17,12 +17,12 @@
   margin-top: 2rem;
   display: flex;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .details {
   flex: 2;
   margin-left: 1rem;
-
   /* border: 1px solid var(--color-border); */
 }
 
