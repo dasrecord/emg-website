@@ -31,7 +31,7 @@ import ContactIcon from './icons/IconContact.vue'
       <DemosIcon />
     </template>
     <template #heading>DEMO SUBMISSION</template>
-    Want to be considered for our label? <RouterLink to="/demo">Send us your demo.</RouterLink>
+    Want to be considered for our label? <RouterLink to="/demos">Send us your demo.</RouterLink>
   </WelcomeItem>
 
   <WelcomeItem>
@@ -47,7 +47,7 @@ import ContactIcon from './icons/IconContact.vue'
       <RosterIcon />
     </template>
     <template #heading>OUR ROSTER</template>
-    Want to book on of our talented artists? <RouterLink to="/roster">Check them out.</RouterLink>
+    Want to book one of our talented artists? <RouterLink to="/roster">Check them out.</RouterLink>
   </WelcomeItem>
 
   <WelcomeItem>
