@@ -634,7 +634,8 @@
   border: none;
   font-size: 18px;
   line-height: 18px;
-  background-color: rgba(242, 242, 242, 0.9);
+  /* background-color: rgba(242, 242, 242, 0.9); */
+  background-color: #181818;
   cursor: pointer;
   padding: 5px 10px 5px 10px;
   display: inline-block;
@@ -804,7 +805,7 @@
 ================================================== */
 .tl-timenav {
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #181818;
   position: relative;
   overflow: hidden;
   border-top: 1px solid #e5e5e5;
