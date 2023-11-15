@@ -64,6 +64,9 @@ export default {
 
 <style>
 .tl-timeline {
-  background-color: var(--color-background);
+  /* display: flex; */
+  flex-direction: column;
+  width: 75vw;
+  height: 75vh;
 }
 </style>
