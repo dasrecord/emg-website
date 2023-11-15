@@ -1,5 +1,5 @@
 <template>
-  <div v-if="artist">
+  <div v-if="artist" class="artist">
     <h1>{{ artist.artist_alias }}</h1>
     <p>{{ `${artist.first_name} ${artist.last_name}` }}</p>
     <p>{{ artist.sector }}</p>
@@ -62,6 +62,9 @@ export default {
 </script>
 
 <style>
+.artist {
+  text-align: center;
+}
 .tl-timeline {
   background-color: var(--color-background);
 }
