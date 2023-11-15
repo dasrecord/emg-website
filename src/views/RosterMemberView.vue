@@ -19,7 +19,6 @@ export default {
   data() {
     return {
       artist: null,
-      timelinedata: 'https://docs.google.com/spreadsheets/d/1KjYDRCbhGGFOsdqawJ5OowtHBn5JTEBEsayhtpIa23A/edit#gid=0'
     };
   },
   mounted() {
@@ -57,7 +56,7 @@ export default {
       // slide_default_fade: '0%',
       // language: 'en'
     };
-    const timeline = new TL.Timeline('timeline', this.timelinedata, options);
+    const timeline = new TL.Timeline('timeline', this.artist.url, options);
   }
 }
 </script>
