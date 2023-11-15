@@ -11,7 +11,7 @@
 /* Includes 
 ================================================== */
 /*	VARIABLES
-	BASE
+	THEME CONTRAST
 ----------------------------------------------------- */
 /* ICON PATH
 ================================================== */
@@ -43,8 +43,7 @@
 	Snippets of reusable CSS to develop faster and keep code readable
  * ----------------------------------------------------------------- */
 .tl-timeline {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* VCard
 	================================================== */
 }
@@ -180,7 +179,7 @@
 }
 .tl-timeline blockquote,
 .tl-timeline blockquote p {
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-family: "Georgia", "Times New Roman", Times, serif;
   color: #999999;
   font-size: 24px;
   line-height: 24px;
@@ -191,7 +190,7 @@
 }
 .tl-timeline blockquote cite,
 .tl-timeline blockquote p cite {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 11px;
   color: #666666;
   display: block;
@@ -200,7 +199,7 @@
 }
 .tl-timeline blockquote cite:before,
 .tl-timeline blockquote p cite:before {
-  content: '\2014';
+  content: "\2014";
 }
 .tl-timeline blockquote p:before {
   content: open-quote;
@@ -225,7 +224,7 @@
   margin: 0;
 }
 .tl-timeline .vcard {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 15px;
   margin-bottom: 15px;
@@ -234,7 +233,7 @@
 .tl-timeline .vcard:before,
 .tl-timeline .vcard:after {
   display: table;
-  content: '';
+  content: "";
 }
 .tl-timeline .vcard:after {
   clear: both;
@@ -305,7 +304,7 @@
 }
 .tl-timeline .tl-note {
   display: block;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   background-color: #fcf8e3;
   font-size: 15px;
@@ -341,18 +340,13 @@
 ================================================== */
 @font-face {
   font-family: 'tl-icons';
-  src: url(../js/../css/icons/tl-icons.eot);
-  src:
-    url(../js/../css/icons/tl-icons.eot?#iefix) format('embedded-opentype'),
-    url(../js/../css/icons/tl-icons.ttf) format('truetype'),
-    url(../js/../css/icons/tl-icons.woff2) format('woff2'),
-    url(../js/../css/icons/tl-icons.woff) format('woff'),
-    url(../js/../css/icons/tl-icons.svg#tl-icons) format('svg');
+  src: url('../../css/icons/tl-icons.eot');
+  src: url('../../css/icons/tl-icons.eot?#iefix') format('embedded-opentype'), url('../../css/icons/tl-icons.ttf') format('truetype'), url('../../css/icons/tl-icons.woff2') format('woff2'), url('../../css/icons/tl-icons.woff') format('woff'), url('../../css/icons/tl-icons.svg#tl-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-[class^='tl-icon-'],
-[class*=' tl-icon-'] {
+[class^="tl-icon-"],
+[class*=" tl-icon-"] {
   font-family: 'tl-icons';
   speak: none;
   font-style: normal;
@@ -365,188 +359,187 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .tl-icon-vine:after {
-  content: '\e64d';
+  content: "\e64d";
 }
 .tl-icon-wikipedia:after {
-  content: '\e64e';
+  content: "\e64e";
 }
 .tl-icon-chevron-right:after {
-  content: '\e64f';
+  content: "\e64f";
 }
 .tl-icon-chevron-left:after {
-  content: '\e650';
+  content: "\e650";
 }
 .tl-icon-youtube-logo:after {
-  content: '\e651';
+  content: "\e651";
 }
 .tl-icon-foursquare:after {
-  content: '\e652';
+  content: "\e652";
 }
 .tl-icon-camera-retro:after {
-  content: '\e653';
+  content: "\e653";
 }
 .tl-icon-doc:after {
-  content: '\e654';
+  content: "\e654";
 }
 .tl-icon-weibo:after {
-  content: '\e655';
+  content: "\e655";
 }
 .tl-icon-resize-horizontal:after {
-  content: '\e656';
+  content: "\e656";
 }
 .tl-icon-resize-vertical:after {
-  content: '\e657';
+  content: "\e657";
 }
 .tl-icon-resize-full:after {
-  content: '\e658';
+  content: "\e658";
 }
 .tl-icon-resize-small:after {
-  content: '\e659';
+  content: "\e659";
 }
 .tl-icon-twitter:after {
-  content: '\e62b';
+  content: "\e62b";
 }
 .tl-icon-google-plus:after {
-  content: '\e62c';
+  content: "\e62c";
 }
 .tl-icon-video:after {
-  content: '\e62d';
+  content: "\e62d";
 }
 .tl-icon-youtube:after {
-  content: '\e62d';
+  content: "\e62d";
 }
 .tl-icon-plaintext:after {
-  content: '\e62e';
+  content: "\e62e";
 }
 .tl-icon-storify:after {
-  content: '\e62e';
+  content: "\e62e";
 }
 .tl-icon-image-v2:after {
-  content: '\e62f';
+  content: "\e62f";
 }
 .tl-icon-quote-v2:after {
-  content: '\e630';
+  content: "\e630";
 }
 .tl-icon-zoom-in:after {
-  content: '+';
+  content: "\e631";
 }
 .tl-icon-zoom-out:after {
-  content: '-';
-  width: 100%;
+  content: "\e632";
 }
 .tl-icon-list:after {
-  content: '\e633';
+  content: "\e633";
 }
 .tl-icon-music:after {
-  content: '\e634';
+  content: "\e634";
 }
 .tl-icon-spotify:after {
-  content: '\e634';
+  content: "\e634";
 }
 .tl-icon-location:after {
-  content: '\e635';
+  content: "\e635";
 }
 .tl-icon-googlemaps:after {
-  content: '\e635';
+  content: "\e635";
 }
 .tl-icon-web:after {
-  content: '\e636';
+  content: "\e636";
 }
 .tl-icon-share-v2:after {
-  content: '\e637';
+  content: "\e637";
 }
 .tl-icon-soundcloud:after {
-  content: '\e639';
+  content: "\e639";
 }
 .tl-icon-video-v2:after {
-  content: '\e63a';
+  content: "\e63a";
 }
 .tl-icon-dailymotion:after {
-  content: '\e63a';
+  content: "\e63a";
 }
 .tl-icon-tumblr:after {
-  content: '\e63b';
+  content: "\e63b";
 }
 .tl-icon-lastfm:after {
-  content: '\e63c';
+  content: "\e63c";
 }
 .tl-icon-github:after {
-  content: '\e63d';
+  content: "\e63d";
 }
 .tl-icon-goback:after {
-  content: '\e63e';
+  content: "\e63e";
 }
 .tl-icon-goend:after {
-  content: '\e969';
+  content: "\e969";
 }
 .tl-icon-prev2:after {
-  content: '\ea23';
+  content: "\ea23";
 }
 .tl-icon-next2:after {
-  content: '\ea24';
+  content: "\ea24";
 }
 .tl-icon-doc-v2:after {
-  content: '\e63f';
+  content: "\e63f";
 }
 .tl-icon-googledrive:after {
-  content: '\e640';
+  content: "\e640";
 }
 .tl-icon-facebook:after {
-  content: '\e641';
+  content: "\e641";
 }
 .tl-icon-flickr:after {
-  content: '\e642';
+  content: "\e642";
 }
 .tl-icon-dribbble:after {
-  content: '\e643';
+  content: "\e643";
 }
 .tl-icon-image:after {
-  content: '\e605';
+  content: "\e605";
 }
 .tl-icon-vimeo:after {
-  content: '\e606';
+  content: "\e606";
 }
 .tl-icon-instagram:after {
-  content: '\e644';
+  content: "\e644";
 }
 .tl-icon-pinterest:after {
-  content: '\e645';
+  content: "\e645";
 }
 .tl-icon-arrow-left:after {
-  content: '\e646';
+  content: "\e646";
 }
 .tl-icon-arrow-down:after {
-  content: '\e647';
+  content: "\e647";
 }
 .tl-icon-arrow-up:after {
-  content: '\e648';
+  content: "\e648";
 }
 .tl-icon-arrow-right:after {
-  content: '\e649';
+  content: "\e649";
 }
 .tl-icon-share:after {
-  content: '\e64a';
+  content: "\e64a";
 }
 .tl-icon-blockquote:after {
-  content: '\e64b';
+  content: "\e64b";
 }
 .tl-icon-evernote:after {
-  content: '\e64c';
+  content: "\e64c";
 }
 .tl-icon-mappin:after {
-  content: '\e600';
+  content: "\e600";
 }
 .tl-icon-swipe-right:after {
-  content: '\e601';
+  content: "\e601";
 }
 .tl-icon-swipe-left:after {
-  content: '\e602';
+  content: "\e602";
 }
 .tl-icon-touch-spread:after {
-  content: '\e603';
+  content: "\e603";
 }
 .tl-icon-touch-pinch:after {
-  content: '\e604';
+  content: "\e604";
 }
 /* Disable Text selection when dragging
 ================================================== */
@@ -605,7 +598,7 @@
 */
 @keyframes invertToBlack {
   from {
-    background-color: #fff;
+    background-color: #FFF;
   }
   to {
     background-color: #000;
@@ -613,7 +606,7 @@
 }
 @-webkit-keyframes invertToBlack {
   from {
-    background: #fff;
+    background: #FFF;
   }
   to {
     background: #000;
@@ -624,7 +617,7 @@
     background-color: #000;
   }
   to {
-    background-color: #fff;
+    background-color: #FFF;
   }
 }
 @-webkit-keyframes invertToWhite {
@@ -632,7 +625,7 @@
     background: #000;
   }
   to {
-    background: #fff;
+    background: #FFF;
   }
 }
 /* MenuBar Button
@@ -646,7 +639,7 @@
   padding: 5px 10px 5px 10px;
   display: inline-block;
   display: block;
-  color: #bfbfbf;
+  color: #6e6e6e;
 }
 .tl-menubar-button:disabled {
   opacity: 0.33;
@@ -655,7 +648,7 @@
 .tl-menubar-button:hover,
 .tl-menubar-button:focus-visible {
   background: #333;
-  color: #fff;
+  color: #FFF;
 }
 .tl-menubar-button:hover:disabled,
 .tl-menubar-button:focus-visible:disabled {
@@ -667,15 +660,15 @@
 }
 .tl-mobile .tl-menubar-button:hover {
   background-color: rgba(242, 242, 242, 0.67);
-  color: #737373;
+  color: #363636;
 }
 .tl-mobile .tl-menubar-button:active {
   background: #c34528;
-  color: #fff;
+  color: #FFF;
 }
 @keyframes invertToBlack {
   from {
-    background-color: #fff;
+    background-color: #FFF;
   }
   to {
     background-color: #000;
@@ -683,7 +676,7 @@
 }
 @-webkit-keyframes invertToBlack {
   from {
-    background: #fff;
+    background: #FFF;
   }
   to {
     background: #000;
@@ -694,7 +687,7 @@
     background-color: #000;
   }
   to {
-    background-color: #fff;
+    background-color: #FFF;
   }
 }
 @-webkit-keyframes invertToWhite {
@@ -702,7 +695,7 @@
     background: #000;
   }
   to {
-    background: #fff;
+    background: #FFF;
   }
 }
 /* MESSAGE 
@@ -737,7 +730,7 @@
   text-transform: uppercase;
   margin-top: 7.5px;
   margin-bottom: 7.5px;
-  text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px #FFF;
 }
 .tl-message .tl-message-container .tl-message-content strong,
 .tl-message-full .tl-message-container .tl-message-content strong {
@@ -783,8 +776,8 @@
 .tl-message-full {
   background-color: hsla(0, 0%, 100%, 0.8);
 }
-.tl-message-full [class^='tl-icon-'],
-.tl-message-full [class*=' tl-icon-'] {
+.tl-message-full [class^="tl-icon-"],
+.tl-message-full [class*=" tl-icon-"] {
   color: #666;
   font-size: 72px;
 }
@@ -799,7 +792,7 @@
 .tl-message-full .tl-message-container .tl-message-content .tl-button {
   display: inline-block;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #FFF;
   color: #333;
   padding: 10px;
   margin-top: 10px;
@@ -811,10 +804,10 @@
 ================================================== */
 .tl-timenav {
   width: 100%;
-  background-color: #181818;
+  background-color: #f2f2f2;
   position: relative;
   overflow: hidden;
-  border-top: 1px solid #181818;
+  border-top: 1px solid #e5e5e5;
 }
 .tl-timenav .tl-timenav-line {
   position: absolute;
@@ -848,7 +841,7 @@
   top: -10px;
 }
 .tl-timenav .tl-timenav-line:after {
-  content: '\e648';
+  content: "\e648";
   bottom: 24px;
 }
 .tl-timenav .tl-timenav-slider {
@@ -883,11 +876,7 @@
   position: absolute;
   height: 100%;
 }
-.tl-timenav
-  .tl-timenav-slider
-  .tl-timenav-container-mask
-  .tl-timenav-container
-  .tl-timenav-item-container {
+.tl-timenav .tl-timenav-slider .tl-timenav-container-mask .tl-timenav-container .tl-timenav-item-container {
   position: absolute;
   height: 100%;
 }
@@ -907,26 +896,10 @@
   cursor: pointer;
   /* Animate Left Width and Top
 	================================================== */
-  -webkit-transition:
-    left 1000ms cubic-bezier(0.77, 0, 0.175, 1),
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition:
-    left 1000ms cubic-bezier(0.77, 0, 0.175, 1),
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition:
-    left 1000ms cubic-bezier(0.77, 0, 0.175, 1),
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition:
-    left 1000ms cubic-bezier(0.77, 0, 0.175, 1),
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: left 1000ms cubic-bezier(0.77, 0, 0.175, 1), top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: left 1000ms cubic-bezier(0.77, 0, 0.175, 1), top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: left 1000ms cubic-bezier(0.77, 0, 0.175, 1), top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: left 1000ms cubic-bezier(0.77, 0, 0.175, 1), top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
@@ -955,54 +928,26 @@
 	================================================== */
 }
 .tl-timemarker.tl-timemarker-fast {
-  -webkit-transition:
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition:
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition:
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition:
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
 .tl-timemarker.tl-timemarker-fast .tl-timemarker-content-container {
-  -webkit-transition:
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition:
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition:
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition:
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: width 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: width 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: width 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: width 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 .tl-timemarker.tl-timemarker-fast .tl-timemarker-timespan {
-  -webkit-transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 .tl-timemarker .tl-timemarker-timespan {
   pointer-events: none;
@@ -1013,18 +958,10 @@
   background-color: rgba(229, 229, 229, 0.15);
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
-  -webkit-transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
@@ -1056,9 +993,9 @@
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
   box-sizing: border-box;
-  border-left: 1px solid #d9d9d9;
+  border-left: 1px solid #8c8c8c;
   z-index: 5;
-  content: ' ';
+  content: " ";
   position: absolute;
   height: 100%;
   -webkit-touch-callout: none;
@@ -1067,12 +1004,12 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  box-shadow: 1px 1px 1px #fff;
+  box-shadow: 1px 1px 1px #FFF;
 }
 .tl-timemarker .tl-timemarker-line-left:after,
 .tl-timemarker .tl-timemarker-line-right:after {
   display: block;
-  content: ' ';
+  content: " ";
   position: absolute;
   left: -4px;
   bottom: 0px;
@@ -1095,25 +1032,17 @@
   width: 100px;
   overflow: hidden;
   z-index: 6;
-  -webkit-transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   box-sizing: border-box;
-  border: 1px solid #d9d9d9;
-  box-shadow: 1px 1px 1px #fff;
+  border: 1px solid #8c8c8c;
+  box-shadow: 1px 1px 1px #FFF;
 }
 .tl-timemarker .tl-timemarker-content-container:hover {
   z-index: 9;
@@ -1134,17 +1063,8 @@
   overflow: hidden;
   position: relative;
 }
-.tl-timemarker
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-text
-  h2.tl-headline,
-.tl-timemarker
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-text
-  h2.tl-headline
-  p {
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline,
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline p {
   display: -webkit-box;
   line-clamp: 2;
   -webkit-line-clamp: 2;
@@ -1157,21 +1077,12 @@
   overflow: hidden;
   font-weight: normal;
   margin: 0;
-  color: #bfbfbf;
+  color: #666666;
   position: relative;
 }
-.tl-timemarker
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-text
-  h2.tl-headline.tl-headline-fadeout:after,
-.tl-timemarker
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-text
-  h2.tl-headline
-  p.tl-headline-fadeout:after {
-  content: '';
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline.tl-headline-fadeout:after,
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline p.tl-headline-fadeout:after {
+  content: "";
   text-align: right;
   position: absolute;
   bottom: 0;
@@ -1180,13 +1091,7 @@
   height: 50%;
   background: -moz-linear-gradient(top, rgba(229, 229, 229, 0) 0%, #e5e5e5 50%);
   /* FF3.6+ */
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0%, rgba(229, 229, 229, 0)),
-    color-stop(50%, #e5e5e5)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(229, 229, 229, 0)), color-stop(50%, #e5e5e5));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, rgba(229, 229, 229, 0) 0%, #e5e5e5 50%);
   /* Chrome10+,Safari5.1+ */
@@ -1199,10 +1104,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@thecolor', endColorstr='@thecolor', GradientType=0);
   /* IE6-9 */
 }
-.tl-timemarker
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container {
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container {
   float: left;
   max-width: 24px;
   max-height: 24px;
@@ -1215,65 +1117,37 @@
   /* Firefox, other Gecko */
   box-sizing: border-box;
 }
-.tl-timemarker
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container
-  .tl-timemarker-media {
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container .tl-timemarker-media {
   max-width: 24px;
   max-height: 100%;
   opacity: 0.25;
 }
-.tl-timemarker
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container
-  [class^='tl-icon-'],
-.tl-timemarker
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container
-  [class*=' tl-icon-'] {
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container [class^="tl-icon-"],
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container [class*=" tl-icon-"] {
   display: block;
   font-size: 24px;
-  color: #bfbfbf;
+  color: #666666;
   margin-top: 0px;
 }
-.tl-timemarker
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container
-  .tl-icon-wikipedia {
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container .tl-icon-wikipedia {
   font-size: 16px;
 }
-.tl-timemarker
-  .tl-timemarker-content-container
-  .tl-timemarker-content.tl-timemarker-content-small
-  .tl-timemarker-text
-  h2.tl-headline {
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content.tl-timemarker-content-small .tl-timemarker-text h2.tl-headline {
   display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.tl-timemarker
-  .tl-timemarker-content-container
-  .tl-timemarker-content.tl-timemarker-content-small
-  .tl-timemarker-media-container
-  [class^='tl-icon-'],
-.tl-timemarker
-  .tl-timemarker-content-container
-  .tl-timemarker-content.tl-timemarker-content-small
-  .tl-timemarker-media-container
-  [class*=' tl-icon-'] {
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content.tl-timemarker-content-small .tl-timemarker-media-container [class^="tl-icon-"],
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content.tl-timemarker-content-small .tl-timemarker-media-container [class*=" tl-icon-"] {
   font-size: 12px;
 }
 .tl-timemarker:hover .tl-timemarker-timespan,
 .tl-timemarker:focus .tl-timemarker-timespan {
-  background-color: rgba(191, 191, 191, 0.25);
+  background-color: rgba(102, 102, 102, 0.25);
 }
 .tl-timemarker:hover .tl-timemarker-timespan .tl-timemarker-timespan-content,
 .tl-timemarker:focus .tl-timemarker-timespan .tl-timemarker-timespan-content {
-  background-color: #bfbfbf;
+  background-color: #666666;
 }
 .tl-timemarker:hover .tl-timemarker-timespan .tl-timemarker-line-left,
 .tl-timemarker:focus .tl-timemarker-timespan .tl-timemarker-line-left,
@@ -1291,54 +1165,24 @@
 .tl-timemarker:focus .tl-timemarker-content-container {
   background-color: #737373;
   border-color: #a6a6a6;
-  -webkit-transition:
-    height 250ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 250ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition:
-    height 250ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 250ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition:
-    height 250ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 250ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition:
-    height 250ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 250ms cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: height 250ms cubic-bezier(0.77, 0, 0.175, 1), width 250ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: height 250ms cubic-bezier(0.77, 0, 0.175, 1), width 250ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: height 250ms cubic-bezier(0.77, 0, 0.175, 1), width 250ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: height 250ms cubic-bezier(0.77, 0, 0.175, 1), width 250ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 .tl-timemarker:hover .tl-timemarker-content-container.tl-timemarker-content-container-small,
 .tl-timemarker:focus .tl-timemarker-content-container.tl-timemarker-content-container-small {
   width: 200px;
 }
-.tl-timemarker:hover
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-text
-  h2.tl-headline,
-.tl-timemarker:focus
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-text
-  h2.tl-headline {
-  color: #fff;
+.tl-timemarker:hover .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline,
+.tl-timemarker:focus .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
+  color: #FFF;
 }
-.tl-timemarker:hover
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-text
-  h2.tl-headline.tl-headline-fadeout:after,
-.tl-timemarker:focus
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-text
-  h2.tl-headline.tl-headline-fadeout:after {
+.tl-timemarker:hover .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline.tl-headline-fadeout:after,
+.tl-timemarker:focus .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline.tl-headline-fadeout:after {
   background: -moz-linear-gradient(top, rgba(115, 115, 115, 0) 0%, #737373 80%);
   /* FF3.6+ */
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0%, rgba(115, 115, 115, 0)),
-    color-stop(80%, #737373)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(115, 115, 115, 0)), color-stop(80%, #737373));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, rgba(115, 115, 115, 0) 0%, #737373 80%);
   /* Chrome10+,Safari5.1+ */
@@ -1351,67 +1195,29 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@thecolor', endColorstr='@thecolor', GradientType=0);
   /* IE6-9 */
 }
-.tl-timemarker:hover
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container
-  .tl-timemarker-media,
-.tl-timemarker:focus
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container
-  .tl-timemarker-media {
+.tl-timemarker:hover .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container .tl-timemarker-media,
+.tl-timemarker:focus .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container .tl-timemarker-media {
   opacity: 1;
 }
-.tl-timemarker:hover
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container
-  [class^='tl-icon-'],
-.tl-timemarker:focus
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container
-  [class^='tl-icon-'],
-.tl-timemarker:hover
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container
-  [class*=' tl-icon-'],
-.tl-timemarker:focus
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container
-  [class*=' tl-icon-'] {
-  color: #fff;
+.tl-timemarker:hover .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container [class^="tl-icon-"],
+.tl-timemarker:focus .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container [class^="tl-icon-"],
+.tl-timemarker:hover .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container [class*=" tl-icon-"],
+.tl-timemarker:focus .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container [class*=" tl-icon-"] {
+  color: #FFF;
 }
-.tl-timemarker:hover.tl-timemarker-active
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-text
-  h2.tl-headline.tl-headline-fadeout:after,
-.tl-timemarker:focus.tl-timemarker-active
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-text
-  h2.tl-headline.tl-headline-fadeout:after {
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 80%);
+.tl-timemarker:hover.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline.tl-headline-fadeout:after,
+.tl-timemarker:focus.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline.tl-headline-fadeout:after {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FFF 80%);
   /* FF3.6+ */
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0%, rgba(255, 255, 255, 0)),
-    color-stop(80%, #fff)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(80%, #FFF));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 80%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FFF 80%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 80%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FFF 80%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 80%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FFF 80%);
   /* IE10+ */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 80%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFF 80%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@thecolor', endColorstr='@thecolor', GradientType=0);
   /* IE6-9 */
@@ -1450,62 +1256,36 @@
   background-color: #333;
 }
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
-  background-color: #fff;
+  background-color: #FFF;
   color: #333;
   z-index: 9;
   border-color: rgba(51, 51, 51, 0.5);
   box-shadow: 1px 1px 3px rgba(145, 145, 145, 0.5);
 }
-.tl-timemarker.tl-timemarker-active
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-text
-  h2.tl-headline {
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
   color: #333;
 }
-.tl-timemarker.tl-timemarker-active
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-text
-  h2.tl-headline.tl-headline-fadeout:after {
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 80%);
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline.tl-headline-fadeout:after {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FFF 80%);
   /* FF3.6+ */
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0%, rgba(255, 255, 255, 0)),
-    color-stop(80%, #fff)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(80%, #FFF));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 80%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FFF 80%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 80%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FFF 80%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 80%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FFF 80%);
   /* IE10+ */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 80%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFF 80%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@thecolor', endColorstr='@thecolor', GradientType=0);
   /* IE6-9 */
 }
-.tl-timemarker.tl-timemarker-active
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container
-  .tl-timemarker-media {
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container .tl-timemarker-media {
   opacity: 1;
 }
-.tl-timemarker.tl-timemarker-active
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container
-  [class^='tl-icon-'],
-.tl-timemarker.tl-timemarker-active
-  .tl-timemarker-content-container
-  .tl-timemarker-content
-  .tl-timemarker-media-container
-  [class*=' tl-icon-'] {
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container [class^="tl-icon-"],
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container [class*=" tl-icon-"] {
   color: #333;
 }
 .tl-timemarker.tl-timemarker-with-end .tl-timemarker-timespan .tl-timemarker-timespan-content {
@@ -1517,7 +1297,7 @@
 }
 .tl-timemarker.tl-timemarker-with-end .tl-timemarker-timespan:after {
   display: block;
-  content: ' ';
+  content: " ";
   position: absolute;
   left: 0px;
   bottom: -7px;
@@ -1529,8 +1309,7 @@
   -moz-border-radius: 7px;
   border-radius: 7px;
 }
-.tl-timemarker.tl-timemarker-with-end
-  .tl-timemarker-content-container.tl-timemarker-content-container-long {
+.tl-timemarker.tl-timemarker-with-end .tl-timemarker-content-container.tl-timemarker-content-container-long {
   box-shadow: none;
 }
 .tl-timemarker.tl-timemarker-with-end .tl-timemarker-line-right {
@@ -1577,26 +1356,10 @@
   z-index: 3;
   /* Animate Left Width and Top
 	================================================== */
-  -webkit-transition:
-    left 1000ms cubic-bezier(0.77, 0, 0.175, 1),
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition:
-    left 1000ms cubic-bezier(0.77, 0, 0.175, 1),
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition:
-    left 1000ms cubic-bezier(0.77, 0, 0.175, 1),
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition:
-    left 1000ms cubic-bezier(0.77, 0, 0.175, 1),
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: left 1000ms cubic-bezier(0.77, 0, 0.175, 1), top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: left 1000ms cubic-bezier(0.77, 0, 0.175, 1), top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: left 1000ms cubic-bezier(0.77, 0, 0.175, 1), top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: left 1000ms cubic-bezier(0.77, 0, 0.175, 1), top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
@@ -1607,22 +1370,10 @@
 	================================================== */
 }
 .tl-timeera.tl-timeera-fast {
-  -webkit-transition:
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition:
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition:
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition:
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 500ms cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
@@ -1662,24 +1413,16 @@
   height: 100%;
   width: 100px;
   overflow: hidden;
-  -webkit-transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition:
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   box-sizing: border-box;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #8c8c8c;
 }
 .tl-timeera .tl-timeera-content-container .tl-timeera-content {
   position: relative;
@@ -1711,15 +1454,11 @@
   overflow: hidden;
   font-weight: normal;
   margin: 0;
-  color: #fff;
+  color: #FFF;
   margin-left: 10px;
 }
-.tl-timeera
-  .tl-timeera-content-container
-  .tl-timeera-content
-  .tl-timeera-text
-  h2.tl-headline.tl-headline-fadeout:after {
-  content: '';
+.tl-timeera .tl-timeera-content-container .tl-timeera-content .tl-timeera-text h2.tl-headline.tl-headline-fadeout:after {
+  content: "";
   text-align: right;
   position: absolute;
   bottom: 0;
@@ -1728,13 +1467,7 @@
   height: 50%;
   background: -moz-linear-gradient(top, rgba(229, 229, 229, 0) 0%, #e5e5e5 50%);
   /* FF3.6+ */
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0%, rgba(229, 229, 229, 0)),
-    color-stop(50%, #e5e5e5)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(229, 229, 229, 0)), color-stop(50%, #e5e5e5));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, rgba(229, 229, 229, 0) 0%, #e5e5e5 50%);
   /* Chrome10+,Safari5.1+ */
@@ -1770,26 +1503,10 @@
   -webkit-box-align: center;
   /* Animate Left Width and Top
 	================================================== */
-  -webkit-transition:
-    left 1000ms cubic-bezier(0.77, 0, 0.175, 1),
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition:
-    left 1000ms cubic-bezier(0.77, 0, 0.175, 1),
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition:
-    left 1000ms cubic-bezier(0.77, 0, 0.175, 1),
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition:
-    left 1000ms cubic-bezier(0.77, 0, 0.175, 1),
-    top 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    height 500ms cubic-bezier(0.77, 0, 0.175, 1),
-    width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: left 1000ms cubic-bezier(0.77, 0, 0.175, 1), top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: left 1000ms cubic-bezier(0.77, 0, 0.175, 1), top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: left 1000ms cubic-bezier(0.77, 0, 0.175, 1), top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: left 1000ms cubic-bezier(0.77, 0, 0.175, 1), top 500ms cubic-bezier(0.77, 0, 0.175, 1), height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
@@ -1797,7 +1514,7 @@
 }
 .tl-timegroup .tl-timegroup-message {
   color: #e0e0e0;
-  text-shadow: #fff 0px 2px 2px;
+  text-shadow: #FFF 0px 2px 2px;
   margin-left: 80px;
 }
 .tl-timegroup.tl-timegroup-alternate {
@@ -1820,7 +1537,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #FFF;
   border-top: 1px solid #e5e5e5;
   z-index: 2;
 }
@@ -1851,16 +1568,8 @@
   text-align: center;
   font-weight: normal;
 }
-.tl-timeaxis
-  .tl-timeaxis-content-container
-  .tl-timeaxis-major
-  .tl-timeaxis-tick
-  .tl-timeaxis-tick-text,
-.tl-timeaxis
-  .tl-timeaxis-content-container
-  .tl-timeaxis-minor
-  .tl-timeaxis-tick
-  .tl-timeaxis-tick-text {
+.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major .tl-timeaxis-tick .tl-timeaxis-tick-text,
+.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick .tl-timeaxis-tick-text {
   display: inline-block;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1868,22 +1577,16 @@
 }
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major .tl-timeaxis-tick:before,
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick:before {
-  content: '|';
+  content: "|";
   display: block;
-  color: #fff;
+  color: #FFF;
   width: 1px;
   overflow: hidden;
-  border-left: 1px solid #bfbfbf;
+  border-left: 1px solid #757575;
   text-align: center;
 }
-.tl-timeaxis
-  .tl-timeaxis-content-container
-  .tl-timeaxis-major.tl-timeaxis-animate
-  .tl-timeaxis-tick,
-.tl-timeaxis
-  .tl-timeaxis-content-container
-  .tl-timeaxis-minor.tl-timeaxis-animate
-  .tl-timeaxis-tick {
+.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major.tl-timeaxis-animate .tl-timeaxis-tick,
+.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor.tl-timeaxis-animate .tl-timeaxis-tick {
   -webkit-transition: all 1000ms cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition: all 1000ms cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition: all 1000ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -1893,14 +1596,8 @@
   -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
-.tl-timeaxis
-  .tl-timeaxis-content-container
-  .tl-timeaxis-major.tl-timeaxis-animate-opacity
-  .tl-timeaxis-tick,
-.tl-timeaxis
-  .tl-timeaxis-content-container
-  .tl-timeaxis-minor.tl-timeaxis-animate-opacity
-  .tl-timeaxis-tick {
+.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major.tl-timeaxis-animate-opacity .tl-timeaxis-tick,
+.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor.tl-timeaxis-animate-opacity .tl-timeaxis-tick {
   -webkit-transition: opacity 1000ms cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition: opacity 1000ms cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition: opacity 1000ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -1912,17 +1609,17 @@
 }
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major {
   z-index: 1;
-  background-color: #fff;
+  background-color: #FFF;
 }
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major .tl-timeaxis-tick {
   font-size: 12px;
   line-height: 14px;
-  color: #737373;
+  color: #5c5c5c;
   width: 100px;
   margin-left: -50px;
 }
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major .tl-timeaxis-tick:before {
-  border-color: #a6a6a6;
+  border-color: #5c5c5c;
   font-size: 18px;
   line-height: 18px;
   margin-bottom: 2px;
@@ -1931,48 +1628,32 @@
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick {
   font-size: 11px;
   line-height: 13px;
-  color: #bfbfbf;
+  color: #757575;
   width: 50px;
   margin-left: -25px;
 }
-.tl-timeaxis
-  .tl-timeaxis-content-container
-  .tl-timeaxis-minor
-  .tl-timeaxis-tick
-  .tl-timeaxis-tick-text {
+.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick .tl-timeaxis-tick-text {
   opacity: 0;
   white-space: normal;
   padding-left: 2px;
   padding-right: 2px;
 }
-.tl-timeaxis
-  .tl-timeaxis-content-container
-  .tl-timeaxis-minor
-  .tl-timeaxis-tick
-  .tl-timeaxis-tick-text
-  span {
+.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick .tl-timeaxis-tick-text span {
   display: block;
   font-size: 9px;
   line-height: 9px;
   margin-top: -2px;
-  color: #e6e6e6;
+  color: #9c9c9c;
 }
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick:before {
   font-size: 9px;
   line-height: 9px;
   margin-left: 25px;
 }
-.tl-timeaxis
-  .tl-timeaxis-content-container
-  .tl-timeaxis-minor
-  .tl-timeaxis-tick.tl-timeaxis-tick-hidden
-  .tl-timeaxis-tick-text {
+.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick.tl-timeaxis-tick-hidden .tl-timeaxis-tick-text {
   opacity: 0 !important;
 }
-.tl-timeaxis
-  .tl-timeaxis-content-container
-  .tl-timeaxis-minor
-  .tl-timeaxis-tick.tl-timeaxis-tick-hidden:before {
+.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick.tl-timeaxis-tick-hidden:before {
   opacity: 0.33;
 }
 /* Skinny
@@ -2121,7 +1802,7 @@
 ================================================== */
 .tl-slide.tl-full-image-background,
 .tl-slide.tl-full-color-background {
-  color: #fff !important;
+  color: #FFF !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background p,
@@ -2138,7 +1819,7 @@
 .tl-slide.tl-full-color-background h5,
 .tl-slide.tl-full-image-background h6,
 .tl-slide.tl-full-color-background h6 {
-  color: #fff !important;
+  color: #FFF !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background a,
@@ -2163,28 +1844,28 @@
 .tl-slide.tl-full-color-background .tl-caption,
 .tl-slide.tl-full-image-background .tl-credit,
 .tl-slide.tl-full-color-background .tl-credit {
-  color: #fff !important;
+  color: #FFF !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background .tl-media-twitter blockquote,
 .tl-slide.tl-full-color-background .tl-media-twitter blockquote,
 .tl-slide.tl-full-image-background .tl-media-blockquote blockquote,
 .tl-slide.tl-full-color-background .tl-media-blockquote blockquote {
-  color: #fff !important;
+  color: #FFF !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background .tl-media-twitter blockquote p,
 .tl-slide.tl-full-color-background .tl-media-twitter blockquote p,
 .tl-slide.tl-full-image-background .tl-media-blockquote blockquote p,
 .tl-slide.tl-full-color-background .tl-media-blockquote blockquote p {
-  color: #fff !important;
+  color: #FFF !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background .vcard a,
 .tl-slide.tl-full-color-background .vcard a,
 .tl-slide.tl-full-image-background .vcard .nickname,
 .tl-slide.tl-full-color-background .vcard .nickname {
-  color: #fff !important;
+  color: #FFF !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 /* Full Image Background
@@ -2285,26 +1966,13 @@
   float: none;
   padding: 0;
 }
-.tl-skinny
-  .tl-slide
-  .tl-slide-content-container
-  .tl-slide-content
-  .tl-text
-  .tl-text-content-container {
+.tl-skinny .tl-slide .tl-slide-content-container .tl-slide-content .tl-text .tl-text-content-container {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
 }
-.tl-skinny
-  .tl-slide.tl-slide.tl-full-color-background
-  .tl-slide-content-container
-  .tl-slide-content
-  .tl-media,
-.tl-skinny
-  .tl-slide.tl-full-image-background
-  .tl-slide-content-container
-  .tl-slide-content
-  .tl-media {
+.tl-skinny .tl-slide.tl-slide.tl-full-color-background .tl-slide-content-container .tl-slide-content .tl-media,
+.tl-skinny .tl-slide.tl-full-image-background .tl-slide-content-container .tl-slide-content .tl-media {
   border-color: rgba(230, 230, 230, 0.25);
 }
 .tl-skinny .tl-slide.tl-slide-media-only .tl-slide-content-container .tl-slide-content {
@@ -2377,10 +2045,10 @@
 .tl-slidenav-previous .tl-slidenav-title,
 .tl-slidenav-next .tl-slidenav-title {
   margin-top: 10px;
-  filter: alpha(opacity=15);
-  -khtml-opacity: 0.15;
-  -moz-opacity: 0.15;
-  opacity: 0.15;
+  filter: alpha(opacity=70);
+  -khtml-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
   font-size: 11px;
   line-height: 11px;
 }
@@ -2388,10 +2056,10 @@
 .tl-slidenav-next .tl-slidenav-description {
   font-size: 11px;
   margin-top: 5px;
-  filter: alpha(opacity=0);
-  -khtml-opacity: 0;
-  -moz-opacity: 0;
-  opacity: 0;
+  filter: alpha(opacity=70);
+  -khtml-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
 }
 .tl-slidenav-previous .tl-slidenav-description small,
 .tl-slidenav-next .tl-slidenav-description small {
@@ -2405,7 +2073,7 @@
 .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-title,
 .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description,
 .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description {
-  text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px #FFF;
   color: #333;
 }
 .tl-slidenav-previous .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-icon,
@@ -2446,7 +2114,7 @@
   margin-left: 76px;
 }
 .tl-slidenav-next .tl-slidenav-icon:before {
-  content: '>>';
+  content: "\e64f";
 }
 .tl-slidenav-previous {
   text-align: left;
@@ -2456,7 +2124,7 @@
   margin-left: 0px;
 }
 .tl-slidenav-previous .tl-slidenav-icon:before {
-  content: '<<';
+  content: "\e650";
 }
 /* NAVIGATION HOVER
 ================================================== */
@@ -2473,10 +2141,10 @@
 .tl-slidenav-next:hover .tl-slidenav-description,
 .tl-slidenav-previous:focus-visible .tl-slidenav-description,
 .tl-slidenav-next:focus-visible .tl-slidenav-description {
-  filter: alpha(opacity=50);
-  -khtml-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
+  filter: alpha(opacity=80);
+  -khtml-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
 }
 .tl-slidenav-next:hover .tl-slidenav-icon,
 .tl-slidenav-next:focus-visible .tl-slidenav-icon {
@@ -2681,7 +2349,7 @@
 .tl-media .tl-media-content-container .tl-media-content:before,
 .tl-media .tl-media-content-container .tl-media-content:after {
   display: table;
-  content: '';
+  content: "";
 }
 .tl-media .tl-media-content-container .tl-media-content:after {
   clear: both;
@@ -2693,8 +2361,8 @@
 .tl-media .tl-media-content-container .tl-media-content .tl-media-loaderror p span {
   color: #f2f2f2;
 }
-.tl-media .tl-media-content-container .tl-media-content .tl-media-loaderror [class^='tl-icon-'],
-.tl-media .tl-media-content-container .tl-media-content .tl-media-loaderror [class*=' tl-icon-'] {
+.tl-media .tl-media-content-container .tl-media-content .tl-media-loaderror [class^="tl-icon-"],
+.tl-media .tl-media-content-container .tl-media-content .tl-media-loaderror [class*=" tl-icon-"] {
   font-size: 28px;
   color: #f2f2f2;
   text-align: center;
@@ -2717,9 +2385,9 @@
 .tl-media-shadow {
   position: relative;
   z-index: 1;
-  -webkit-box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.61);
-  -moz-box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.61);
-  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.6);
 }
 .tl-slide.tl-full-image-background a,
 .tl-slide.tl-full-color-background a,
@@ -2736,7 +2404,7 @@
 /* Credit
 ================================================== */
 .tl-credit {
-  color: #999999;
+  color: #686868;
   text-align: right;
   display: block;
   margin: 0 auto;
@@ -2815,10 +2483,10 @@
   vertical-align: middle;
   text-align: left;
   text-shadow: none;
-  color: #737373;
+  color: #363636;
 }
 .tl-text p {
-  color: #737373;
+  color: #363636;
 }
 .tl-text .tl-text-content-container .tl-text-headline-container {
   display: flex;
@@ -2829,31 +2497,30 @@
 .tl-text h2.tl-headline-title,
 .tl-text h2.tl-headline {
   margin-top: 0;
-  color: #fff;
 }
 .tl-text .tl-headline-date,
 .tl-text h3.tl-headline-date {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 15px;
   font-weight: normal;
   margin: 0 0 3px 0;
-  color: #b3b3b3;
+  color: #757575;
 }
 .tl-text .tl-headline-date small,
 .tl-text h3.tl-headline-date small {
   font-size: 15px;
   line-height: 15px;
   font-weight: normal;
-  color: #b3b3b3;
+  color: #757575;
 }
 .tl-text .tl-text-date {
   display: inline-block;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   margin-top: 10px;
   font-size: 12px;
-  color: #b3b3b3;
+  color: #757575;
 }
 .tl-full-image-background .tl-text,
 .tl-full-color-background .tl-text,
@@ -2940,18 +2607,18 @@
   display: none;
 }
 .tl-media .tl-media-twitter .tl-icon-twitter {
-  color: #55acee;
+  color: #55ACEE;
 }
 .tl-media .tl-media-twitter .vcard a:hover,
 .tl-media .tl-media-twitter .vcard a.tl-date:hover {
   text-decoration: none;
-  color: #55acee;
+  color: #55ACEE;
 }
 .tl-media .tl-media-twitter .vcard a:hover .fn,
 .tl-media .tl-media-twitter .vcard a.tl-date:hover .fn,
 .tl-media .tl-media-twitter .vcard a:hover .nickname,
 .tl-media .tl-media-twitter .vcard a.tl-date:hover .nickname {
-  color: #55acee;
+  color: #55ACEE;
 }
 .tl-slide-media-only .tl-media .tl-media-twitter {
   width: 80%;
@@ -3105,7 +2772,7 @@
 }
 .tl-slide.tl-full-image-background .tl-media .tl-media-wikipedia h4 a,
 .tl-slide.tl-full-color-background .tl-media .tl-media-wikipedia h4 a {
-  color: #fff !important;
+  color: #FFF !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background .tl-media .tl-media-wikipedia a:hover,
@@ -3158,11 +2825,7 @@
   max-height: 120px;
   margin: 4px 0 0 15px;
 }
-.tl-media
-  .tl-media-content-container
-  .tl-media-content
-  .tl-media-website
-  img.tl-media-website-icon {
+.tl-media .tl-media-content-container .tl-media-content .tl-media-website img.tl-media-website-icon {
   max-width: 16px;
   max-height: 16px;
   float: none;
@@ -3182,7 +2845,7 @@
 }
 .tl-slide.tl-full-image-background .tl-media .tl-media-website h4 a,
 .tl-slide.tl-full-color-background .tl-media .tl-media-website h4 a {
-  color: #fff !important;
+  color: #FFF !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background .tl-media .tl-media-website a:hover,
@@ -3208,8 +2871,8 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  background-color: #fff;
-  color: #737373;
+  background-color: #FFF;
+  color: #363636;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -3225,8 +2888,7 @@
   border: 1px solid #cccccc;
   border-radius: 8px;
 }
-.tl-timeline .tl-attribution {
-  display: none;
+/* .tl-timeline .tl-attribution {
   cursor: pointer;
   z-index: 9;
   position: absolute;
@@ -3234,12 +2896,12 @@
   left: 0px;
   font-size: 10px;
   line-height: 10px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   background-color: rgba(255, 255, 255, 0.85);
   padding: 3px;
-}
+} */
 .tl-timeline .tl-attribution a {
-  color: #cccccc;
+  color: #757575;
 }
 .tl-timeline .tl-attribution a:hover,
 .tl-timeline .tl-attribution a:focus-visible {
@@ -3257,7 +2919,7 @@
   width: 8px;
   margin-right: 3px;
   background-color: #c34528;
-  background-color: #cccccc;
+  background-color: #757575;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -3299,5 +2961,3 @@
 .tl-rtl .tl-credit {
   text-align: left;
 }
-
-/*# sourceMappingURL=timeline.css.map*/

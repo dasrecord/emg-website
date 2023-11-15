@@ -10,7 +10,6 @@
 <script>
 import rosterData from '@/stores/roster.json'
 import TimeLine from '@/components/TimeLine.vue'
-import '/public/timeline.css'
 
 export default {
   name: 'RosterMemberView',
@@ -28,7 +27,7 @@ export default {
     this.artist = rosterData.find(artist => artist.id === id);
     const options = {
       width: window.innerWidth,
-      height: 100,
+      base_class: 'tl-timeline',
       initial_zoom: 2,
       start_at_end: true,
       timenav_position: 'top',
@@ -40,7 +39,6 @@ export default {
       // debug: false,
       // is_embed: false,
       // optimal_tick_width: 100,
-      // base_class: 'tl-timeline',
       // timenav_height: 150,
       // timenav_height_percentage: 25,
       // timenav_mobile_height_percentage: 40,
@@ -63,3 +61,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.tl-timeline {
+  background-color: var(--color-background);
+}
+</style>
