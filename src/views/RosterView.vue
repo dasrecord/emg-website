@@ -29,19 +29,21 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  /* justify-content: space-evenly; */
-  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0%;
   /* max-width: 100px; */
 }
 .roster-member {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  min-width: 300px;
   height: 100%;
   text-align: center;
   padding: 1rem;
   margin-top: 3rem;
+  margin: auto;
 }
 </style>
 

@@ -26,6 +26,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  padding: 0%;
   /* justify-content: space-evenly; */
   /* flex-wrap: wrap; */
   /* align-items: center; */
