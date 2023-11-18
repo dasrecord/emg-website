@@ -27,12 +27,15 @@ import HeadSection from './components/HeadSection.vue'
 
 <style>
 header {
+  display: flex;
+  flex-direction: column;
   line-height: 1.5;
   max-height: 80vh;
   margin: 2rem;
 }
 
 .logo {
+  align-self: center;
   display: block;
   margin-bottom: 20px;
 }
@@ -42,6 +45,7 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  font-size: 2rem;
   color: var(--color-heading);
 }
 
@@ -79,14 +83,18 @@ nav a:first-of-type {
   z-index: 1;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
   header {
     display: flex;
-    flex-direction: column;
-    place-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* place-items: center; */
   }
 
   .logo {
+    height: 50px;
+    width: 50px;
     margin: 0 2rem 0 0;
   }
 
