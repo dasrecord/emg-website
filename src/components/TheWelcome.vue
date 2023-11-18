@@ -6,6 +6,7 @@ import DemosIcon from './icons/IconDemos.vue'
 import TeamIcon from './icons/IconTeam.vue'
 import RosterIcon from './icons/IconRoster.vue'
 import ContactIcon from './icons/IconContact.vue'
+import PlacementsIcon from './icons/IconPlacements.vue'
 </script>
 
 <template>
@@ -48,6 +49,14 @@ import ContactIcon from './icons/IconContact.vue'
     </template>
     <template #heading>OUR ROSTER</template>
     Want to book one of our talented artists? <RouterLink to="/roster">Check them out.</RouterLink>
+  </WelcomeItem>
+
+  <WelcomeItem>
+    <template #icon>
+      <PlacementsIcon />
+    </template>
+    <template #heading>OUR PLACEMENTS</template>
+    Want to see where our artists have placed their music? <RouterLink to="/roster"> Cick here.</RouterLink>
   </WelcomeItem>
 
   <WelcomeItem>
