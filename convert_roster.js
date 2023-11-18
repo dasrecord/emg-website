@@ -12,7 +12,7 @@ fs.createReadStream('./src/stores/roster.csv')
             "first_name": data["First Name"],
             "last_name": data["Last Name"],
             "email": data["Email"],
-            "url": data["Website URL"],
+            "url": data["Experience"],
             "sector": data["Sector"],
             "artist_alias": data["Artist Name"],
             "job_title": data["Job Title"],
