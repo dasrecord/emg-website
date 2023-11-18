@@ -56,7 +56,7 @@ import PlacementsIcon from './icons/IconPlacements.vue'
       <PlacementsIcon />
     </template>
     <template #heading>OUR PLACEMENTS</template>
-    Want to see where our artists have placed their music? <RouterLink to="/roster"> Cick here.</RouterLink>
+    Want to see where our artists have placed their music? <RouterLink to="/placements"> Cick here.</RouterLink>
   </WelcomeItem>
 
   <WelcomeItem>
