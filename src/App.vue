@@ -7,9 +7,9 @@ import HeadSection from './components/HeadSection.vue'
   <header>
     <img alt="EMG logo" class="logo" src="@\assets\emg_logo.png" width="125" height="125" />
     <div>
-      <HeadSection site_name="EVOLVED MUSIC GROUP" />
-      <HeadSection tagline="Empowering Musical Growth" />
-
+      <HeadSection
+      site_name="EVOLVED MUSIC GROUP"
+      tagline="Empowering Musical Growth" />
       <nav v-if="$route.path != '/'">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About Us</RouterLink>

@@ -20,11 +20,11 @@ defineProps({
 
 <style>
 h1 {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 4.6rem;
   position: relative;
   top: -10px;
-  margin-top: -1rem;
+
   margin-bottom: -1rem;
 }
 
@@ -44,10 +44,13 @@ h3 {
   text-align: center;
 }
 
-@media (max-width: 768) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
+@media (max-width: 768px) {
+  .greetings h1{
+    font-size: 2rem;
+  }
+
+  .greetings h2 {
+    font-size: 1rem;
   }
 }
 </style>
