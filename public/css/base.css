@@ -35,6 +35,13 @@
 
   --section-gap: 80px;
 }
+@font-face {
+  font-family: 'Agency FB';
+  src: url('/fonts/agency.eot'); /* Update the path based on your font file's location */
+  /* Add other formats as needed */
+  font-weight: normal;
+  font-style: normal;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -66,7 +73,7 @@ body {
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
-  /* font-family: 'Agency FB', sans-serif; */
+  font-family: 'Agency FB', sans-serif;
   font-family:
     'Agency FB',
     Inter,
