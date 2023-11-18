@@ -1,11 +1,11 @@
 <template>
   <div>
     <ul>
-      <TeamItem v-for="placement in placements" :key="placement.artist_name" class="team-member">
+      <TeamItem v-for="placement in placements" :key="placement.artist_name" class="artist">
         <template #name>
           {{ placement.artist_name }}
         </template>
-        <template #role>
+        <template #link>
           <div v-for="track in placement.tracks" :key="track.track_name">
             <a :href="track.url">{{ track.track_name }}</a>
           </div>
@@ -23,7 +23,7 @@ h2 {
 
 ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding: 0%;
   /* justify-content: space-evenly; */
@@ -31,7 +31,7 @@ ul {
   /* align-items: center; */
   /* max-width: 100px; */
 }
-.team-member {
+.artist {
   display: flex;
   flex-direction: column;
   justify-content: center;
