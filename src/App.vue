@@ -17,6 +17,7 @@ import HeadSection from './components/HeadSection.vue'
         <RouterLink to="/demos">Submit Demos</RouterLink>
         <RouterLink to="/team">Our Team</RouterLink>
         <RouterLink to="/roster">Our Roster</RouterLink>
+        <RouterLink to="/placements">Our Placements</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
       </nav>
     </div>

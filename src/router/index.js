@@ -7,6 +7,7 @@ import TeamView from '../views/TeamView.vue'
 import ContactView from '../views/ContactView.vue'
 import RosterView from '../views/RosterView.vue'
 import RosterMemberView from '../views/RosterMemberView.vue'
+import PlacementView from '../views/PlacementsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -48,6 +49,11 @@ const router = createRouter({
       path: '/roster/:id',
       name: 'roster-member',
       component: RosterMemberView
+    },
+    {
+      path: '/placements',
+      name: 'placements',
+      component: PlacementView
     },
     {
       path: '/contact',
