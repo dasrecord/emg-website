@@ -42,6 +42,7 @@ header {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   font-size: 12px;
   text-align: center;
@@ -70,8 +71,10 @@ nav a:first-of-type {
 }
 
 .typeform-embed {
+  display: block;
   width: 100vw;
-  height: 100%;
+  min-height: max-content;
+
 }
 
 .video-background {
@@ -96,7 +99,7 @@ nav a:first-of-type {
   .logo {
     height: 50px;
     width: 50px;
-    margin: 0 2rem 0 0;
+    margin: 0 0 0 0;
   }
 
   header .wrapper {
@@ -107,7 +110,7 @@ nav a:first-of-type {
 
   nav {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     padding: 1rem 0;
     margin-top: 1rem;
   }
