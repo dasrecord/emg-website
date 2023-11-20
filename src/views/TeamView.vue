@@ -23,20 +23,20 @@ h2 {
 }
 
 ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   /* justify-content: space-evenly; */
   /* flex-wrap: wrap; */
   /* align-items: center; */
   /* max-width: 100px; */
 }
+
 .team-member {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 50%;
   height: 100%;
   text-align: center;
   padding: 1rem;

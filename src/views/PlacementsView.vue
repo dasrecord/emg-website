@@ -22,10 +22,10 @@ h2 {
 }
 
 ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  padding: 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
   /* justify-content: space-evenly; */
   /* flex-wrap: wrap; */
   /* align-items: center; */

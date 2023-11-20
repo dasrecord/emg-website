@@ -26,19 +26,19 @@ h2 {
 }
 
 ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding: 0%;
+  /* justify-content: space-evenly; */
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
   /* max-width: 100px; */
 }
 .roster-member {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 300px;
+  width: 100%;
   height: 100%;
   text-align: center;
   padding: 1rem;
