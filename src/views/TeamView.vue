@@ -36,7 +36,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   height: 100%;
   text-align: center;
   padding: 1rem;

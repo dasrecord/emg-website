@@ -4,8 +4,8 @@ import HeadSection from './components/HeadSection.vue'
 </script>
 
 <template>
+  <img v-if="$route.path == '/'" alt="EMG logo" class="logo" src="@\assets\emg_logo.png" width="125" height="125" />
   <header>
-    <img alt="EMG logo" class="logo" src="@\assets\emg_logo.png" width="125" height="125" />
     <div>
       <HeadSection
       site_name="EVOLVED MUSIC GROUP"
@@ -41,6 +41,7 @@ header {
 }
 
 nav {
+  display: flex;
   width: 100%;
   font-size: 12px;
   text-align: center;
