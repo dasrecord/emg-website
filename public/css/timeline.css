@@ -43,7 +43,8 @@
 	Snippets of reusable CSS to develop faster and keep code readable
  * ----------------------------------------------------------------- */
 .tl-timeline {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Agency FB' !important;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
   /* VCard
 	================================================== */
 }
@@ -161,6 +162,7 @@
 .tl-timeline .tl-credit,
 .tl-timeline .tl-slidenav-next,
 .tl-timeline .tl-slidenav-previous {
+  font-family: 'Agency FB' !important;
   font-size: 11px;
   line-height: 11px;
 }
@@ -808,7 +810,7 @@
   background-color: #181818;
   position: relative;
   overflow: hidden;
-  border-top: 1px solid #e5e5e5;
+  /* border-top: 1px solid #e5e5e5; */
 }
 .tl-timenav .tl-timenav-line {
   position: absolute;
@@ -1442,6 +1444,7 @@
   height: 100%;
 }
 .tl-timeera .tl-timeera-content-container .tl-timeera-content .tl-timeera-text h2.tl-headline {
+  
   bottom: 0px;
   position: absolute;
   display: -webkit-box;
@@ -1697,7 +1700,7 @@
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .tl-slide .tl-slide-background {
   position: absolute;
@@ -1734,7 +1737,7 @@
 }
 .tl-slide .tl-slide-content-container .tl-slide-content {
   display: table;
-  vertical-align: middle;
+  vertical-align: top;
   direction: rtl;
   padding-left: 100px;
   padding-right: 100px;
