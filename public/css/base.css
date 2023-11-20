@@ -54,7 +54,14 @@
     --color-text: var(--vt-c-text-dark-2);
   }
 }
-
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+    /* Add the rest of your variables here */
+  }
+}
 *,
 *::before,
 *::after {
