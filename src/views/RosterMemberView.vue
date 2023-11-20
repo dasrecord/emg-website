@@ -34,7 +34,7 @@ export default {
       default_bg_color: getComputedStyle(document.documentElement).getPropertyValue('--color-background').trim(),
       font: 'default',
       // other options...
-      // scale_factor: 2,
+      scale_factor: 2,
       // hash_bookmark: true,
       // debug: false,
       // is_embed: false,
@@ -57,7 +57,7 @@ export default {
       // slide_default_fade: '0%',
       // language: 'en'
     };
-    const timeline = new TL.Timeline('timeline', "this.artist.url", options);
+    const timeline = new TL.Timeline('timeline', this.artist.other_link, options);
   }
 }
 </script>
@@ -68,5 +68,6 @@ export default {
 }
 .tl-timeline {
   background-color: var(--color-background);
+  min-height: 800px;
 }
 </style>
