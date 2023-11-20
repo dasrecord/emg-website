@@ -21,15 +21,16 @@ export default {
   data() {
     return {
       artist: null,
+      artistImage: null
     };
   },
-  computed: {
-    artistImage() {
+  methods: {
+    async loadArtistImage() {
       if (!this.artist) {
-        return null; // or return a default image
+        return;
       }
-      const images = require.context('@/assets/', false, /\.jpg$/);
-      return images(`./${this.artist.artist_alias}.jpg`);
+      const imageModule = await import(`@/assets/${this.artist.artist_alias}.jpg`);
+      this.artistImage = imageModule.default;
     }
   },
   mounted() {
@@ -68,11 +69,19 @@ export default {
       // language: 'en'
     };
     const timeline = new TL.Timeline('timeline', this.artist.other_link, options);
-  }
+    this.loadArtistImage();
+  },
 }
 </script>
 
 <style>
+img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+}
 .artist {
   text-align: center;
 }
