@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul>
-      <TeamItem v-for="member in roster" :key="member.id" class="roster-member">
+      <TeamItem v-for="member in sortedRoster" :key="member.id" class="roster-member">
         <img :src="member.headshot" :alt="member.name" />
         <template #name>
           <RouterLink :to="{ name: 'roster-member', params: { id: member.id } }">
@@ -55,6 +55,11 @@ export default {
   data() {
     return {
       roster: rosterData
+    }
+  },
+  computed: {
+    sortedRoster() {
+      return this.roster.slice().sort((a, b) => a.artist_alias.localeCompare(b.artist_alias));
     }
   },
   components: { TeamItem }
