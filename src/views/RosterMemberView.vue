@@ -1,8 +1,9 @@
 <template>
   <div v-if="artist" class="artist">
     <h1>{{ artist.artist_alias }}</h1>
-    <p>{{ `${artist.first_name} ${artist.last_name}` }}</p>
-    <p>{{ artist.sector }}</p>
+    <p>{{ artist.act }}</p>
+    <p>{{ artist.genre }}</p>
+    <p>{{ artist.short_bio }}</p>
   </div>
   <div id="timeline"></div>
 </template>

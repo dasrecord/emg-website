@@ -2,17 +2,17 @@
   <div>
     <ul>
       <TeamItem v-for="member in roster" :key="member.id" class="roster-member">
-        <img :src="member.image" :alt="member.name" />
+        <img :src="member.headshot" :alt="member.name" />
         <template #name>
           <RouterLink :to="{ name: 'roster-member', params: { id: member.id } }">
             {{ member.artist_alias }}
           </RouterLink>
           </template>
         <template #role>
-          <p>{{ member.sector }}</p>
+          <p>{{ member.act }}</p>
         </template>
         <template #link>
-          {{ `${member.first_name} ${member.last_name}` }}    
+          {{ member.genre }}    
         </template>
       </TeamItem>
     </ul>
