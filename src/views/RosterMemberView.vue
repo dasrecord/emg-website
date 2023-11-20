@@ -57,7 +57,7 @@ export default {
       // slide_default_fade: '0%',
       // language: 'en'
     };
-    const timeline = new TL.Timeline('timeline', this.artist.url, options);
+    const timeline = new TL.Timeline('timeline', "this.artist.url", options);
   }
 }
 </script>
