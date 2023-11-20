@@ -1,5 +1,6 @@
 <template>
   <div v-if="artist" class="artist">
+    <img :src="artistImage" alt="Artist Image">
     <h1>{{ artist.artist_alias }}</h1>
     <p>{{ artist.act }}</p>
     <p>{{ artist.genre }}</p>
@@ -21,6 +22,15 @@ export default {
     return {
       artist: null,
     };
+  },
+  computed: {
+    artistImage() {
+      if (!this.artist) {
+        return null; // or return a default image
+      }
+      const images = require.context('@/assets/', false, /\.jpg$/);
+      return images(`./${this.artist.artist_alias}.jpg`);
+    }
   },
   mounted() {
     const id = Number(this.$route.params.id);
