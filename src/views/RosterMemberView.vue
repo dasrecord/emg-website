@@ -1,6 +1,8 @@
 <template>
   <div v-if="artist" class="artist">
-    <img :src="artistImage" alt="Artist Image">
+    <div class="artist-image">
+      <img :src="artistImage" alt="Artist Image">
+    </div>
     <h1>{{ artist.artist_alias }}</h1>
     <p>{{ artist.act }}</p>
     <p>{{ artist.genre }}</p>
@@ -75,16 +77,30 @@ export default {
 </script>
 
 <style>
-img {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  display: block;
-  border-radius: 50%;
-}
 .artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
+
+.artist-image {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.artist-image img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
 .tl-timeline {
   background-color: var(--color-background);
   min-height: 800px;
