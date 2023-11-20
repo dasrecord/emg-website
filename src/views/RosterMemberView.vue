@@ -3,7 +3,7 @@
     <h1>{{ artist.artist_alias }}</h1>
     <p>{{ artist.act }}</p>
     <p>{{ artist.genre }}</p>
-    <p>{{ artist.short_bio }}</p>
+    <p v-html="artist.short_bio"></p>
   </div>
   <div id="timeline"></div>
 </template>
