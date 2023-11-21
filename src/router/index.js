@@ -108,6 +108,13 @@ const router = createRouter({
       beforeEnter() {
         location.href = '/MA2023.pdf';
       }
+    },
+    {
+      path: "/q&a",
+      name: "q&a",
+      beforeEnter() {
+        location.href = '/QA2023.pdf';
+      }
     }
 
   ]
