@@ -94,7 +94,22 @@ const router = createRouter({
       beforeEnter() {
         location.href = "https://dasrecord.typeform.com/to/OCJRuEEY#artist=one%20of%20our%20artists";
       }
+    },
+    {
+      path: "/publishing-contract",
+      name: "publishing-contract",
+      beforeEnter() {
+        location.href = '/PA2023.pdf';
+      }
+    },
+    {
+      path: "/management-contract",
+      name: "management-contract",
+      beforeEnter() {
+        location.href = '/MA2023.pdf';
+      }
     }
+
   ]
 })
 
