@@ -59,6 +59,13 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: ContactView
+    },
+    {
+      path: '/scoutingform',
+      name: 'scoutingform',
+      beforeEnter() { 
+        location.href = 'https://dasrecord.typeform.com/to/N79PIVG9'
+      }
     }
   ]
 })
