@@ -88,6 +88,13 @@ const router = createRouter({
         location.href = 'https://discord.gg/RsRFCZn8'
       }
     },
+    {
+      path: "/bookings",
+      name: "bookings",
+      beforeEnter() {
+        location.href = "https://dasrecord.typeform.com/to/OCJRuEEY#artist=one%20of%20our%20artists";
+      }
+    }
   ]
 })
 
