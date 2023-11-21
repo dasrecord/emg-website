@@ -61,10 +61,31 @@ const router = createRouter({
       component: ContactView
     },
     {
-      path: '/scoutingform',
+      path: '/scouting-form',
       name: 'scoutingform',
       beforeEnter() { 
         location.href = 'https://dasrecord.typeform.com/to/N79PIVG9'
+      }
+    },
+    {
+      path: '/twitch-assets',
+      name: 'twitchassets',
+      beforeEnter() { 
+        location.href = 'https://drive.google.com/drive/folders/1pa-mBBZRqtt-BHLt1CoSR3At8xoo39Rb?usp=sharing'
+      }
+    },
+    {
+      path: '/slack',
+      name: 'slack',
+      beforeEnter() { 
+        location.href = 'https://evolvedmusicgroup.slack.com'
+      }
+    },
+    {
+      path: '/discord',
+      name: 'discord',
+      beforeEnter() { 
+        location.href = 'https://discord.gg/RsRFCZn8'
       }
     }
   ]
