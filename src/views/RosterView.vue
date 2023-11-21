@@ -8,6 +8,9 @@
             {{ member.artist_alias }}
           </RouterLink>
           </template>
+        <template #booking>
+          <a :href="bookingUrl(member.artist_alias)">BOOK HERE</a>
+        </template>
         <template #role>
           <p>{{ member.act }}</p>
         </template>
@@ -60,6 +63,12 @@ export default {
   computed: {
     sortedRoster() {
       return this.roster.slice().sort((a, b) => a.artist_alias.localeCompare(b.artist_alias));
+    }
+  },
+  methods: {
+    bookingUrl(artist_alias) {
+      const baseURL = "https://dasrecord.typeform.com/to/OCJRuEEY?artist=";
+      return `${baseURL}${encodeURIComponent(artist_alias)}`;
     }
   },
   components: { TeamItem }

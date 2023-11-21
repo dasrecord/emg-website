@@ -11,6 +11,7 @@
         <!-- <template #link>
           <a :href="member.link">View Profile</a>
         </template> -->
+        <a :href="bookingUrl">Booking Link</a>
       </TeamItem>
     </ul>
   </div>

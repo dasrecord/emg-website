@@ -8,6 +8,7 @@
         <slot name="role"></slot>
       </h3>
       <slot name="link"></slot>
+      <slot name="booking"></slot>
     </div>
   </div>
 </template>

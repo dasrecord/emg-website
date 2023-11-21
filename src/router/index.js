@@ -87,7 +87,7 @@ const router = createRouter({
       beforeEnter() { 
         location.href = 'https://discord.gg/RsRFCZn8'
       }
-    }
+    },
   ]
 })
 
