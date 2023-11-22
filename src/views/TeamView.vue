@@ -6,7 +6,7 @@
           {{ member.name }}
         </template>
         <template #role>
-         <a href="member.link">{{ member.role }}</a>
+          <a :href="member.url">{{ member.role }}</a>
         </template>
         <!-- <template #link>
           <a :href="member.link">View Profile</a>
