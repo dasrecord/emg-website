@@ -29,15 +29,18 @@ import HeadSection from './components/HeadSection.vue'
 header {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   line-height: 1.5;
   max-height: 80vh;
-  margin: 2rem;
+  margin: 1rem 1rem 2rem 1rem;
 }
 
 .logo {
+  float: left;
   align-self: center;
-  display: block;
-  margin-bottom: 20px;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 nav {
@@ -60,8 +63,11 @@ nav a.router-link-exact-active:hover {
 }
 
 nav a {
-  display: inline-block;
-  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
   color: var(--color-heading);
   border-left: 1px solid var(--color-text);
 }
@@ -93,7 +99,7 @@ nav a:first-of-type {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    /* place-items: center; */
+    place-items: center;
   }
 
   .logo {
@@ -109,9 +115,13 @@ nav a:first-of-type {
   }
 
   nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
     font-size: 0.8rem;
-    padding: 1rem 0;
+    padding: 1rem 1rem 1rem 1rem;
     margin-top: 1rem;
   }
 }
