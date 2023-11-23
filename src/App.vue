@@ -12,12 +12,12 @@ import HeadSection from './components/HeadSection.vue'
       tagline="Empowering Musical Growth" />
       <nav v-if="$route.path != '/'">
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About Us</RouterLink>
-        <RouterLink to="/intake">Artist Intake</RouterLink>
-        <RouterLink to="/demos">Submit Demos</RouterLink>
-        <RouterLink to="/team">Our Team</RouterLink>
-        <RouterLink to="/roster">Our Roster</RouterLink>
-        <RouterLink to="/placements">Our Placements</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/intake">Intake</RouterLink>
+        <RouterLink to="/demos">Demos</RouterLink>
+        <RouterLink to="/team">Team</RouterLink>
+        <RouterLink to="/roster">Roster</RouterLink>
+        <RouterLink to="/placements">Placements</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
       </nav>
     </div>
@@ -47,6 +47,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
@@ -64,8 +66,6 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
   padding: 1rem 1rem 1rem 1rem;
   color: var(--color-heading);
@@ -77,10 +77,9 @@ nav a:first-of-type {
 }
 
 .typeform-embed {
-  display: block;
-  width: 100vw;
-  min-height: max-content;
-
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .video-background {
@@ -118,11 +117,17 @@ nav a:first-of-type {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
     text-align: center;
+    align-items: center;
     font-size: 0.8rem;
     padding: 1rem 1rem 1rem 1rem;
     margin-top: 1rem;
+  }
+
+  nav a {
+    width: 50%;
+    border: 0;
+
   }
 }
 </style>
