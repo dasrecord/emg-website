@@ -13,21 +13,33 @@
   },
   {
     "name": "Prasenjit Das",
-    "role": "Assistant Head of A&R",
+    "role": "Assistant Head of A&R and Devops/Technology",
     "location": "Vancouver, Canada",
     "url": "https://www.linkedin.com/in/dasrecord/"
   },
   {
-    "name": "Sismi Priguna",
-    "role": "Partnerships Manager",
-    "location": "Indonesia",
-    "url": "https://www.linkedin.com/in/sismi/"
+    "name": "Jack Dillon",
+    "role": "Artist Manager & Booking Agent",
+    "location": "Leeds Uni, UK",
+    "url": "https://www.linkedin.com/in/jack-dillon-b6286028a/"
+  },
+  {
+    "name": "Daniel Sireau",
+    "role": "Artist Manager & Booking Agent",
+    "location": "London, UK",
+    "url": "https://www.linkedin.com/in/daniel-sireau-7bb918274/"
   },
   {
     "name": "Claudia Gross",
     "role": "Social Media Manager",
     "location": "London, UK",
     "url": "https://www.linkedin.com/in/claudiamgross/"
+  },
+  {
+    "name": "Sismi Priguna",
+    "role": "Partnerships Manager",
+    "location": "Indonesia",
+    "url": "https://www.linkedin.com/in/sismi/"
   },
   {
     "name": "Noyan Baudon",
@@ -38,7 +50,7 @@
   {
     "name": "Danny Paton",
     "role": "Videographer & Photographer",
-    "location": "UK",
+    "location": "Troon, Scotland",
     "url": "https://www.linkedin.com/in/danny-paton-a26211b6/"
   },
   {
@@ -56,7 +68,7 @@
   {
     "name": "Alexis De La Cruz",
     "role": "Artists Bookings Manager",
-    "location": "LA, USA",
+    "location": "L.A., USA",
     "url": ""
   },
   {
@@ -64,11 +76,5 @@
     "role": "Artist Manager & Booking Agent",
     "location": "Leeds Uni, UK",
     "url": ""
-  },
-  {
-    "name": "Jack Dillon",
-    "role": "Artist Manager & Booking Agent",
-    "location": "Leeds Uni, UK",
-    "url": "https://www.linkedin.com/in/jack-dillon-b6286028a/"
   }
 ]

@@ -2,12 +2,14 @@
   <div>
     <ul>
       <TeamItem v-for="member in sortedRoster" :key="member.id" class="roster-member">
-        <img :src="member.headshot" :alt="member.name" />
+        <template #image>
+          <img :src="images[member.artist_alias]" alt="Artist Image" class="artist-image">
+        </template>
         <template #name>
           <RouterLink :to="{ name: 'roster-member', params: { id: member.id } }">
             {{ member.artist_alias }}
           </RouterLink>
-          </template>
+        </template>
         <template #booking>
           <a :href="bookingUrl(member.artist_alias)">BOOK HERE</a>
         </template>
@@ -23,6 +25,22 @@
 </template>
 
 <style scoped>
+.artist-image {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.artist-image img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
 h2 {
   font-weight: 800;
   color: var(--color-heading);
@@ -56,7 +74,8 @@ import TeamItem from '@/components/TeamItem.vue'
 export default {
   data() {
     return {
-      roster: rosterData
+      roster: rosterData,
+      images: {}
     }
   },
   computed: {
@@ -68,6 +87,18 @@ export default {
     bookingUrl(artist_alias) {
       const baseURL = "https://dasrecord.typeform.com/to/OCJRuEEY?artist=";
       return `${baseURL}${encodeURIComponent(artist_alias)}`;
+    },
+    async loadArtistImage(member) {
+      if (!member) {
+        return;
+      }
+      const imageModule = await import(`@/assets/${member.artist_alias}.jpg`);
+      this.images[member.artist_alias] = imageModule.default;
+    }
+  },
+  async created() {
+    for (const member of this.sortedRoster) {
+      await this.loadArtistImage(member);
     }
   },
   components: { TeamItem }

@@ -1,6 +1,7 @@
 <template>
   <div class="team">
     <div class="team-member">
+      <slot name="image"></slot>
       <h2>
         <slot name="name"></slot>
       </h2>
