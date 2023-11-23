@@ -46,12 +46,13 @@ ul {
 <script>
 import placementsData from '@/stores/placements.json'
 import TeamItem from '@/components/TeamItem.vue'
-console.log(TeamItem)
+console.log(placements)
 
 export default {
   data() {
     return {
       placements: placementsData
+      
     }
   },
   components: { TeamItem }
