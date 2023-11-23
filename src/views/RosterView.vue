@@ -11,7 +11,7 @@
           </RouterLink>
         </template>
         <template #booking>
-          <a :href="bookingUrl(member.artist_alias)">BOOK HERE</a>
+          <a :href="bookingUrl(member.artist_alias)">CLICK HERE TO BOOK</a>
         </template>
         <template #role>
           <p>{{ member.act }}</p>
@@ -34,25 +34,25 @@ ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
+  width: 100%;
   /* flex-wrap: wrap; */
   /* align-items: center; */
   /* max-width: 100px; */
 }
 .roster-member {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
   margin-top: 3rem;
 }
 .artist-image {
-  width: 100%;
+  /* width: 100%; */
+  aspect-ratio: 1/1;
   max-width: 300px;
-  height: 100%;
+  /* height: 100%; */
   overflow: hidden;
   position: relative;
   border-radius: 50%;
