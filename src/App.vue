@@ -116,7 +116,7 @@ nav a:first-of-type {
   nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
     align-items: center;
     font-size: 0.8rem;
@@ -126,8 +126,11 @@ nav a:first-of-type {
 
   nav a {
     width: 50%;
-    border: 0;
-
+    border: 1px solid var(--color-text);
+    justify-content: center;
+  }
+  nav a:first-of-type {
+    border: 1px solid var(--color-text);
   }
 }
 </style>

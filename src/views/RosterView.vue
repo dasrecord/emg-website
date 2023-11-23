@@ -25,22 +25,6 @@
 </template>
 
 <style scoped>
-.artist-image {
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-}
-
-.artist-image img {
-  width: auto;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-}
 h2 {
   font-weight: 800;
   color: var(--color-heading);
@@ -65,6 +49,24 @@ ul {
   padding: 1rem;
   margin-top: 3rem;
 }
+.artist-image {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+}
+
+/* .artist-image img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+} */
 </style>
 
 <script>
