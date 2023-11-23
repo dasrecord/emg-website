@@ -46,7 +46,7 @@ ul {
 <script>
 import placementsData from '@/stores/placements.json'
 import TeamItem from '@/components/TeamItem.vue'
-console.log(placements)
+
 
 export default {
   data() {
@@ -54,6 +54,9 @@ export default {
       placements: placementsData
       
     }
+  },
+  mounted() {
+    console.log(this.placements);
   },
   components: { TeamItem }
 }

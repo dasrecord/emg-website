@@ -117,13 +117,12 @@ const router = createRouter({
       }
     },
     {
-      path: "/a&r-meeting"
+      path: "/a&r-meeting",
       name: "a&rmeeting",
       beforeEnter() {
         location.href = 'https://calendar.google.com/calendar/selfsched?sstoken=UUczNGlyUVdxVmlMfGRlZmF1bHR8N2EwYjgyODMyNTViMDUzNDNjYTg1MTE3ZmUzZWMyMzk';
       }
     }
-
   ]
 })
 

@@ -7,8 +7,12 @@
       <h3>
         <slot name="role"></slot>
       </h3>
-      <!-- <slot name="link"></slot> -->
-      <slot name="booking"></slot>
+      <div>
+        <slot name="link"></slot>
+      </div>
+      <div>
+        <slot name="booking"></slot>
+      </div>
     </div>
   </div>
 </template>
