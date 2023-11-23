@@ -46,7 +46,6 @@ ul {
   text-align: center;
   padding: 1rem;
   margin-top: 3rem;
-  margin: auto;
 }
 </style>
 
