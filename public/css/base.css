@@ -97,3 +97,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.typeform-embed {
+  width: 90vw !important;
+  overflow: hidden !important;
+}
