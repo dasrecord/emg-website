@@ -122,6 +122,13 @@ const router = createRouter({
       beforeEnter() {
         location.href = 'https://calendar.google.com/calendar/selfsched?sstoken=UUczNGlyUVdxVmlMfGRlZmF1bHR8N2EwYjgyODMyNTViMDUzNDNjYTg1MTE3ZmUzZWMyMzk';
       }
+    },
+    {
+      path: "/internal-timelines",
+      name: "internaltimelines",
+      beforeEnter() {
+        location.href = 'https://docs.google.com/spreadsheets/d/18iW65n4NfkpvHJSG6U5YYgJxJpt0cV5OvIotTQajbac';
+      }
     }
   ]
 })
