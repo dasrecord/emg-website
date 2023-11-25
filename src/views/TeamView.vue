@@ -8,10 +8,9 @@
         <template #role>
           <a :href="member.url">{{ member.role }}</a>
         </template>
-        <!-- <template #link>
-          <a :href="member.link">View Profile</a>
-        </template> -->
-        <a :href="bookingUrl">Booking Link</a>
+        <template #location>
+          {{ member.location }}
+        </template>
       </TeamItem>
     </ul>
   </div>

@@ -12,6 +12,9 @@
         <slot name="link"></slot>
       </div>
       <div>
+        <slot name="location"></slot>
+      </div>
+      <div>
         <slot name="booking"></slot>
       </div>
     </div>

@@ -20,7 +20,7 @@
   {
     "name": "Jack Dillon",
     "role": "Artist Manager & Booking Agent",
-    "location": "Leeds Uni, UK",
+    "location": "Leeds, UK",
     "url": "https://www.linkedin.com/in/jack-dillon-b6286028a/"
   },
   {
@@ -69,12 +69,6 @@
     "name": "Alexis De La Cruz",
     "role": "Artists Bookings Manager",
     "location": "L.A., USA",
-    "url": ""
-  },
-  {
-    "name": "Jade Harris",
-    "role": "Artist Manager & Booking Agent",
-    "location": "Leeds Uni, UK",
     "url": ""
   }
 ]
