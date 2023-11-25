@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div v-for="(group, act) in groupedRoster" :key="act">
+    <h2>{{ act }}</h2>
     <ul>
-      <TeamItem v-for="member in sortedRoster" :key="member.id" class="roster-member">
+      <TeamItem v-for="member in group" :key="member.id" class="roster-member">
         <template #image>
           <img :src="images[member.artist_alias]" alt="Artist Image" class="artist-image">
         </template>
@@ -83,7 +84,17 @@ export default {
   computed: {
     sortedRoster() {
       return this.roster.slice().sort((a, b) => a.artist_alias.localeCompare(b.artist_alias));
-    }
+    },
+    groupedRoster() {
+      return this.sortedRoster.reduce((groups, member) => {
+        const key = member.act;
+        if (!groups[key]) {
+          groups[key] = [];
+        }
+        groups[key].push(member);
+        return groups;
+      }, {});
+    },
   },
   methods: {
     bookingUrl(artist_alias) {
