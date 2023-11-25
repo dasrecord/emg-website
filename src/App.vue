@@ -10,7 +10,7 @@ import HeadSection from './components/HeadSection.vue'
       <HeadSection
       site_name="EVOLVED MUSIC GROUP"
       tagline="Empowering Musical Growth" />
-      <nav v-if="$route.path != '/' && !$route.path.includes('/internal/')">
+      <nav v-if="$route.path != '/' || $route.path.includes('/internal/')">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/intake">Intake</RouterLink>
@@ -32,6 +32,7 @@ header {
   justify-content: space-between;
   line-height: 1.5;
   max-height: 80vh;
+  font-size: 2rem;
   margin: 1rem 1rem 2rem 1rem;
 }
 
@@ -92,7 +93,7 @@ nav a:first-of-type {
   z-index: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   header {
     display: flex;
     flex-direction: row;
@@ -119,7 +120,7 @@ nav a:first-of-type {
     justify-content: center;
     text-align: center;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 1rem 1rem 1rem 1rem;
     margin-top: 1rem;
   }
