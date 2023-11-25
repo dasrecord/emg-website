@@ -21,9 +21,10 @@ export default {
     }
   },
   methods: {
-    async fetchArtistData(artistName) {
-      const artist = rosterData.find(artist => artist.artist_alias === artistName);
-      return artist;
+  async fetchArtistData(artistName) {
+    console.log(rosterData, artistName);
+    const artist = rosterData.find(artist => artist.artist_alias === artistName);
+    return artist;
     },
     async loadArtistImage() {
       if (!this.artist) {
@@ -33,13 +34,20 @@ export default {
       this.artistImage = imageModule.default;
     }
   },
+  created() {
+    console.log(this.$route.params);
+  },
   async mounted() {
     try {
-      this.artist = await this.fetchArtistData(this.$route.params.artistName);
+      console.log(this.$route.params.artist_alias);
+      this.artist = await this.fetchArtistData(this.$route.params.artist_alias);
+      console.log(this.artist);
       if (this.artist && this.artist.management_timeline) {
-        console.log(this.artist.management_timeline); // log the timeline data to the console
-        const options = {} // replace with actual options if any
-        const timeline = new TL.Timeline('timeline', this.artist.management_timeline, options);
+        console.log(this.artist.management_timeline);
+        this.$nextTick(() => {
+          const options = {} // replace with actual options if any
+          const timeline = new TL.Timeline('timeline', this.artist.management_timeline, options);
+        });
       }
     } catch (error) {
       console.error('Error in mounted hook:', error);
