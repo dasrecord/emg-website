@@ -10,7 +10,7 @@ import HeadSection from './components/HeadSection.vue'
       <HeadSection
       site_name="EVOLVED MUSIC GROUP"
       tagline="Empowering Musical Growth" />
-      <nav v-if="$route.path != '/'">
+      <nav v-if="$route.path != '/' && !$route.path.includes('/internal/')">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/intake">Intake</RouterLink>

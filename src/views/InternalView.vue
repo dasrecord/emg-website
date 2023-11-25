@@ -1,6 +1,7 @@
 <template>
   <div v-if="artist" class="artist">
     <h1>{{ artist.artist_alias }}</h1>
+    <h2>Internal Management Timeline</h2>
   </div>
   <div id="timeline"></div>
 </template>
