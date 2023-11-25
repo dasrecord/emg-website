@@ -27,8 +27,11 @@
 
 <style scoped>
 h2 {
+  padding: 2rem;
+  padding-bottom: 0;
   font-weight: 800;
   color: var(--color-heading);
+  text-align: center;
 }
 
 ul {
