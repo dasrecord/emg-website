@@ -8,6 +8,7 @@ import ContactView from '../views/ContactView.vue'
 import RosterView from '../views/RosterView.vue'
 import RosterMemberView from '../views/RosterMemberView.vue'
 import PlacementView from '../views/PlacementsView.vue'
+import InternalView from '../views/InternalView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -129,6 +130,11 @@ const router = createRouter({
       beforeEnter() {
         location.href = 'https://docs.google.com/spreadsheets/d/18iW65n4NfkpvHJSG6U5YYgJxJpt0cV5OvIotTQajbac';
       }
+    },
+    {
+      path: '/internal/:artist_alias',
+      name: 'InternalView',
+      component: InternalView
     }
   ]
 })
