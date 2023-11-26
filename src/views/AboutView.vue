@@ -133,4 +133,12 @@ li {
   padding: 10px;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .blocktext {
+    width: 100%;
+  }
+}
+
 </style>
+

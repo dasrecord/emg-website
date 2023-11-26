@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
+import ConsultancyView from '../views/ConsultancyView.vue'
 import IntakeView from '../views/IntakeView.vue'
 import DemosView from '../views/DemosView.vue'
 import TeamView from '../views/TeamView.vue'
@@ -25,6 +26,11 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: AboutView
+    },
+    {
+      path: '/consultancy',
+      name: 'consultancy',
+      component: ConsultancyView
     },
     {
       path: '/intake',
