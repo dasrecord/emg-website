@@ -128,7 +128,7 @@ const router = createRouter({
       path: "/internal-timelines",
       name: "internaltimelines",
       beforeEnter() {
-        location.href = 'https://docs.google.com/spreadsheets/d/18iW65n4NfkpvHJSG6U5YYgJxJpt0cV5OvIotTQajbac';
+        location.href = "https://drive.google.com/drive/folders/1zjqqCXxJVy9K5h42nl18gJ4tvkBhPvsA?usp=drive_link"
       }
     },
     {

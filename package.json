@@ -10,7 +10,8 @@
     "format": "prettier --write src/",
     "cleantext": "node ./cleantext.js",
     "convertroster": "node ./convert_roster.js",
-    "convertplacements": "node ./convert_placements.js"
+    "convertplacements": "node ./convert_placements.js",
+    "generatelinks": "node ./generate_links.js"
   },
   "dependencies": {
     "csv-parser": "^3.0.0",
