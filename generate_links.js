@@ -33,11 +33,14 @@ fs.writeFileSync('EMG_INTERNAL_MANAGEMENT_LINKS.txt', final_internal_text);
 const paths = [
     'slack',
     'discord',
+    'twitch-assets',
+    'contact',
     'bookings',
     'publishing-contract',
     'management-contract',
     'q&a',
     'a&r-meeting',
+    'scouting-form',
     'internal-timelines'
 ]
 const external_description = "IMPORTANT LINKS\n\n";

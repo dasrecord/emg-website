@@ -135,6 +135,14 @@ const router = createRouter({
       path: '/internal/:artist_alias',
       name: 'InternalView',
       component: InternalView
+    },
+    {
+      path: '/scouting/danielsireau',
+      name: 'danielsireau',
+      beforeEnter() {
+        location.href = 'https://dasrecord.typeform.com/to/uNSZDxDB?scout=Daniel%20Sireau'
+      }
+
     }
   ]
 })
