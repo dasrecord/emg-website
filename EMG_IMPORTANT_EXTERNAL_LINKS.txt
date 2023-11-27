@@ -12,4 +12,3 @@ https://evolvedmusicgroup.web.app/management-contract
 https://evolvedmusicgroup.web.app/q&a
 https://evolvedmusicgroup.web.app/a&r-meeting
 https://evolvedmusicgroup.web.app/scouting-form
-https://evolvedmusicgroup.web.app/internal-timelines

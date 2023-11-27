@@ -25,8 +25,10 @@ const generateExternalLinks = (paths) => {
 
 
 const header_text = "EVOLVED MUSIC GROUP\n\n"
-const internal_description = "INTERNAL MANAGEMENT TIMELINE LINKS\n\n";
-const final_internal_text = header_text + internal_description + generateInternalLinks(roster);
+const internal_description_a = "INTERNAL MANAGEMENT TIMELINE FOLDER\n";
+const internal_folder = "https://evolvedmusicgroup.web.app/internal-timelines\n\n";
+const internal_description_b = "INTERNAL MANAGEMENT ACCOUNTABILITY LINKS\n"
+const final_internal_text = header_text + internal_description_a + internal_folder + internal_description_b + generateInternalLinks(roster);
 fs.writeFileSync('EMG_INTERNAL_MANAGEMENT_LINKS.txt', final_internal_text);
 
 
@@ -41,7 +43,6 @@ const paths = [
     'q&a',
     'a&r-meeting',
     'scouting-form',
-    'internal-timelines'
 ]
 const external_description = "IMPORTANT LINKS\n\n";
 const final_external_text = header_text + external_description + generateExternalLinks(paths);
