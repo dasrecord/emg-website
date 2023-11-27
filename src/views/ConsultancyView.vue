@@ -131,7 +131,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .blocktext {
   margin: 0 auto;
   width: 80%;
