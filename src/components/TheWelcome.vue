@@ -7,6 +7,8 @@ import TeamIcon from './icons/IconTeam.vue'
 import RosterIcon from './icons/IconRoster.vue'
 import ContactIcon from './icons/IconContact.vue'
 import PlacementsIcon from './icons/IconPlacements.vue'
+import ConsultancyIcon from './icons/IconConsultancy.vue'
+
 </script>
 
 <template>
@@ -15,7 +17,15 @@ import PlacementsIcon from './icons/IconPlacements.vue'
       <AboutIcon />
     </template>
     <template #heading>ABOUT US</template>
-    Find out more about <RouterLink to="/about">what we do.</RouterLink>
+    Find out more about <RouterLink to="/about">who we are.</RouterLink>
+  </WelcomeItem>
+
+  <WelcomeItem>
+    <template #icon>
+      <ConsultancyIcon />
+    </template>
+    <template #heading>CONSULTANCY</template>
+    Find out more about <RouterLink to="/consultancy">what we do.</RouterLink>
   </WelcomeItem>
 
   <WelcomeItem>
