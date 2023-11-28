@@ -148,8 +148,14 @@ const router = createRouter({
       beforeEnter() {
         location.href = 'https://dasrecord.typeform.com/to/uNSZDxDB?scout=Daniel%20Sireau'
       }
-
+    },
+    {
+    path: 'livestream-calendar',
+    name: 'livestreamcalendar',
+    beforeEnter() {
+      location.href = 'https://calendar.google.com/calendar/u/0?cid=Y185NzcwMzczNmU5OWI0ZTc2Nzk4YmY0YjI3Y2E5MThlYTlmOTVlNDQ3ZTljMjUzZTI3MjU2MmNkNmQyMGE1OWUzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20'
     }
+  }
   ]
 })
 

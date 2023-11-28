@@ -14,9 +14,9 @@
         <template #booking>
           <a :href="bookingUrl(member.artist_alias)">CLICK HERE TO BOOK</a>
         </template>
-        <template #role>
+        <!-- <template #role>
           <p>{{ member.act }}</p>
-        </template>
+        </template> -->
         <template #link>
           {{ member.genre }}    
         </template>
