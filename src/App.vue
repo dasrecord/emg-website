@@ -13,6 +13,7 @@ import HeadSection from './components/HeadSection.vue'
       <nav v-if="$route.path != '/' || $route.path.includes('/internal/')">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/consultancy">Consultancy</RouterLink>
         <RouterLink to="/intake">Intake</RouterLink>
         <RouterLink to="/demos">Demos</RouterLink>
         <RouterLink to="/team">Team</RouterLink>
