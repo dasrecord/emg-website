@@ -1,47 +1,37 @@
 <template>
   <div class="blocktext">
-    <h2>
-      EMG: Revolutionising the Music Industry
-    </h2>
+    <h2>EMG: Revolutionising the Music Industry</h2>
     <br>
-    <p>
-      Evolved Music Group is not just a forward-thinking company; we 
+    <p>Evolved Music Group is not just a forward-thinking company; we 
       are passionate about revolutionising the music industry. Our 
       comprehensive artist development and management services 
       include bookings, publishing, record label releases, tour 
       management, and consultancy. We collaborate closely with artists 
       to provide personalised services, ensuring they thrive creatively and 
       professionally. Join us in reshaping the future of music, where talent 
-      outshines, and innovation prevails.
-    </p>
+      outshines, and innovation prevails.🎶🚀</p>
     <br>
-    <h2>
-      🎶 Embark on Your Sonic Odyssey with Evolved Music Group! 🚀
-    </h2>
+    <h2>Embark on Your Sonic Odyssey with Evolved Music Group!</h2>
     <br>
-    <p>
-      Welcome to a realm where creativity knows no bounds, and 
+    <p>Welcome to a realm where creativity knows no bounds, and 
       music takes flight on wings of innovation! At Evolved Music Group, 
       we're not just a service; we're your gateway to a vibrant world of 
-      possibilities in the music industry. 🌐 ✨
-    </p>
+      possibilities in the music industry. 🌐 ✨</p>
     <br>
-    <h2>
-      Our Mission: Transforming the Music Industry
-    </h2>
+    <h2>Our Mission: Transforming the Music Industry</h2>
     <br>
     <h3>1. Elevate Your Artistry with A&R Brilliance:</h3>
     <p>Dive into the heart of our A&R consultancy, where connections meet 
     expertise, paving the way for your global musical journey. Our A&R 
     wizards craft personal artist management plans, securing long-term 
-    foundations for your rise. 🌟  From record deals to international 
+    foundations for your rise.  From record deals to international 
     tours, we're your passport to prominence. 🎤 ✈</p>
     <br>
     <h3>2. Unleash Sonic Brilliance in our Global Studios:</h3>
     <p>Join forces with Evolved's network of high-end production studios, 
     both in the UK and across the globe. Our accomplished musical 
     maestros specialize in crafting dynamic, edgy, and unique sounds 
-    that resonate with the masses. 🎵  Collaborate with hit-making 
+    that resonate with the masses. Collaborate with hit-making 
     writers and producers, turning your lyrics into unrivaled records of 
     top-tier production quality. 🚀 🎹</p>
     <br>
@@ -91,8 +81,7 @@
     <p>Navigate the changing landscape of digital marketing with our 
     influencer management service. Partner with global influencers to 
     boost your music's exposure. From consultation to negotiation, we'll 
-    orchestrate a campaign that resonates across social platforms. 🌐
-    🌟</p>
+    orchestrate a campaign that resonates across social platforms. 🌐 🌟</p>
     <br>
     <h3>11. Conquer the Press with Music Industry Specialists:</h3>
     <p>Elevate your visibility with our music industry press team. With 
@@ -101,15 +90,13 @@
     guarantees an added layer of interest to your radio/TV/press 
     campaigns. 🗞 🎤</p>
     <br>
-    <h3>12. Songwriting Camps: Ignite Your Creative Fire! 🎶</h3>
+    <h3>12. Songwriting Camps: Ignite Your Creative Fire! </h3>
     <p>Join our private songwriting sessions and emerge from our camps 
     with stellar vocal projects. With Grammy-nominated artists and 
     industry veterans, your projects will soar globally. Enquire now to 
-    take your music to the next level! 🔥 🎵
-    Evolved Music Group isn't just a service; it's a symphony of 
-    possibilities. 🎼  Connect with us, and let's craft your musical legacy 
-    together! 🌟 🎤 ✨  #EvolvedMusic #SonicRevolution 
-    #MusicInnovation 🚀</p>
+    take your music to the next level! Evolved Music Group isn't just a service; it's a symphony of 
+    possibilities. Connect with us, and let's craft your musical legacy 
+    together! #EvolvedMusic #SonicRevolution #MusicInnovation 🎤 ✨</p>
     <br>
   </div>
 </template>
@@ -134,7 +121,7 @@ export default {
 <style scoped>
 .blocktext {
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
   padding: 10px;
   text-align: justify;
 }

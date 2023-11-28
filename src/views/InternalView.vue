@@ -50,7 +50,7 @@ export default {
             width: window.innerWidth,
             base_class: 'tl-timeline',
             initial_zoom: 2,
-            start_at_end: true,
+            start_at_end: false,
             timenav_position: 'top',
             default_bg_color: getComputedStyle(document.documentElement).getPropertyValue('--color-background').trim(),
             font: 'default',
@@ -61,7 +61,7 @@ export default {
             // is_embed: false,
             // optimal_tick_width: 100,
             // timenav_height: 150,
-            // timenav_height_percentage: 25,
+            timenav_height_percentage: 10,
             // timenav_mobile_height_percentage: 40,
             // timenav_height_min: 150,
             // marker_height_min: 30,
@@ -88,7 +88,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .artist {
   display: flex;
   flex-direction: column;
@@ -116,5 +116,6 @@ export default {
 .tl-timeline {
   background-color: var(--color-background);
   min-height: 800px;
+  width: 100vw;
 }
 </style>
