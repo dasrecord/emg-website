@@ -10,7 +10,7 @@ import HeadSection from './components/HeadSection.vue'
       <HeadSection
       site_name="EVOLVED MUSIC GROUP"
       tagline="Empowering Musical Growth" />
-      <nav v-if="!($route.path != '/' || $route.path.toLowerCase().includes('/internal/'))">
+      <nav v-if="!($route.path == '/' || $route.path.toLowerCase().includes('/internal/'))">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/consultancy">Consultancy</RouterLink>
@@ -18,7 +18,7 @@ import HeadSection from './components/HeadSection.vue'
         <RouterLink to="/demos">Demos</RouterLink>
         <RouterLink to="/team">Team</RouterLink>
         <RouterLink to="/roster">Roster</RouterLink>
-        <RouterLink to="/twitch">Placements</RouterLink>
+        <RouterLink to="/twitch">Livestream</RouterLink>
         <RouterLink to="/placements">Placements</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
       </nav>
@@ -107,7 +107,7 @@ nav a:first-of-type {
   .logo {
     height: 50px;
     width: 50px;
-    margin: 0 0 0 0;
+    margin: 0 0 2rem 0 0;
   }
 
   header .wrapper {
@@ -120,17 +120,19 @@ nav a:first-of-type {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 0.25rem;
     text-align: center;
     align-items: center;
     font-size: 1rem;
     padding: 1rem 1rem 1rem 1rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
   }
 
   nav a {
-    width: 50%;
+    width: 49%;
     border: 1px solid var(--color-text);
     justify-content: center;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
   }
   nav a:first-of-type {
     border: 1px solid var(--color-text);
