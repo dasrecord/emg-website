@@ -75,6 +75,13 @@ const router = createRouter({
       }
     },
     {
+      path: '/twitch',
+      name: 'twitch',
+      beforeEnter() { 
+        location.href = 'https://www.twitch.tv/evolvedmusicgroup'
+      }
+    },
+    {
       path: '/twitch-assets',
       name: 'twitchassets',
       beforeEnter() { 
