@@ -15,6 +15,27 @@
         <slot name="location"></slot>
       </div>
       <div>
+        <slot name="facebook"></slot>
+      </div>
+      <div>
+        <slot name="instagram"></slot>
+      </div>
+      <div>
+        <slot name="x"></slot>
+      </div>
+      <div>
+        <slot name="spotify"></slot>
+      </div>
+      <div>
+        <slot name="soundcloud"></slot>
+      </div>
+      <div>
+        <slot name="youtube"></slot>
+      </div>
+      <div>
+        <slot name="twitch"></slot>
+      </div>
+      <div>
         <slot name="booking"></slot>
       </div>
     </div>

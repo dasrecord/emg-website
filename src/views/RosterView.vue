@@ -14,9 +14,26 @@
         <template #booking>
           <a :href="bookingUrl(member.artist_alias)">CLICK HERE TO BOOK</a>
         </template>
-        <!-- <template #role>
-          <p>{{ member.act }}</p>
-        </template> -->
+        <template #facebook>
+          <a :href="member.facebook_link" target="_blank">
+            <IconFacebook width="24" height="24" color="white"/>
+          </a>
+        </template>
+        <template #instagram>
+          <a :href="member.instagram_link" target="_blank">
+            <IconInstagram width="24" height="24" color="white"/>
+          </a>
+        </template>
+        <template #spotify>
+          <a :href="member.spotify_link" target="_blank">
+            <IconSpotify width="24" height="24" color="white"/>
+          </a>
+        </template>
+        <template #soundcloud>
+          <a :href="member.soundcloud_link" target="_blank">
+            <IconSoundcloud width="24" height="24" color="white"/>
+          </a>
+        </template>
         <template #link>
           {{ member.genre }}    
         </template>
@@ -76,6 +93,13 @@ ul {
 <script>
 import rosterData from '@/stores/roster.json'
 import TeamItem from '@/components/TeamItem.vue'
+import IconFacebook from '@/components/icons/IconFacebook.vue'
+import IconInstagram from '@/components/icons/IconInstagram.vue'
+import IconX from '@/components/icons/IconX.vue'
+import IconSpotify from '@/components/icons/IconSpotify.vue'
+import IconSoundcloud from '@/components/icons/IconSoundcloud.vue'
+import IconYoutube from '@/components/icons/IconYoutube.vue'
+import IconTwitch from '@/components/icons/IconTwitch.vue'
 
 export default {
   data() {
@@ -117,6 +141,15 @@ export default {
       await this.loadArtistImage(member);
     }
   },
-  components: { TeamItem }
+  components: {
+    TeamItem,
+    IconFacebook,
+    IconInstagram,
+    IconX,
+    IconSpotify,
+    IconSoundcloud,
+    IconYoutube,
+    IconTwitch
+  }
 }
 </script>
