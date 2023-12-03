@@ -6,27 +6,27 @@
     <h1>{{ artist.artist_alias }}</h1>
     <p>{{ artist.act }}</p>
     <p>{{ artist.genre }}</p>
+    <div>
+      <a :href="artist.facebook_link">
+        <IconFacebook width="24" height="24" color="white"/>
+      </a>
+      <a :href="artist.instagram_link">
+        <IconInstagram width="24" height="24" color="white"/>
+      </a>
+      <a :href="artist.spotify_link">
+        <IconSpotify width="24" height="24" color="white"/>
+      </a>
+      <a :href="artist.soundcloud_link">
+        <IconSoundcloud width="24" height="24" color="white"/>
+      </a>
+      <a :href="artist.youtube_link">
+        <IconYoutube width="24" height="24" color="white"/>
+      </a>
+      <a :href="artist.twitch_link">
+        <IconTwitch width="24" height="24" color="white"/>
+      </a>
+    </div>
     <p v-html="artist.short_bio"></p>
-  </div>
-  <div>
-    <a :href="artist.facebook_link">
-      <IconFacebook width="24" height="24" color="white"/>
-    </a>
-    <a :href="artist.instagram_link">
-      <IconInstagram width="24" height="24" color="white"/>
-    </a>
-    <a :href="artist.spotify_link">
-      <IconSpotify width="24" height="24" color="white"/>
-    </a>
-    <a :href="artist.soundcloud_link">
-      <IconSoundcloud width="24" height="24" color="white"/>
-    </a>
-    <a :href="artist.youtube_link">
-      <IconYoutube width="24" height="24" color="white"/>
-    </a>
-    <a :href="artist.twitch_link">
-      <IconTwitch width="24" height="24" color="white"/>
-    </a>
   </div>
   <div id="timeline"></div>
 </template>
