@@ -89,6 +89,7 @@ ul {
   border-radius: 50%;
 }
 
+
 /* .artist-image img {
   width: auto;
   height: 100%;

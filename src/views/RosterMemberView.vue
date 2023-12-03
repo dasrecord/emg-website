@@ -8,17 +8,52 @@
     <p>{{ artist.genre }}</p>
     <p v-html="artist.short_bio"></p>
   </div>
+  <div>
+    <a :href="artist.facebook_link">
+      <IconFacebook width="24" height="24" color="white"/>
+    </a>
+    <a :href="artist.instagram_link">
+      <IconInstagram width="24" height="24" color="white"/>
+    </a>
+    <a :href="artist.spotify_link">
+      <IconSpotify width="24" height="24" color="white"/>
+    </a>
+    <a :href="artist.soundcloud_link">
+      <IconSoundcloud width="24" height="24" color="white"/>
+    </a>
+    <a :href="artist.youtube_link">
+      <IconYoutube width="24" height="24" color="white"/>
+    </a>
+    <a :href="artist.twitch_link">
+      <IconTwitch width="24" height="24" color="white"/>
+    </a>
+  </div>
   <div id="timeline"></div>
 </template>
 
 <script>
 import rosterData from '@/stores/roster.json'
 import TimeLine from '@/components/TimeLine.vue'
+import IconFacebook from '@/components/icons/IconFacebook.vue'
+import IconInstagram from '@/components/icons/IconInstagram.vue'
+import IconX from '@/components/icons/IconX.vue'
+import IconSpotify from '@/components/icons/IconSpotify.vue'
+import IconSoundcloud from '@/components/icons/IconSoundcloud.vue'
+import IconYoutube from '@/components/icons/IconYoutube.vue'
+import IconTwitch from '@/components/icons/IconTwitch.vue'
+
 
 export default {
   name: 'RosterMemberView',
   components: {
-    TimeLine
+    TimeLine,
+    IconFacebook,
+    IconInstagram,
+    IconX,
+    IconSpotify,
+    IconSoundcloud,
+    IconYoutube,
+    IconTwitch
   },
   data() {
     return {
@@ -99,6 +134,13 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
 }
 
 .tl-timeline {
