@@ -131,6 +131,13 @@ const router = createRouter({
       }
     },
     {
+      path: "/deck",
+      name: "deck",
+      beforeEnter() {
+        location.href = '/DECK2023.pdf';
+      }
+    },
+    {
       path: "/a&r-meeting",
       name: "a&rmeeting",
       beforeEnter() {
