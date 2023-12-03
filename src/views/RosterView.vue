@@ -15,23 +15,33 @@
           <a :href="bookingUrl(member.artist_alias)">CLICK HERE TO BOOK</a>
         </template>
         <template #facebook>
-          <a :href="member.facebook_link" target="_blank">
+          <a :href="member.facebook_link">
             <IconFacebook width="24" height="24" color="white"/>
           </a>
         </template>
         <template #instagram>
-          <a :href="member.instagram_link" target="_blank">
+          <a :href="member.instagram_link">
             <IconInstagram width="24" height="24" color="white"/>
           </a>
         </template>
         <template #spotify>
-          <a :href="member.spotify_link" target="_blank">
+          <a :href="member.spotify_link">
             <IconSpotify width="24" height="24" color="white"/>
           </a>
         </template>
         <template #soundcloud>
-          <a :href="member.soundcloud_link" target="_blank">
+          <a :href="member.soundcloud_link">
             <IconSoundcloud width="24" height="24" color="white"/>
+          </a>
+        </template>
+        <template #youtube>
+          <a :href="member.youtube_link">
+            <iconYoutube width="24" height="24" color="white"/>
+          </a>
+        </template>
+        <template #twitch>
+          <a :href="member.twitch_link">
+            <IconTwitch width="24" height="24" color="white"/>
           </a>
         </template>
         <template #link>

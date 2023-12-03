@@ -15,27 +15,26 @@
         <slot name="location"></slot>
       </div>
       <div>
-        <slot name="facebook"></slot>
-      </div>
-      <div>
-        <slot name="instagram"></slot>
-      </div>
-      <div>
-        <slot name="x"></slot>
-      </div>
-      <div>
-        <slot name="spotify"></slot>
-      </div>
-      <div>
-        <slot name="soundcloud"></slot>
-      </div>
-      <div>
-        <slot name="youtube"></slot>
-      </div>
-      <div>
-        <slot name="twitch"></slot>
-      </div>
-      <div>
+        <div class="socials">
+          <div>
+            <slot name="facebook"></slot>
+          </div>
+          <div>
+            <slot name="instagram"></slot>
+          </div>
+          <div>
+            <slot name="spotify"></slot>
+          </div>
+          <div>
+            <slot name="soundcloud"></slot>
+          </div>
+          <div>
+            <slot name="youtube"></slot>
+          </div>
+          <div>
+            <slot name="twitch"></slot>
+          </div>
+        </div>
         <slot name="booking"></slot>
       </div>
     </div>
@@ -55,6 +54,12 @@
   padding-inline-start: 0;
 }
 
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
 /* GRID STLYE */
 /* .team {
   margin-top: 2rem;
