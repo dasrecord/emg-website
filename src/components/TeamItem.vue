@@ -58,7 +58,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
 }
 /* GRID STLYE */
 /* .team {

@@ -48,7 +48,7 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .greetings h1{
+  .greetings h1 {
     font-size: 2rem;
   }
 

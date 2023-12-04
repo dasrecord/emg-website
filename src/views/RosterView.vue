@@ -4,7 +4,7 @@
     <ul>
       <TeamItem v-for="member in group" :key="member.id" class="roster-member">
         <template #image>
-          <img :src="images[member.artist_alias]" alt="Artist Image" class="artist-image">
+          <img :src="images[member.artist_alias]" alt="Artist Image" class="artist-image" />
         </template>
         <template #name>
           <RouterLink :to="{ name: 'roster-member', params: { id: member.id } }">
@@ -16,36 +16,36 @@
         </template>
         <template #facebook>
           <a :href="member.facebook_link">
-            <IconFacebook width="24" height="24" color="white"/>
+            <IconFacebook width="24" height="24" color="white" />
           </a>
         </template>
         <template #instagram>
           <a :href="member.instagram_link">
-            <IconInstagram width="24" height="24" color="white"/>
+            <IconInstagram width="24" height="24" color="white" />
           </a>
         </template>
         <template #spotify>
           <a :href="member.spotify_link">
-            <IconSpotify width="24" height="24" color="white"/>
+            <IconSpotify width="24" height="24" color="white" />
           </a>
         </template>
         <template #soundcloud>
           <a :href="member.soundcloud_link">
-            <IconSoundcloud width="24" height="24" color="white"/>
+            <IconSoundcloud width="24" height="24" color="white" />
           </a>
         </template>
         <template #youtube>
           <a :href="member.youtube_link">
-            <iconYoutube width="24" height="24" color="white"/>
+            <iconYoutube width="24" height="24" color="white" />
           </a>
         </template>
         <template #twitch>
           <a :href="member.twitch_link">
-            <IconTwitch width="24" height="24" color="white"/>
+            <IconTwitch width="24" height="24" color="white" />
           </a>
         </template>
         <template #link>
-          {{ member.genre }}    
+          {{ member.genre }}
         </template>
       </TeamItem>
     </ul>
@@ -89,7 +89,6 @@ ul {
   border-radius: 50%;
 }
 
-
 /* .artist-image img {
   width: auto;
   height: 100%;
@@ -121,35 +120,35 @@ export default {
   },
   computed: {
     sortedRoster() {
-      return this.roster.slice().sort((a, b) => a.artist_alias.localeCompare(b.artist_alias));
+      return this.roster.slice().sort((a, b) => a.artist_alias.localeCompare(b.artist_alias))
     },
     groupedRoster() {
       return this.sortedRoster.reduce((groups, member) => {
-        const key = member.act;
+        const key = member.act
         if (!groups[key]) {
-          groups[key] = [];
+          groups[key] = []
         }
-        groups[key].push(member);
-        return groups;
-      }, {});
-    },
+        groups[key].push(member)
+        return groups
+      }, {})
+    }
   },
   methods: {
     bookingUrl(artist_alias) {
-      const baseURL = "https://dasrecord.typeform.com/to/OCJRuEEY?artist=";
-      return `${baseURL}${encodeURIComponent(artist_alias)}`;
+      const baseURL = 'https://dasrecord.typeform.com/to/OCJRuEEY?artist='
+      return `${baseURL}${encodeURIComponent(artist_alias)}`
     },
     async loadArtistImage(member) {
       if (!member) {
-        return;
+        return
       }
-      const imageModule = await import(`@/assets/${member.artist_alias}.jpg`);
-      this.images[member.artist_alias] = imageModule.default;
+      const imageModule = await import(`@/assets/${member.artist_alias}.jpg`)
+      this.images[member.artist_alias] = imageModule.default
     }
   },
   async created() {
     for (const member of this.sortedRoster) {
-      await this.loadArtistImage(member);
+      await this.loadArtistImage(member)
     }
   },
   components: {

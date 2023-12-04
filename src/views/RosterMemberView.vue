@@ -1,30 +1,18 @@
 <template>
   <div v-if="artist" class="artist">
     <div class="artist-image">
-      <img :src="artistImage" alt="Artist Image">
+      <img :src="artistImage" alt="Artist Image" />
     </div>
     <h1>{{ artist.artist_alias }}</h1>
     <p>{{ artist.act }}</p>
     <p>{{ artist.genre }}</p>
-    <div>
-      <a :href="artist.facebook_link">
-        <IconFacebook width="24" height="24" color="white"/>
-      </a>
-      <a :href="artist.instagram_link">
-        <IconInstagram width="24" height="24" color="white"/>
-      </a>
-      <a :href="artist.spotify_link">
-        <IconSpotify width="24" height="24" color="white"/>
-      </a>
-      <a :href="artist.soundcloud_link">
-        <IconSoundcloud width="24" height="24" color="white"/>
-      </a>
-      <a :href="artist.youtube_link">
-        <IconYoutube width="24" height="24" color="white"/>
-      </a>
-      <a :href="artist.twitch_link">
-        <IconTwitch width="24" height="24" color="white"/>
-      </a>
+    <div class="socials">
+      <a :href="artist.facebook_link"><IconFacebook width="24" height="24" color="white" /></a>
+      <a :href="artist.instagram_link"><IconInstagram width="24" height="24" color="white" /></a>
+      <a :href="artist.spotify_link"><IconSpotify width="24" height="24" color="white" /></a>
+      <a :href="artist.soundcloud_link"><IconSoundcloud width="24" height="24" color="white" /></a>
+      <a :href="artist.youtube_link"><IconYoutube width="24" height="24" color="white" /></a>
+      <a :href="artist.twitch_link"><IconTwitch width="24" height="24" color="white" /></a>
     </div>
     <p v-html="artist.short_bio"></p>
   </div>
@@ -42,7 +30,6 @@ import IconSoundcloud from '@/components/icons/IconSoundcloud.vue'
 import IconYoutube from '@/components/icons/IconYoutube.vue'
 import IconTwitch from '@/components/icons/IconTwitch.vue'
 
-
 export default {
   name: 'RosterMemberView',
   components: {
@@ -59,30 +46,32 @@ export default {
     return {
       artist: null,
       artistImage: null
-    };
+    }
   },
   methods: {
     async loadArtistImage() {
       if (!this.artist) {
-        return;
+        return
       }
-      const imageModule = await import(`@/assets/${this.artist.artist_alias}.jpg`);
-      this.artistImage = imageModule.default;
+      const imageModule = await import(`@/assets/${this.artist.artist_alias}.jpg`)
+      this.artistImage = imageModule.default
     }
   },
   mounted() {
-    const id = Number(this.$route.params.id);
-    this.artist = rosterData.find(artist => artist.id === id);
+    const id = Number(this.$route.params.id)
+    this.artist = rosterData.find((artist) => artist.id === id)
     const options = {
       width: window.innerWidth,
       base_class: 'tl-timeline',
       initial_zoom: 2,
       start_at_end: true,
       timenav_position: 'top',
-      default_bg_color: getComputedStyle(document.documentElement).getPropertyValue('--color-background').trim(),
+      default_bg_color: getComputedStyle(document.documentElement)
+        .getPropertyValue('--color-background')
+        .trim(),
       font: 'default',
       // other options...
-      scale_factor: 2,
+      scale_factor: 2
       // hash_bookmark: true,
       // debug: false,
       // is_embed: false,
@@ -104,10 +93,10 @@ export default {
       // slide_padding_lr: 100,
       // slide_default_fade: '0%',
       // language: 'en'
-    };
-    const timeline = new TL.Timeline('timeline', this.artist.other_link, options);
-    this.loadArtistImage();
-  },
+    }
+    const timeline = new TL.Timeline('timeline', this.artist.other_link, options)
+    this.loadArtistImage()
+  }
 }
 </script>
 
@@ -139,8 +128,8 @@ export default {
 .socials {
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-evenly;
-
 }
 
 .tl-timeline {

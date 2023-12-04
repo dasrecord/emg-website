@@ -47,16 +47,14 @@ ul {
 import placementsData from '@/stores/placements.json'
 import TeamItem from '@/components/TeamItem.vue'
 
-
 export default {
   data() {
     return {
       placements: placementsData
-      
     }
   },
   mounted() {
-    console.log(this.placements);
+    console.log(this.placements)
   },
   components: { TeamItem }
 }

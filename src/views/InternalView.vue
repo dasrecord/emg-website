@@ -18,33 +18,33 @@ export default {
   data() {
     return {
       artist: null,
-      artistImage: null,
+      artistImage: null
     }
   },
   methods: {
-  async fetchArtistData(artistName) {
-    console.log(rosterData, artistName);
-    const artist = rosterData.find(artist => artist.artist_alias === artistName);
-    return artist;
+    async fetchArtistData(artistName) {
+      console.log(rosterData, artistName)
+      const artist = rosterData.find((artist) => artist.artist_alias === artistName)
+      return artist
     },
     async loadArtistImage() {
       if (!this.artist) {
-        return;
+        return
       }
-      const imageModule = await import(`@/assets/${this.artist.artist_alias}.jpg`);
-      this.artistImage = imageModule.default;
+      const imageModule = await import(`@/assets/${this.artist.artist_alias}.jpg`)
+      this.artistImage = imageModule.default
     }
   },
   created() {
-    console.log(this.$route.params);
+    console.log(this.$route.params)
   },
   async mounted() {
     try {
-      console.log(this.$route.params.artist_alias);
-      this.artist = await this.fetchArtistData(this.$route.params.artist_alias);
-      console.log(this.artist);
+      console.log(this.$route.params.artist_alias)
+      this.artist = await this.fetchArtistData(this.$route.params.artist_alias)
+      console.log(this.artist)
       if (this.artist && this.artist.management_timeline) {
-        console.log(this.artist.management_timeline);
+        console.log(this.artist.management_timeline)
         this.$nextTick(() => {
           const options = {
             width: window.innerWidth,
@@ -52,7 +52,9 @@ export default {
             initial_zoom: 2,
             start_at_end: false,
             timenav_position: 'top',
-            default_bg_color: getComputedStyle(document.documentElement).getPropertyValue('--color-background').trim(),
+            default_bg_color: getComputedStyle(document.documentElement)
+              .getPropertyValue('--color-background')
+              .trim(),
             font: 'default',
             // other options...
             scale_factor: 2,
@@ -61,7 +63,7 @@ export default {
             // is_embed: false,
             // optimal_tick_width: 100,
             // timenav_height: 150,
-            timenav_height_percentage: 10,
+            timenav_height_percentage: 10
             // timenav_mobile_height_percentage: 40,
             // timenav_height_min: 150,
             // marker_height_min: 30,
@@ -78,11 +80,11 @@ export default {
             // slide_default_fade: '0%',
             // language: 'en'
           }
-          const timeline = new TL.Timeline('timeline', this.artist.management_timeline, options);
-        });
+          const timeline = new TL.Timeline('timeline', this.artist.management_timeline, options)
+        })
       }
     } catch (error) {
-      console.error('Error in mounted hook:', error);
+      console.error('Error in mounted hook:', error)
     }
   }
 }

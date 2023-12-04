@@ -70,85 +70,88 @@ const router = createRouter({
     {
       path: '/scouting-form',
       name: 'scoutingform',
-      beforeEnter() { 
+      beforeEnter() {
         location.href = 'https://dasrecord.typeform.com/to/N79PIVG9'
       }
     },
     {
       path: '/twitch',
       name: 'twitch',
-      beforeEnter() { 
+      beforeEnter() {
         location.href = 'https://www.twitch.tv/evolvedmusicgroup'
       }
     },
     {
       path: '/twitch-assets',
       name: 'twitchassets',
-      beforeEnter() { 
-        location.href = 'https://drive.google.com/drive/folders/1pa-mBBZRqtt-BHLt1CoSR3At8xoo39Rb?usp=sharing'
+      beforeEnter() {
+        location.href =
+          'https://drive.google.com/drive/folders/1pa-mBBZRqtt-BHLt1CoSR3At8xoo39Rb?usp=sharing'
       }
     },
     {
       path: '/slack',
       name: 'slack',
-      beforeEnter() { 
+      beforeEnter() {
         location.href = 'https://evolvedmusicgroup.slack.com'
       }
     },
     {
       path: '/discord',
       name: 'discord',
-      beforeEnter() { 
+      beforeEnter() {
         location.href = 'https://discord.gg/RsRFCZn8'
       }
     },
     {
-      path: "/bookings",
-      name: "bookings",
+      path: '/bookings',
+      name: 'bookings',
       beforeEnter() {
-        location.href = "https://dasrecord.typeform.com/to/OCJRuEEY#artist=one%20of%20our%20artists";
+        location.href = 'https://dasrecord.typeform.com/to/OCJRuEEY#artist=one%20of%20our%20artists'
       }
     },
     {
-      path: "/publishing-contract",
-      name: "publishing-contract",
+      path: '/publishing-contract',
+      name: 'publishing-contract',
       beforeEnter() {
-        location.href = '/PA2023.pdf';
+        location.href = '/PA2023.pdf'
       }
     },
     {
-      path: "/management-contract",
-      name: "management-contract",
+      path: '/management-contract',
+      name: 'management-contract',
       beforeEnter() {
-        location.href = '/MA2023.pdf';
+        location.href = '/MA2023.pdf'
       }
     },
     {
-      path: "/q&a",
-      name: "q&a",
+      path: '/q&a',
+      name: 'q&a',
       beforeEnter() {
-        location.href = '/QA2023.pdf';
+        location.href = '/QA2023.pdf'
       }
     },
     {
-      path: "/deck",
-      name: "deck",
+      path: '/deck',
+      name: 'deck',
       beforeEnter() {
-        location.href = '/DECK2023.pdf';
+        location.href = '/DECK2023.pdf'
       }
     },
     {
-      path: "/a&r-meeting",
-      name: "a&rmeeting",
+      path: '/a&r-meeting',
+      name: 'a&rmeeting',
       beforeEnter() {
-        location.href = 'https://calendar.google.com/calendar/selfsched?sstoken=UUczNGlyUVdxVmlMfGRlZmF1bHR8N2EwYjgyODMyNTViMDUzNDNjYTg1MTE3ZmUzZWMyMzk';
+        location.href =
+          'https://calendar.google.com/calendar/selfsched?sstoken=UUczNGlyUVdxVmlMfGRlZmF1bHR8N2EwYjgyODMyNTViMDUzNDNjYTg1MTE3ZmUzZWMyMzk'
       }
     },
     {
-      path: "/internal-timelines",
-      name: "internaltimelines",
+      path: '/internal-timelines',
+      name: 'internaltimelines',
       beforeEnter() {
-        location.href = "https://drive.google.com/drive/folders/1zjqqCXxJVy9K5h42nl18gJ4tvkBhPvsA?usp=drive_link"
+        location.href =
+          'https://drive.google.com/drive/folders/1zjqqCXxJVy9K5h42nl18gJ4tvkBhPvsA?usp=drive_link'
       }
     },
     {
@@ -164,12 +167,13 @@ const router = createRouter({
       }
     },
     {
-    path: '/livestream-calendar',
-    name: 'livestreamcalendar',
-    beforeEnter() {
-      location.href = 'https://calendar.google.com/calendar/u/0?cid=Y185NzcwMzczNmU5OWI0ZTc2Nzk4YmY0YjI3Y2E5MThlYTlmOTVlNDQ3ZTljMjUzZTI3MjU2MmNkNmQyMGE1OWUzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20'
+      path: '/livestream-calendar',
+      name: 'livestreamcalendar',
+      beforeEnter() {
+        location.href =
+          'https://calendar.google.com/calendar/u/0?cid=Y185NzcwMzczNmU5OWI0ZTc2Nzk4YmY0YjI3Y2E5MThlYTlmOTVlNDQ3ZTljMjUzZTI3MjU2MmNkNmQyMGE1OWUzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20'
+      }
     }
-  }
   ]
 })
 

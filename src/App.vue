@@ -1,15 +1,20 @@
 <script setup>
-import { RouterLink, RouterView, } from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router'
 import HeadSection from './components/HeadSection.vue'
 </script>
 
 <template>
-  <img v-if="$route.path == '/'" alt="EMG logo" class="logo" src="@\assets\emg_logo.png" width="125" height="125" />
+  <img
+    v-if="$route.path == '/'"
+    alt="EMG logo"
+    class="logo"
+    src="@\assets\emg_logo.png"
+    width="125"
+    height="125"
+  />
   <header>
     <div>
-      <HeadSection
-      site_name="EVOLVED MUSIC GROUP"
-      tagline="Empowering Musical Growth" />
+      <HeadSection site_name="EVOLVED MUSIC GROUP" tagline="Empowering Musical Growth" />
       <nav v-if="!($route.path == '/' || $route.path.toLowerCase().includes('/internal/'))">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>

@@ -8,7 +8,6 @@ import RosterIcon from './icons/IconRoster.vue'
 import ContactIcon from './icons/IconContact.vue'
 import PlacementsIcon from './icons/IconPlacements.vue'
 import ConsultancyIcon from './icons/IconConsultancy.vue'
-
 </script>
 
 <template>
@@ -66,7 +65,8 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <PlacementsIcon />
     </template>
     <template #heading>OUR PLACEMENTS</template>
-    Want to see where our artists have placed their music? <RouterLink to="/placements"> Cick here.</RouterLink>
+    Want to see where our artists have placed their music?
+    <RouterLink to="/placements"> Cick here.</RouterLink>
   </WelcomeItem>
 
   <WelcomeItem>

@@ -12,11 +12,11 @@ app.use(router)
 const script = document.createElement('script')
 script.src = '/timeline.js'
 script.onload = () => {
-    // Mount the app after timeline.js is loaded
-    app.mount('#app')
+  // Mount the app after timeline.js is loaded
+  app.mount('#app')
 }
 script.onerror = (error) => {
-    // Log any errors that occur when the script is loaded
-    console.error('Error loading timeline.js:', error)
+  // Log any errors that occur when the script is loaded
+  console.error('Error loading timeline.js:', error)
 }
 document.body.appendChild(script)
