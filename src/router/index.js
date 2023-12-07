@@ -111,6 +111,13 @@ const router = createRouter({
       }
     },
     {
+      path: '/artist-onboarding',
+      name: 'artistonboarding',
+      beforeEnter() {
+        location.href = 'https://dasrecord.typeform.com/to/oA5UYgNv'
+      }
+    },
+    {
       path: '/publishing-contract',
       name: 'publishing-contract',
       beforeEnter() {
