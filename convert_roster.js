@@ -18,7 +18,7 @@ fs.readFile('./src/stores/roster.json', 'utf8', (err, data) => {
             const existingArtist = results.find(artist => artist.artist_alias === data["What is your Official Artist Alias?"]);
             if (!existingArtist) {
                 results.push({
-                    "id": id++,
+                    "id": ++id,
                     "email": data["What is your email?"],
                     "artist_alias": data["What is your Official Artist Alias?"],
                     "country": data["Which country are you based in?"],
