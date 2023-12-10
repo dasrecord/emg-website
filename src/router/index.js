@@ -174,6 +174,13 @@ const router = createRouter({
       }
     },
     {
+      path: '/scouting/prasenjitdas',
+      name: 'prasenjitdas',
+      beforeEnter() {
+        location.href = 'https://dasrecord.typeform.com/to/uNSZDxDB?scout=Prasenjit%20Das'
+      }
+    },
+    {
       path: '/livestream-calendar',
       name: 'livestreamcalendar',
       beforeEnter() {
