@@ -6,7 +6,7 @@
     <ul>
       <TeamItem v-for="member in group" :key="member.id" class="roster-member">
         <template #image>
-          <router-link :to="{ name: 'roster-member', params: { id: member.id } }">
+          <router-link class="image-link" :to="{ name: 'roster-member', params: { id: member.id } }">
             <img :src="images[member.artist_alias]" alt="Artist Image" class="artist-image" />
           </router-link>
         </template>
@@ -96,8 +96,12 @@ ul {
   border-radius: 15px;
   transition: box-shadow 250ms ease;
 }
-.artist-image:hover {
-  box-shadow: 0 0 20px #fff; /* adjust color and size as needed */
+.image-link:hover {
+  background-color: transparent; /* remove the green background */
+}
+
+.image-link:hover .artist-image {
+  box-shadow: 0 0 20px #fff; /* add the white glow to the image */
 }
 
 /* .artist-image img {
