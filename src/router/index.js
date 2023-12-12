@@ -187,6 +187,34 @@ const router = createRouter({
         location.href =
           'https://calendar.google.com/calendar/u/0?cid=Y185NzcwMzczNmU5OWI0ZTc2Nzk4YmY0YjI3Y2E5MThlYTlmOTVlNDQ3ZTljMjUzZTI3MjU2MmNkNmQyMGE1OWUzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20'
       }
+    },
+    {
+      path: '/instagram',
+      name: 'instagram',
+      beforeEnter() {
+        'https://www.instagram.com/evolved_music_group/'
+      }
+    },
+    {
+      path: '/facebook',
+      name: "facebook",
+      beforeEnter() {
+        'https://www.facebook.com/evolvedmusicgroup'
+      }
+    },
+    {
+      path: '/linkedin',
+      name: "linkedin",
+      beforeEnter() {
+        'https://www.linkedin.com/company/evolvedmusicgroup/'
+      }
+    },
+    {
+      path: '/youtube',
+      name: "youtube",
+      beforeEnter() {
+        'https://www.youtube.com/@EvolvedArtists'
+     }
     }
   ]
 })
