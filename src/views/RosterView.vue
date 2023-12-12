@@ -6,7 +6,9 @@
     <ul>
       <TeamItem v-for="member in group" :key="member.id" class="roster-member">
         <template #image>
-          <img :src="images[member.artist_alias]" alt="Artist Image" class="artist-image" />
+          <router-link :to="{ name: 'roster-member', params: { id: member.id } }">
+            <img :src="images[member.artist_alias]" alt="Artist Image" class="artist-image" />
+          </router-link>
         </template>
         <template #name>
           <RouterLink :to="{ name: 'roster-member', params: { id: member.id } }">
@@ -78,9 +80,10 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   padding: 1rem;
   margin-top: 1rem;
+  margin-right: 1rem;
   border-radius: 25px;
 }
 .artist-image {
@@ -94,7 +97,7 @@ ul {
   transition: box-shadow 250ms ease;
 }
 .artist-image:hover {
-  box-shadow: 0 0 10px #00ff00; /* adjust color and size as needed */
+  box-shadow: 0 0 20px #fff; /* adjust color and size as needed */
 }
 
 /* .artist-image img {
