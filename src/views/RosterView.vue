@@ -1,6 +1,8 @@
 <template>
-  <div v-for="(group, act) in groupedRoster" :key="act">
-    <h2>{{ act }}</h2>
+  <p>Here is our current roster of talented producers, djs, and live acts.</p>
+  <div v-for="(group, act) in groupedRoster" :key="act">  
+    <h2>{{ act }}s</h2>
+    
     <ul>
       <TeamItem v-for="member in group" :key="member.id" class="roster-member">
         <template #image>
@@ -89,6 +91,10 @@ ul {
   overflow: hidden;
   position: relative;
   border-radius: 15px;
+  transition: box-shadow 250ms ease;
+}
+.artist-image:hover {
+  box-shadow: 0 0 10px #00ff00; /* adjust color and size as needed */
 }
 
 /* .artist-image img {
