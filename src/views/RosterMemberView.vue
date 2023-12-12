@@ -15,7 +15,7 @@
       <a :href="artist.twitch_link"><IconTwitch width="24" height="24" color="white" /></a>
     </div>
     <p v-html="artist.short_bio"></p>
-  </div>
+    <a :href="`https://dasrecord.typeform.com/to/OCJRuEEY?artist=${artist.artist_alias}`">CLICK HERE TO BOOK</a>  </div>
   <div id="timeline"></div>
 </template>
 
