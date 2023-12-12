@@ -64,7 +64,7 @@ export default {
     const options = {
       width: window.innerWidth,
       base_class: 'tl-timeline',
-      initial_zoom: 0,
+      initial_zoom: 4,
       start_at_end: true,
       timenav_position: 'top',
       default_bg_color: getComputedStyle(document.documentElement)
