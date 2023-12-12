@@ -107,6 +107,7 @@ nav a:first-of-type {
     justify-content: space-evenly;
     align-items: center;
     place-items: center;
+    padding: 1rem;
   }
 
   .logo {

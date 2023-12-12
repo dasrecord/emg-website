@@ -18,6 +18,9 @@
   display: flex;
   position: relative;
   margin-bottom: 3rem;
+  padding: 1rem;
+  border: 3px solid var(--color-border);
+  border-radius: 25px;
 }
 
 .details {
@@ -44,15 +47,17 @@ h3 {
 @media (max-width: 768px) {
   .item {
     margin-top: 0;
-    /* padding: 0.4rem 0 1rem calc(var(--section-gap) / 2); */
+    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
+    border: 3px solid var(--color-border);
+    border-radius: 25px;
   }
 
   i {
     top: calc(50% - 25px);
-    left: -26px;
+    left: 10px;
     position: absolute;
     background: var(--color-background);
-    border-radius: 8px;
+    border-radius: 10px;
     width: 2rem;
     height: 2rem;
   }
