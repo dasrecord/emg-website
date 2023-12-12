@@ -40,7 +40,7 @@ header {
   line-height: 1.5;
   max-height: 80vh;
   font-size: 2rem;
-  margin: 1rem 1rem 2rem 1rem;
+  margin-bottom: 2rem;
 }
 
 .logo {

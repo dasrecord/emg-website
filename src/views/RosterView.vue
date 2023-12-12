@@ -76,8 +76,10 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
-  padding: 2rem;
-  margin-top: 3rem;
+  /* justify-content: space-between; */
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 25px;
 }
 .artist-image {
   /* width: 100%; */
@@ -86,7 +88,7 @@ ul {
   /* height: 100%; */
   overflow: hidden;
   position: relative;
-  border-radius: 50%;
+  border-radius: 15px;
 }
 
 /* .artist-image img {

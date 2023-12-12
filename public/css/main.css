@@ -1,8 +1,8 @@
 @import './base.css';
 
 #app {
-  margin: 2rem;
-  padding: 2rem;
+  margin: 1rem;
+  /* padding: 2rem; */
   font-weight: bold;
 }
 
