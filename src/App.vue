@@ -78,11 +78,13 @@ nav a {
   padding: 1rem 1rem 1rem 1rem;
   color: var(--color-heading);
   border-left: 1px solid var(--color-text);
+  border-right: 1px solid var(--color-text);
+  border-radius: 15px;
 }
 
-nav a:first-of-type {
+/* nav a:first-of-type {
   border: 0;
-}
+} */
 
 .typeform-embed {
   width: 100%;
