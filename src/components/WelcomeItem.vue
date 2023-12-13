@@ -26,7 +26,7 @@
 .details {
   flex: 2;
   margin-left: 1rem;
-  /* border: 1px solid var(--color-border); */
+  padding: 1rem;
 }
 
 i {

@@ -32,7 +32,7 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <IntakeIcon />
     </template>
     <template #heading>ARTIST INTAKE</template>
-    Want to be considered for artist management?
+    Want to be considered for artist management?<br>
     <RouterLink to="/intake">Show us your stuff.</RouterLink>
   </WelcomeItem>
 
@@ -41,7 +41,8 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <DemosIcon />
     </template>
     <template #heading>DEMO SUBMISSION</template>
-    Want to be considered for our label? <RouterLink to="/demos">Send us your demo.</RouterLink>
+    Want to be considered for our label?<br>
+    <RouterLink to="/demos">Send us your demo.</RouterLink>
   </WelcomeItem>
 
   <WelcomeItem>
@@ -49,7 +50,8 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <TeamIcon />
     </template>
     <template #heading>OUR TEAM</template>
-    Meet the team behind the agency. <RouterLink to="/team">Get to know us.</RouterLink>
+    Meet the team behind the agency.<br>
+    <RouterLink to="/team">Get to know us.</RouterLink>
   </WelcomeItem>
 
   <WelcomeItem>
@@ -57,7 +59,8 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <RosterIcon />
     </template>
     <template #heading>OUR ROSTER</template>
-    Want to book one of our talented artists? <RouterLink to="/roster">Check them out.</RouterLink>
+    Want to book one of our talented artists?<br>
+    <RouterLink to="/roster">Check them out.</RouterLink>
   </WelcomeItem>
 
   <WelcomeItem>
@@ -65,7 +68,7 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <PlacementsIcon />
     </template>
     <template #heading>OUR PLACEMENTS</template>
-    Want to see where our artists have placed their music?
+    Want to see where our artists have placed their music?<br>
     <RouterLink to="/placements"> Cick here.</RouterLink>
   </WelcomeItem>
 
@@ -74,6 +77,7 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <ContactIcon />
     </template>
     <template #heading>CONTACT</template>
-    Want to get in touch? <RouterLink to="/contact">Send us a message.</RouterLink>
+    Want to get in touch?<br>
+    <RouterLink to="/contact">Send us a message.</RouterLink>
   </WelcomeItem>
 </template>

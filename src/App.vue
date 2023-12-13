@@ -54,8 +54,8 @@ header {
 nav {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: space-evenly;
+  width: 100%;
   align-items: center;
   font-size: 12px;
   text-align: center;
@@ -79,7 +79,7 @@ nav a {
   color: var(--color-heading);
   border-left: 1px solid var(--color-text);
   border-right: 1px solid var(--color-text);
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 /* nav a:first-of-type {
