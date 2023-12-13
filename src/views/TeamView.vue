@@ -40,7 +40,6 @@ ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 40%;
   height: 100%;
   text-align: center;
   padding: 1rem;
