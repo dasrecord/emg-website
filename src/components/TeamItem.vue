@@ -5,15 +5,18 @@
       <h2>
         <slot name="name"></slot>
       </h2>
-      <h3>
-        <slot name="role"></slot>
-      </h3>
       <div>
         <slot name="link"></slot>
       </div>
       <div>
         <slot name="location"></slot>
       </div>
+      <div>
+        <slot name="logo"></slot>
+      </div>
+      <h3>
+        <slot name="role"></slot>
+      </h3>
       <div>
         <div class="socials">
           <div>

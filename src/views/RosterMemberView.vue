@@ -3,7 +3,8 @@
     <div class="artist-image">
       <img :src="artistImage" alt="Artist Image" />
     </div>
-    <h1>{{ artist.artist_alias }}</h1>
+    <!-- <h1>{{ artist.artist_alias }}</h1> -->
+    <img :src="`/src/assets/${artist.artist_alias}_logo.png`" class="artist-logo" alt="Artist Logo" />
     <p>{{ artist.act }}</p>
     <p>{{ artist.genre }}</p>
     <div class="socials">
@@ -124,6 +125,11 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 25px;
+}
+
+.artist-logo {
+  max-width: 300px;
+  height: auto;
 }
 
 .socials {
