@@ -23,32 +23,32 @@
         </template>
         <template #facebook>
           <a :href="member.facebook_link">
-            <IconFacebook width="24" height="24" color="white" />
+            <IconFacebook width="32" height="32" color="white" />
           </a>
         </template>
         <template #instagram>
           <a :href="member.instagram_link">
-            <IconInstagram width="24" height="24" color="white" />
+            <IconInstagram width="32" height="32" color="white" />
           </a>
         </template>
         <template #spotify>
           <a :href="member.spotify_link">
-            <IconSpotify width="24" height="24" color="white" />
+            <IconSpotify width="32" height="32" color="white" />
           </a>
         </template>
         <template #soundcloud>
           <a :href="member.soundcloud_link">
-            <IconSoundcloud width="24" height="24" color="white" />
+            <IconSoundcloud width="32" height="32" color="white" />
           </a>
         </template>
         <template #youtube>
           <a :href="member.youtube_link">
-            <iconYoutube width="24" height="24" color="white" />
+            <iconYoutube width="32" height="32" color="white" />
           </a>
         </template>
         <template #twitch>
           <a :href="member.twitch_link">
-            <IconTwitch width="24" height="24" color="white" />
+            <IconTwitch width="32" height="32" color="white" />
           </a>
         </template>
         <template #link>
@@ -108,6 +108,7 @@ ul {
 }
 
 .artist-logo{
+  display: none;
   max-height: 100px;
 }
 </style>

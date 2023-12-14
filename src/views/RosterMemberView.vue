@@ -1,19 +1,19 @@
 <template>
   <div v-if="artist" class="artist">
-    <div class="artist-image">
-      <img :src="artistImage" alt="Artist Image" />
-    </div>
     <!-- <h1>{{ artist.artist_alias }}</h1> -->
-    <img :src="`/src/assets/${artist.artist_alias}_logo.png`" class="artist-logo" alt="Artist Logo" />
+    <div class="artist-image" alt="Artist Image" >
+      <img :src="artistImage"/>
+    </div>
     <p>{{ artist.act }}</p>
     <p>{{ artist.genre }}</p>
+    <img :src="`/src/assets/${artist.artist_alias}_logo.png`" class="artist-logo" alt="Artist Logo"/>
     <div class="socials">
-      <a :href="artist.facebook_link"><IconFacebook width="24" height="24" color="white" /></a>
-      <a :href="artist.instagram_link"><IconInstagram width="24" height="24" color="white" /></a>
-      <a :href="artist.spotify_link"><IconSpotify width="24" height="24" color="white" /></a>
-      <a :href="artist.soundcloud_link"><IconSoundcloud width="24" height="24" color="white" /></a>
-      <a :href="artist.youtube_link"><IconYoutube width="24" height="24" color="white" /></a>
-      <a :href="artist.twitch_link"><IconTwitch width="24" height="24" color="white" /></a>
+      <a :href="artist.facebook_link"><IconFacebook width="32" height="32" color="white" /></a>
+      <a :href="artist.instagram_link"><IconInstagram width="32" height="32" color="white" /></a>
+      <a :href="artist.spotify_link"><IconSpotify width="32" height="32" color="white" /></a>
+      <a :href="artist.soundcloud_link"><IconSoundcloud width="32" height="32" color="white" /></a>
+      <a :href="artist.youtube_link"><IconYoutube width="32" height="32" color="white" /></a>
+      <a :href="artist.twitch_link"><IconTwitch width="32" height="32" color="white" /></a>
     </div>
     <p v-html="artist.short_bio"></p>
     <a :href="`https://dasrecord.typeform.com/to/OCJRuEEY?artist=${artist.artist_alias}`">CLICK HERE TO BOOK</a>
@@ -107,6 +107,10 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -120,13 +124,12 @@ export default {
 .artist-image img {
   width: auto;
   height: 100%;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 25px;
 }
-
 .artist-logo {
   max-width: 300px;
   height: auto;
