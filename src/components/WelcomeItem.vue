@@ -58,7 +58,7 @@ h3 {
 
   i {
     top: calc(50% - 25px);
-    left: 10px;
+    left: 25px;
     position: absolute;
     background: var(--color-background);
     border-radius: 10px;

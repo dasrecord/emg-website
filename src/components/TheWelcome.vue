@@ -24,7 +24,7 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <ConsultancyIcon />
     </template>
     <template #heading>CONSULTANCY</template>
-    Click here to learn about <RouterLink to="/consultancy">what we do.</RouterLink>
+    Learn more about <RouterLink to="/consultancy">what we do.</RouterLink>
   </WelcomeItem>
 
   <WelcomeItem>
