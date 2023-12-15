@@ -1,13 +1,13 @@
 <template>
   <div v-if="artist" class="artist">
     <!-- <h1>{{ artist.artist_alias }}</h1> -->
-    <div class="artist-image" alt="Artist Image" >
-      <img :src="artistImage"/>
-    </div>
+    <div class="artist-image" alt="Artist Image" ><img :src="artistImage"/></div>
     <p>{{ artist.act }}</p>
     <p>{{ artist.genre }}</p>
+    <br>
     <img :src="`/src/assets/${artist.artist_alias}_logo.png`" class="artist-logo" alt="Artist Logo"/>
-    <div class="socials">
+    <br>
+    <div>
       <a :href="artist.facebook_link"><IconFacebook width="32" height="32" color="white" /></a>
       <a :href="artist.instagram_link"><IconInstagram width="32" height="32" color="white" /></a>
       <a :href="artist.spotify_link"><IconSpotify width="32" height="32" color="white" /></a>
@@ -15,8 +15,11 @@
       <a :href="artist.youtube_link"><IconYoutube width="32" height="32" color="white" /></a>
       <a :href="artist.twitch_link"><IconTwitch width="32" height="32" color="white" /></a>
     </div>
+    <br>
     <p v-html="artist.short_bio"></p>
-    <a :href="`https://dasrecord.typeform.com/to/OCJRuEEY?artist=${artist.artist_alias}`">CLICK HERE TO BOOK</a>
+    <br>
+    <a :href="`https://dasrecord.typeform.com/to/OCJRuEEY?artist=${artist.artist_alias}`">CLICK HERE TO BOOK {{ artist.artist_alias.toUpperCase() }}</a>
+    <br>
   </div>
   <div id="timeline"></div>
 </template>
@@ -141,6 +144,7 @@ export default {
   width: 100%;
   justify-content: space-evenly;
 }
+
 
 .tl-timeline {
   background-color: var(--color-background);
