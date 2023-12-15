@@ -7,7 +7,7 @@
     <br>
     <div class="artist-logo" alt="Artist Image" ><img :src="artistLogo"/></div>
     <br>
-    <div>
+    <div class="socials">
       <a :href="artist.facebook_link"><IconFacebook width="32" height="32" color="white" /></a>
       <a :href="artist.instagram_link"><IconInstagram width="32" height="32" color="white" /></a>
       <a :href="artist.spotify_link"><IconSpotify width="32" height="32" color="white" /></a>

@@ -10,11 +10,11 @@
         <template #name>
           {{ member.name }}
         </template>
-        <template #role>
-          <a :href="member.url">{{ member.role }}</a>
-        </template>
         <template #location>
           {{ member.location }}
+        </template>
+        <template #role>
+          <a :href="member.url">{{ member.role }}</a>
         </template>
       </TeamItem>
     </ul>
@@ -31,7 +31,7 @@ ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 100%;
   width: 100%;
 }
@@ -47,7 +47,7 @@ ul {
   border-radius: 25px;
 }
 .team-image {
-  /* width: 100%; */
+  width: 100%;
   /* aspect-ratio: 1/1; */
   max-width: 300px;
   /* height: 100%; */
