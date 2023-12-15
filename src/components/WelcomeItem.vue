@@ -18,7 +18,7 @@
   display: flex;
   position: relative;
   margin-bottom: 3rem;
-  padding: 1rem;
+  padding: 1rem 3rem;
   border: 3px solid var(--color-border);
   border-radius: 25px;
 }
@@ -33,8 +33,8 @@ i {
   display: flex;
   place-items: center;
   place-content: center;
-  width: 3rem;
-  height: rem;
+  width: 4rem;
+
 }
 
 h3 {
