@@ -5,7 +5,7 @@
     <p>{{ artist.act }}</p>
     <p>{{ artist.genre }}</p>
     <br>
-    <img :src="`/src/assets/${artist.artist_alias}_logo.png`" class="artist-logo" alt="Artist Logo"/>
+    <div class="artist-logo" alt="Artist Image" ><img :src="artistLogo"/></div>
     <br>
     <div>
       <a :href="artist.facebook_link"><IconFacebook width="32" height="32" color="white" /></a>
@@ -50,7 +50,8 @@ export default {
   data() {
     return {
       artist: null,
-      artistImage: null
+      artistImage: null,
+      artistLogo: null
     }
   },
   methods: {
@@ -60,6 +61,13 @@ export default {
       }
       const imageModule = await import(`@/assets/${this.artist.artist_alias}.jpg`)
       this.artistImage = imageModule.default
+    },
+    async loadArtistLogo() {
+      if (!this.artist) {
+        return
+      }
+      const imageModule = await import(`@/assets/${this.artist.artist_alias}_logo.png`)
+      this.artistLogo = imageModule.default
     }
   },
   mounted() {
@@ -101,6 +109,7 @@ export default {
     }
     const timeline = new TL.Timeline('timeline', this.artist.other_link, options)
     this.loadArtistImage()
+    this.loadArtistLogo()
   }
 }
 </script>
@@ -133,8 +142,8 @@ export default {
   transform: translate(-50%, -50%);
   border-radius: 25px;
 }
-.artist-logo {
-  max-width: 300px;
+.artist-logo img {
+  max-width: 450px;
   height: auto;
 }
 
