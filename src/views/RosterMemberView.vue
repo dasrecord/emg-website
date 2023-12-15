@@ -145,6 +145,10 @@ export default {
   justify-content: space-evenly;
 }
 
+p {
+  max-width: 900px;
+  font-size: 2rem;
+}
 
 .tl-timeline {
   background-color: var(--color-background);
