@@ -2,9 +2,9 @@
   <div>
     <ul>
       <TeamItem v-for="member in team" :key="member.id" class="team-member">
-        <template #image>
+        <template #image >
           <a :href="member.url" class="image-link">
-          <img :src="`src/assets/${member.name}.jpg`" :alt="`${member.name}`" class="team-image">
+          <img :src="images[member.name]" class="team-image">
           </a>
         </template>
         <template #name>
@@ -76,6 +76,17 @@ export default {
     return {
       team: teamData,
       images: {}
+    }
+  },
+  methods: {
+    async loadArtistImage(name) {
+      const imageModule = await import(`@/assets/${name}.jpg`);
+      this.images[name] = imageModule.default;
+    }
+  },
+  created() {
+    for (const member of this.team) {
+      this.loadArtistImage(member.name);
     }
   },
   components: { TeamItem }
