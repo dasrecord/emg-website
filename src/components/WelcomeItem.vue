@@ -21,6 +21,10 @@
   padding: 1rem 3rem;
   border: 3px solid var(--color-border);
   border-radius: 25px;
+  transition: box-shadow 150ms ease-out;
+}
+.item:hover {
+  box-shadow: 0 0 20px #fff; /* add the white glow to the image */
 }
 
 .details {
