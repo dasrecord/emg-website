@@ -18,6 +18,9 @@
         <slot name="role"></slot>
       </h3>
       <div>
+        <slot name="quote"></slot>
+      </div>
+      <div>
         <div class="socials">
           <div>
             <slot name="facebook"></slot>
@@ -62,6 +65,7 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 /* GRID STLYE */
 /* .team {
   margin-top: 2rem;

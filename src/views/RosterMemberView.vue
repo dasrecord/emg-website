@@ -143,7 +143,7 @@ export default {
   border-radius: 25px;
 }
 .artist-logo img {
-  max-width: 450px;
+  max-width: 300px;
   height: auto;
 }
 

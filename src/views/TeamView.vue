@@ -16,6 +16,11 @@
         <template #role>
           <a :href="member.url">{{ member.role }}</a>
         </template>
+        <template #quote>
+          <p class="quote">
+            {{ member.quote }}
+          </p>
+        </template>
       </TeamItem>
     </ul>
   </div>
@@ -63,6 +68,13 @@ ul {
 
 .image-link:hover .team-image {
   box-shadow: 0 0 20px #fff; /* add the white glow to the image */
+}
+
+.quote {
+  font-size: 1rem;
+  padding: 1rem;
+  max-width: 300px;
+  margin-top: -2rem;
 }
 </style>
 
