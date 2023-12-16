@@ -1,7 +1,7 @@
 <template>
-  <p>Here is our current roster of talented producers, djs, and live acts.</p>
+  <!-- <p>Here is our current roster of talented producers, djs, and live acts.</p> -->
   <div v-for="(group, act) in groupedRoster" :key="act">  
-    <h2>{{ act }}s</h2>
+    <h2>{{ act.toUpperCase() }}s</h2>
     
     <ul>
       <TeamItem v-for="member in group" :key="member.id" class="roster-member">
@@ -60,9 +60,10 @@
 </template>
 
 <style scoped>
+
 h2 {
   padding: 2rem;
-  padding-bottom: 0;
+  padding-bottom: 1rem;
   font-weight: 800;
   color: var(--color-heading);
   text-align: center;
@@ -78,6 +79,11 @@ ul {
   /* align-items: center; */
   /* max-width: 100px; */
 }
+p {
+  font-weight: 400;
+  color: var(--color-heading);
+  text-align: center;
+}
 .roster-member {
   display: flex;
   flex-direction: row;
@@ -88,6 +94,7 @@ ul {
   margin-top: 1rem;
   margin-right: 1rem;
   border-radius: 25px;
+  overflow: hidden;
 }
 .artist-image {
   /* width: 100%; */
@@ -108,8 +115,8 @@ ul {
 }
 
 .artist-logo{
-  display: none;
-  max-height: 100px;
+  max-width: 300px;
+  max-height: 50px;
 }
 </style>
 
