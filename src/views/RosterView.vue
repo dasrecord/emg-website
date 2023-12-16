@@ -6,8 +6,8 @@
     <ul>
       <TeamItem v-for="member in group" :key="member.id" class="roster-member">
         <template #logo>
-        <img :src="`/src/assets/${member.artist_alias}_logo.png`" class="artist-logo" alt="Artist Logo" />
-        </template>
+          <img :src="logos[member.artist_alias]" class="artist-logo" alt="Artist Logo" />
+      </template>
         <template #image>
           <router-link class="image-link" :to="{ name: 'roster-member', params: { id: member.id } }">
             <img :src="images[member.artist_alias]" alt="Artist Image" class="artist-image" />
@@ -135,7 +135,8 @@ export default {
   data() {
     return {
       roster: rosterData,
-      images: {}
+      images: {},
+      logos: {}
     }
   },
   computed: {
@@ -164,11 +165,18 @@ export default {
       }
       const imageModule = await import(`@/assets/${member.artist_alias}.jpg`)
       this.images[member.artist_alias] = imageModule.default
+    },
+    async loadArtistLogo(member) {
+      if (!member) {
+        return
+      }
+      const imageModule = await import(`@/assets/${member.artist_alias}_logo.png`)
+      this.logos[member.artist_alias] = imageModule.default
     }
   },
   async created() {
     for (const member of this.sortedRoster) {
-      await this.loadArtistImage(member)
+      await Promise.all([this.loadArtistImage(member), this.loadArtistLogo(member)]);
     }
   },
   components: {

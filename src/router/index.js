@@ -215,6 +215,13 @@ const router = createRouter({
       beforeEnter() {
         'https://www.youtube.com/@EvolvedArtists'
      }
+    },
+    {
+      path: '/spotify',
+      name: "spotify",
+      beforeEnter() {
+        'https://open.spotify.com/user/31ptna5z6wj77l2vlid2cwy6i4q4'
+      }
     }
   ]
 })
