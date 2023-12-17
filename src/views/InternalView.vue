@@ -119,5 +119,7 @@ export default {
   background-color: var(--color-background);
   min-height: 800px;
   width: 100vw;
+  margin-top: 2rem;
+
 }
 </style>
