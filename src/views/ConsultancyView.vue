@@ -44,28 +44,28 @@
       experienced team ensures your vocals shine. 🎙🌟
     </p>
     <br />
-    <h3>4. Sonic Mastery in Mixing & Mastering:</h3>
+    <h3>4. Excellent in Mixing & Mastering:</h3>
     <p>
       Master your tracks with precision and flair. Our external engineers, working hand-in-hand with
       Evolved, ensure your music is heard by 'fresh ears.' From analog to digital, your tracks will
       be mastered swiftly, delivering high-quality WAVs for your approval. 🎚🔊
     </p>
     <br />
-    <h3>5. Visual Brilliance in HD and 360:</h3>
+    <h3>5. Brilliance in HD and 360:</h3>
     <p>
       Your musical journey deserves captivating visuals. Elevate your art with our professional HD
       music videos, or venture into the immersive world of 360 videos. Our award-winning directors
       and cutting-edge technology ensure your music not only sounds but looks groundbreaking. 🎬🌈
     </p>
     <br />
-    <h3>6. Unleash the Power of Live Performance:</h3>
+    <h3>6. The Power of Live Performance:</h3>
     <p>
       Forge your presence with high-end live performance videos, shot in a single location. Showcase
       your music and performance prowess, securing quality gig opportunities early in your career.
       🎥🎤
     </p>
     <br />
-    <h3>7. Captivate Audiences with Industry Photography and Design:</h3>
+    <h3>7. Captivating Photography and Design:</h3>
     <p>
       Step into the spotlight with our award-winning photographers and graphic design team. From
       planning shoots to polishing images, we ensure you look like the star you are. Your logo will

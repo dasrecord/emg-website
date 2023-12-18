@@ -72,7 +72,7 @@ ul {
 
 .quote {
   font-size: 1rem;
-  padding: 1rem;
+  padding-top: 1rem;
   max-width: 300px;
   margin-top: -2rem;
 }
@@ -94,6 +94,9 @@ export default {
     async loadArtistImage(name) {
       const imageModule = await import(`@/assets/${name}.jpg`);
       this.images[name] = imageModule.default;
+    },
+    formatQuote(quote) {
+      return quote.replace(/\\n/g, '<br />');
     }
   },
   created() {

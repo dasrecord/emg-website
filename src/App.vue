@@ -37,7 +37,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  line-height: 1.5;
   max-height: 80vh;
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -75,11 +74,14 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: flex;
   align-items: center;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-right: auto;
   color: var(--color-heading);
   border-left: 1px solid var(--color-text);
   border-right: 1px solid var(--color-text);
-  border-radius: 8px;
+  /* border-top: 1px solid var(--color-text); */
+  /* border-bottom: 1px solid var(--color-text); */
+  border-radius: 5px;
 }
 
 /* nav a:first-of-type {
@@ -102,11 +104,11 @@ nav a {
   z-index: 1;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     place-items: center;
     padding: 1rem;
@@ -137,7 +139,7 @@ nav a {
   }
 
   nav a {
-    width: 49%;
+    width: 45%;
     border: 1px solid var(--color-text);
     justify-content: center;
     padding: 0.1rem 0.1rem 0.1rem 0.1rem;
