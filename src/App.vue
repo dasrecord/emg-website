@@ -39,7 +39,7 @@ header {
   justify-content: space-between;
   max-height: 80vh;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .logo {
@@ -52,14 +52,13 @@ header {
 
 nav {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 100%;
   align-items: center;
-  font-size: 12px;
   text-align: center;
   margin-top: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--color-heading);
 }
 
@@ -75,13 +74,14 @@ nav a {
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  margin-right: auto;
+  margin: 0.5rem;
   color: var(--color-heading);
   border-left: 1px solid var(--color-text);
   border-right: 1px solid var(--color-text);
   /* border-top: 1px solid var(--color-text); */
   /* border-bottom: 1px solid var(--color-text); */
-  border-radius: 5px;
+  border-radius: 10px;
+  /* background-color: black; */
 }
 
 /* nav a:first-of-type {
@@ -111,7 +111,7 @@ nav a {
     justify-content: center;
     align-items: center;
     place-items: center;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
 
   .logo {
@@ -120,11 +120,6 @@ nav a {
     margin: 0 0 2rem 0 0;
   }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
 
   nav {
     display: flex;
@@ -134,15 +129,18 @@ nav a {
     text-align: center;
     align-items: center;
     font-size: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
     /* margin-top: 1rem; */
   }
 
   nav a {
-    width: 45%;
+    width: 40%;
     border: 1px solid var(--color-text);
     justify-content: center;
-    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.2rem 0.1rem 0.2rem 0.1rem;
+    margin: 0.25rem;
+    font-size: small;
+    border-radius: 5px;
+
   }
   nav a:first-of-type {
     border: 1px solid var(--color-text);

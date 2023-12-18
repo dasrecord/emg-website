@@ -50,6 +50,7 @@ ul {
   padding: 1rem;
   margin: 1rem;
   border-radius: 25px;
+  /* background-color: black; */
 }
 .team-image {
   width: 100%;
