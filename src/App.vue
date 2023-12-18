@@ -110,8 +110,9 @@ nav a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
     /* place-items: center; */
-    /* padding: 1rem; */
+    padding: 1rem;
   }
 
   .logo {
