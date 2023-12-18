@@ -103,17 +103,28 @@ export default {
   width: 80%;
   padding: 10px;
   text-align: justify;
+  font-size: 2rem;
 }
 
 li {
   list-style-type: none;
   padding: 10px;
   text-align: center;
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {
   .blocktext {
     width: 100%;
+  }
+
+  .blocktext h2 {
+    font-size: 2rem;
+  }
+
+  .blocktext p,
+  .blocktext li {
+    font-size: 1rem;
   }
 }
 </style>

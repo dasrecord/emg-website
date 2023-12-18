@@ -57,13 +57,13 @@ export default {
               .trim(),
             font: 'default',
             // other options...
-            scale_factor: 2,
+            scale_factor: 1,
             // hash_bookmark: true,
             // debug: false,
             // is_embed: false,
             // optimal_tick_width: 100,
             // timenav_height: 150,
-            timenav_height_percentage: 10
+            // timenav_height_percentage: 10
             // timenav_mobile_height_percentage: 40,
             // timenav_height_min: 150,
             // marker_height_min: 30,
