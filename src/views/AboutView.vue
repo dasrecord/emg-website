@@ -1,7 +1,7 @@
 <template>
   <div class="blocktext">
     <h2>About</h2>
-    <br />
+    <br>
     <p>
       Welcome to Evolved Music Group (EMG), where we proudly uphold our Company Motto: Empowering
       Musical Growth. At EMG, we are more than just a record label; we are a force for positive
@@ -9,9 +9,9 @@
       morality sets us apart, and our mission is to redefine the evolutionary landscape of the music
       industry for the greater good.
     </p>
-    <br />
+    <br>
     <h2>Discover, Enable, Build: Unleashing Tomorrow's Talent Today</h2>
-    <br />
+    <br>
     <p>
       Come on in and meet our entire global creative team who bring nearly five decades of combined
       experience in the music industry together under one unique international roof. In a world
@@ -22,9 +22,9 @@
       and supportive manner. Stand with us, as we represent tomorrow's talent
       today—unapologetically.
     </p>
-    <br />
+    <br>
     <h2>Our Mission: Transforming the Music Industry</h2>
-    <br />
+    <br>
     <p>
       EMG is on a mission to be the systematic and long-lasting positive change that the electronic
       music industry has yearned for but has consistently failed to achieve. In the wake of a new
@@ -36,9 +36,9 @@
       change, and fighting for industrial parity. EMG seeks to unite the lost and the hopeless,
       taking them on a spiritual journey of awakening and empowering genuine talents worldwide.
     </p>
-    <br />
+    <br>
     <h2>Our Purpose: Leaving a Legacy of Creativity and Balance</h2>
-    <br />
+    <br>
     <p>
       EMG is committed to leaving the world in a healthier, more creatively educated, and socially
       engaged state than we found it. We support unique talents from all corners of society,
@@ -47,13 +47,9 @@
       planet. By democratising and humanising corporate governance, we strategically target industry
       best practices, continually innovating to resonate with the ecosystem around us.
     </p>
-    <br />
+    <br>
     <h2>Our Core Values: Guiding Principles for Success</h2>
-    <br />
-    <!-- <p>
-      At EMG, our core values are the driving force behind our success:
-    </p>
-    <br> -->
+    <br>
     <ul>
       <li>Ownership: Be proud of your opinions and work ethic.</li>
       <li>Accountability: Real measurable transparency is key.</li>
@@ -111,6 +107,14 @@ li {
   padding: 10px;
   text-align: center;
   font-size: 2rem;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 
 @media (max-width: 768px) {
