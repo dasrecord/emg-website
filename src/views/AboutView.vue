@@ -10,7 +10,7 @@
       industry for the greater good.
     </p>
     <br>
-    <h2>Discover, Enable, Build: Unleashing Tomorrow's Talent Today</h2>
+    <h2>Discover, Enable, Build<br>Unleashing Tomorrow's Talent Today</h2>
     <br>
     <p>
       Come on in and meet our entire global creative team who bring nearly five decades of combined
@@ -23,7 +23,7 @@
       today—unapologetically.
     </p>
     <br>
-    <h2>Our Mission: Transforming the Music Industry</h2>
+    <h2>Our Mission:<br>Transforming the Music Industry</h2>
     <br>
     <p>
       EMG is on a mission to be the systematic and long-lasting positive change that the electronic
@@ -37,7 +37,7 @@
       taking them on a spiritual journey of awakening and empowering genuine talents worldwide.
     </p>
     <br>
-    <h2>Our Purpose: Leaving a Legacy of Creativity and Balance</h2>
+    <h2>Our Purpose:<br>Leaving a Legacy of Creativity and Balance</h2>
     <br>
     <p>
       EMG is committed to leaving the world in a healthier, more creatively educated, and socially
@@ -48,7 +48,7 @@
       best practices, continually innovating to resonate with the ecosystem around us.
     </p>
     <br>
-    <h2>Our Core Values: Guiding Principles for Success</h2>
+    <h2>Our Core Values:<br>Guiding Principles for Success</h2>
     <br>
     <ul>
       <li>Ownership: Be proud of your opinions and work ethic.</li>
@@ -97,7 +97,6 @@ export default {
 .blocktext {
   margin: 0 auto;
   width: 80%;
-  padding: 10px;
   text-align: justify;
   font-size: 2rem;
 }
