@@ -8,12 +8,12 @@
     <div class="artist-logo" alt="Artist Image" ><img :src="artistLogo"/></div>
     <br>
     <div class="socials">
-      <a :href="artist.facebook_link"><IconFacebook width="32" height="32" color="white" /></a>
-      <a :href="artist.instagram_link"><IconInstagram width="32" height="32" color="white" /></a>
-      <a :href="artist.spotify_link"><IconSpotify width="32" height="32" color="white" /></a>
-      <a :href="artist.soundcloud_link"><IconSoundcloud width="32" height="32" color="white" /></a>
-      <a :href="artist.youtube_link"><IconYoutube width="32" height="32" color="white" /></a>
-      <a :href="artist.twitch_link"><IconTwitch width="32" height="32" color="white" /></a>
+      <a :href="artist.facebook_link"><IconFacebook width="32" height="32" color="white" /><br><span class="socials-text">Facebook</span></a>
+      <a :href="artist.instagram_link"><IconInstagram width="32" height="32" color="white" /><br><span class="socials-text">Instagram</span></a>
+      <a :href="artist.spotify_link"><IconSpotify width="32" height="32" color="white" /><br><span class="socials-text">Spotify</span></a>
+      <a :href="artist.soundcloud_link"><IconSoundcloud width="32" height="32" color="white" /><br><span class="socials-text">Soundcloud</span></a>
+      <a :href="artist.youtube_link"><IconYoutube width="32" height="32" color="white" /><br><span class="socials-text">Youtube</span></a>
+      <a :href="artist.twitch_link"><IconTwitch width="32" height="32" color="white" /><br><span class="socials-text">Twitch</span></a>
     </div>
     <br>
     <p v-html="artist.short_bio"></p>
@@ -155,12 +155,22 @@ export default {
 }
 
 p {
-  max-width: 900px;
-  font-size: 2rem;
+  max-width: 750px;
+  font-size: 1.4rem;
+}
+
+.socials-text {
+  font-size: 1rem;
 }
 
 .tl-timeline {
   background-color: var(--color-background);
   min-height: 800px;
+}
+
+@media (max-width: 768px) {
+  span {
+    display: none;
+  };  
 }
 </style>
