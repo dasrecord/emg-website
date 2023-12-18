@@ -131,20 +131,21 @@ export default {
 
 <style>
 .blocktext {
-  margin: 0 auto;
   width: 80%;
   padding: 10px;
   text-align: justify;
 }
 
-.blocktext h3 {
+.blocktext h2 {
   text-align: center;
   font-size: 1.5rem;
 }
+
 li {
   list-style-type: none;
   padding: 10px;
   text-align: center;
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {

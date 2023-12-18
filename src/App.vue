@@ -37,9 +37,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-height: 80vh;
+  /* max-height: 80vh; */
   font-size: 2rem;
-  /* margin-bottom: 2rem; */
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -110,7 +110,7 @@ nav a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    place-items: center;
+    /* place-items: center; */
     /* padding: 1rem; */
   }
 
@@ -126,8 +126,8 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.25rem;
-    text-align: center;
     align-items: center;
+    text-align: center;
     font-size: 1rem;
     /* margin-top: 1rem; */
   }
@@ -140,7 +140,6 @@ nav a {
     margin: 0.25rem;
     font-size: small;
     border-radius: 5px;
-
   }
   nav a:first-of-type {
     border: 1px solid var(--color-text);

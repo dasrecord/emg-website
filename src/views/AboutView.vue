@@ -95,10 +95,17 @@ export default {
 
 <style>
 .blocktext {
-  margin: 0 auto;
-  width: 80%;
+  padding: 10px;
   text-align: justify;
-  font-size: 2rem;
+}
+
+.blocktext h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.blocktext p {
+  width: 100%;
 }
 
 li {
@@ -108,13 +115,6 @@ li {
   font-size: 2rem;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s;
-}
-
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
 
 @media (max-width: 768px) {
   .blocktext {
@@ -122,7 +122,7 @@ li {
   }
 
   .blocktext h2 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .blocktext p,
