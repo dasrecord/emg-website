@@ -74,7 +74,9 @@ ul {
 .quote {
   font-size: 1rem;
   padding-top: 1rem;
-  max-width: 300px;
+  padding-left: 0%;
+  padding-right: 0%;
+  max-width: 275px;
   margin-top: -2rem;
 }
 </style>

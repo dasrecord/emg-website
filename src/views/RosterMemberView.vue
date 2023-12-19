@@ -16,7 +16,7 @@
       <a :href="artist.twitch_link"><IconTwitch width="32" height="32" color="white" /><br><span class="socials-text">Twitch</span></a>
     </div>
     <br>
-    <p v-html="artist.short_bio"></p>
+      <p v-html="artist.short_bio"></p>
     <br>
     <a :href="`https://dasrecord.typeform.com/to/OCJRuEEY?artist=${artist.artist_alias}`">CLICK HERE TO BOOK {{ artist.artist_alias.toUpperCase() }}</a>
     <br>
@@ -114,7 +114,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .artist {
   display: flex;
   flex-direction: column;
@@ -155,7 +155,7 @@ export default {
 }
 
 p {
-  max-width: 750px;
+  /* max-width: 750px; */
   font-size: 1.4rem;
 }
 

@@ -106,6 +106,7 @@ export default {
 
 .blocktext p {
   width: 100%;
+  /* margin: auto; */
 }
 
 li {

@@ -136,7 +136,8 @@ export default {
   text-align: justify;
 }
 
-.blocktext h2 {
+.blocktext h2,
+.blocktext h3 {
   text-align: center;
   font-size: 1.5rem;
 }
