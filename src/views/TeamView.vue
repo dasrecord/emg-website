@@ -16,11 +16,6 @@
         <template #role>
           <a :href="member.url">{{ member.role }}</a>
         </template>
-        <template #quote>
-          <p class="quote">
-            {{ member.quote }}
-          </p>
-        </template>
       </TeamItem>
     </ul>
   </div>
