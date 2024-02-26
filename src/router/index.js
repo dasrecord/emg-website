@@ -150,7 +150,7 @@ const router = createRouter({
       name: 'a&rmeeting',
       beforeEnter() {
         location.href =
-          'https://calendar.google.com/calendar/selfsched?sstoken=UUczNGlyUVdxVmlMfGRlZmF1bHR8N2EwYjgyODMyNTViMDUzNDNjYTg1MTE3ZmUzZWMyMzk'
+        'https://calendar.google.com/calendar/selfsched?sstoken=UUczNGlyUVdxVmlMfGRlZmF1bHR8N2EwYjgyODMyNTViMDUzNDNjYTg1MTE3ZmUzZWMyMzk'
       }
     },
     {
@@ -158,7 +158,7 @@ const router = createRouter({
       name: 'internaltimelines',
       beforeEnter() {
         location.href =
-          'https://drive.google.com/drive/folders/1zjqqCXxJVy9K5h42nl18gJ4tvkBhPvsA?usp=drive_link'
+        'https://drive.google.com/drive/folders/1zjqqCXxJVy9K5h42nl18gJ4tvkBhPvsA?usp=drive_link'
       }
     },
     {
@@ -171,6 +171,20 @@ const router = createRouter({
       name: 'danielsireau',
       beforeEnter() {
         location.href = 'https://dasrecord.typeform.com/to/uNSZDxDB?scout=Daniel%20Sireau'
+      }
+    },
+    {
+      path: '/socialmediaquestionnaire',
+      name: 'socialmediaquestionnaire',
+      beforeEnter() {
+        location.href = 'https://dasrecord.typeform.com/to/yERaGMY4'
+      }
+    },
+    {
+      path: '/meetdaniel',
+      name: 'meetdaniel',
+      beforeEnter() {
+        location.href = 'https://calendar.google.com/calendar/u/0/selfsched?sstoken=UU5Jc0pJRUtNX00yfGRlZmF1bHR8NmNhYWE4OTg5NTQ2ODA3YTk4YjczNzY0M2IxZjJjNmY'
       }
     },
     {
