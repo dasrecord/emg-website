@@ -1,25 +1,51 @@
 <template>
   <div v-if="artist" class="artist">
     <!-- <h1>{{ artist.artist_alias }}</h1> -->
-    <div class="artist-image" alt="Artist Image" ><img :src="artistImage"/></div>
+    <div class="artist-image" alt="Artist Image"><img :src="artistImage" /></div>
     <p>{{ artist.act }}</p>
     <p>{{ artist.genre }}</p>
-    <br>
-    <div class="artist-logo" alt="Artist Image" ><img :src="artistLogo"/></div>
-    <br>
+    <br />
+    <div class="artist-logo" alt="Artist Image"><img :src="artistLogo" /></div>
+    <br />
     <div class="socials">
-      <a :href="artist.facebook_link"><IconFacebook width="32" height="32" color="white" /><br><span class="socials-text">Facebook</span></a>
-      <a :href="artist.instagram_link"><IconInstagram width="32" height="32" color="white" /><br><span class="socials-text">Instagram</span></a>
-      <a :href="artist.spotify_link"><IconSpotify width="32" height="32" color="white" /><br><span class="socials-text">Spotify</span></a>
-      <a :href="artist.soundcloud_link"><IconSoundcloud width="32" height="32" color="white" /><br><span class="socials-text">Soundcloud</span></a>
-      <a :href="artist.youtube_link"><IconYoutube width="32" height="32" color="white" /><br><span class="socials-text">Youtube</span></a>
-      <a :href="artist.twitch_link"><IconTwitch width="32" height="32" color="white" /><br><span class="socials-text">Twitch</span></a>
+      <a :href="artist.facebook_link"
+        ><IconFacebook width="32" height="32" color="white" /><br /><span class="socials-text"
+          >Facebook</span
+        ></a
+      >
+      <a :href="artist.instagram_link"
+        ><IconInstagram width="32" height="32" color="white" /><br /><span class="socials-text"
+          >Instagram</span
+        ></a
+      >
+      <a :href="artist.spotify_link"
+        ><IconSpotify width="32" height="32" color="white" /><br /><span class="socials-text"
+          >Spotify</span
+        ></a
+      >
+      <a :href="artist.soundcloud_link"
+        ><IconSoundcloud width="32" height="32" color="white" /><br /><span class="socials-text"
+          >Soundcloud</span
+        ></a
+      >
+      <a :href="artist.youtube_link"
+        ><IconYoutube width="32" height="32" color="white" /><br /><span class="socials-text"
+          >Youtube</span
+        ></a
+      >
+      <a :href="artist.twitch_link"
+        ><IconTwitch width="32" height="32" color="white" /><br /><span class="socials-text"
+          >Twitch</span
+        ></a
+      >
     </div>
-    <br>
-      <p v-html="artist.short_bio"></p>
-    <br>
-    <a :href="`https://dasrecord.typeform.com/to/OCJRuEEY?artist=${artist.artist_alias}`">CLICK HERE TO BOOK {{ artist.artist_alias.toUpperCase() }}</a>
-    <br>
+    <br />
+    <p v-html="artist.short_bio"></p>
+    <br />
+    <a :href="`https://dasrecord.typeform.com/to/OCJRuEEY?artist=${artist.artist_alias}`"
+      >CLICK HERE TO BOOK {{ artist.artist_alias.toUpperCase() }}</a
+    >
+    <br />
   </div>
   <div id="timeline"></div>
 </template>
@@ -99,7 +125,7 @@ export default {
       // start_at_slide: 0,
       // menubar_height: 0,
       // use_bc: false,
-      duration: 1000,
+      duration: 1000
       // ease: TL.Ease.easeInOutQuint,
       // dragging: true,
       // trackResize: true,
@@ -171,6 +197,6 @@ p {
 @media (max-width: 768px) {
   span {
     display: none;
-  };  
+  }
 }
 </style>

@@ -1,15 +1,23 @@
 <template>
   <!-- <p>Here is our current roster of talented producers, djs, and live acts.</p> -->
-  <div v-for="(group, act) in groupedRoster" :key="act">  
+  <div v-for="(group, act) in groupedRoster" :key="act">
     <h2>{{ act.toUpperCase() }}s</h2>
-    
+
     <ul>
       <TeamItem v-for="member in group" :key="member.id" class="roster-member">
         <template #logo>
-          <img :src="logos[member.artist_alias]" class="artist-logo" alt="Artist Logo" />
-      </template>
+          <img
+            v-if="logos[member.artist_alias]"
+            :src="logos[member.artist_alias]"
+            class="artist-logo"
+            alt="Artist Logo"
+          />
+        </template>
         <template #image>
-          <router-link class="image-link" :to="{ name: 'roster-member', params: { id: member.id } }">
+          <router-link
+            class="image-link"
+            :to="{ name: 'roster-member', params: { id: member.id } }"
+          >
             <img :src="images[member.artist_alias]" alt="Artist Image" class="artist-image" />
           </router-link>
         </template>
@@ -60,7 +68,6 @@
 </template>
 
 <style scoped>
-
 h2 {
   padding: 2rem;
   padding-bottom: 1rem;
@@ -114,7 +121,7 @@ p {
   box-shadow: 0 0 20px #fff; /* add the white glow to the image */
 }
 
-.artist-logo{
+.artist-logo {
   max-width: 300px;
   max-height: 50px;
 }
@@ -170,13 +177,18 @@ export default {
       if (!member) {
         return
       }
-      const imageModule = await import(`@/assets/${member.artist_alias}_logo.png`)
-      this.logos[member.artist_alias] = imageModule.default
+      try {
+        const imageModule = await import(`@/assets/${member.artist_alias}_logo.png`)
+        this.logos[member.artist_alias] = imageModule.default
+      } catch (error) {
+        console.error(`Error loading logo for ${member.artist_alias}:`, error)
+        this.logos[member.artist_alias] = this.defaultLogo
+      }
     }
   },
   async created() {
     for (const member of this.sortedRoster) {
-      await Promise.all([this.loadArtistImage(member), this.loadArtistLogo(member)]);
+      await Promise.all([this.loadArtistImage(member), this.loadArtistLogo(member)])
     }
   },
   components: {

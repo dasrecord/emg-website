@@ -1,18 +1,28 @@
 const fs = require('fs');
+const path = require('path');
 const csv = require('csv-parser');
 
 let results = [];
 let id = 0;
 
+const rosterJsonPath = path.resolve(__dirname, './src/stores/roster.json');
+const rosterCsvPath = path.resolve(__dirname, './src/stores/roster.csv');
+
+// Check if roster.csv exists
+if (!fs.existsSync(rosterCsvPath)) {
+    console.error(`Error: File not found at path ${rosterCsvPath}`);
+    process.exit(1);
+}
+
 // Read the existing roster.json file
-fs.readFile('./src/stores/roster.json', 'utf8', (err, data) => {
+fs.readFile(rosterJsonPath, 'utf8', (err, data) => {
     if (err) throw err;
     results = JSON.parse(data);
     // Find the highest id
     id = Math.max(...results.map(artist => artist.id));
 
     // Read the roster.csv file
-    fs.createReadStream('./src/stores/roster.csv')
+    fs.createReadStream(rosterCsvPath)
         .pipe(csv())
         .on('data', (data) => {
             const existingArtist = results.find(artist => artist.artist_alias === data["What is your Official Artist Alias?"]);
@@ -49,16 +59,14 @@ fs.readFile('./src/stores/roster.json', 'utf8', (err, data) => {
                     "management_timeline": "",
                     "start_date": data["Start Date (UTC)"],
                     "submit_date": data["Submit Date (UTC)"],
-                    "network_id": data["Network ID"],
-                    "tags": data["Tags"],
                 });
             }
         })
         .on('end', () => {
-            // Write the updated results back to roster.json
-            fs.writeFile('./src/stores/roster.json', JSON.stringify(results, null, 2), (err) => {
+            // Write the updated results back to the JSON file
+            fs.writeFile(rosterJsonPath, JSON.stringify(results, null, 2), (err) => {
                 if (err) throw err;
-                console.log('The file has been saved!');
+                console.log('Roster updated successfully.');
             });
         });
 });
