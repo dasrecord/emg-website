@@ -40,6 +40,9 @@ export default {
 </script>
 
 <style scoped>
+h2 {
+  margin-bottom: 0.5rem;
+}
 .camps {
   display: flex;
   flex-direction: column;

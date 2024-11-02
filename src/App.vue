@@ -20,6 +20,7 @@ import HeadSection from './components/HeadSection.vue'
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/consultancy">Consultancy</RouterLink>
         <RouterLink to="/intake">Intake</RouterLink>
+        <RouterLink to="/songwritingcamps">Camps</RouterLink>
         <RouterLink to="/demos">Demos</RouterLink>
         <RouterLink to="/team">Team</RouterLink>
         <RouterLink to="/roster">Roster</RouterLink>
@@ -120,7 +121,6 @@ nav a {
     width: 50px;
     margin: 0 0 2rem 0 0;
   }
-
 
   nav {
     display: flex;
