@@ -32,8 +32,16 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <IntakeIcon />
     </template>
     <template #heading>ARTIST INTAKE</template>
-    Want to be considered for artist management?<br>
+    Want to be considered for artist management?<br />
     <RouterLink to="/intake">Show us your stuff.</RouterLink>
+  </WelcomeItem>
+  <WelcomeItem>
+    <template #icon>
+      <IntakeIcon />
+    </template>
+    <template #heading>SONGWRITING CAMPS</template>
+    Want to take part in a songwriting intensive?<br />
+    <RouterLink to="/songwritingcamps">Attend our camps.</RouterLink>
   </WelcomeItem>
 
   <WelcomeItem>
@@ -41,7 +49,7 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <DemosIcon />
     </template>
     <template #heading>DEMO SUBMISSION</template>
-    Want to be considered for our label?<br>
+    Want to be considered for our label?<br />
     <RouterLink to="/demos">Send us your demo.</RouterLink>
   </WelcomeItem>
 
@@ -50,7 +58,7 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <TeamIcon />
     </template>
     <template #heading>OUR TEAM</template>
-    Meet the team behind the agency.<br>
+    Meet the team behind the agency.<br />
     <RouterLink to="/team">Get to know us.</RouterLink>
   </WelcomeItem>
 
@@ -59,7 +67,7 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <RosterIcon />
     </template>
     <template #heading>OUR ROSTER</template>
-    Want to book one of our talented artists?<br>
+    Want to book one of our talented artists?<br />
     <RouterLink to="/roster">Check them out.</RouterLink>
   </WelcomeItem>
 
@@ -68,7 +76,7 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <PlacementsIcon />
     </template>
     <template #heading>OUR PLACEMENTS</template>
-    Want to see where our artists have placed their music?<br>
+    Want to see where our artists have placed their music?<br />
     <RouterLink to="/placements"> Cick here.</RouterLink>
   </WelcomeItem>
 
@@ -77,7 +85,7 @@ import ConsultancyIcon from './icons/IconConsultancy.vue'
       <ContactIcon />
     </template>
     <template #heading>CONTACT</template>
-    Want to get in touch?<br>
+    Want to get in touch?<br />
     <RouterLink to="/contact">Send us a message.</RouterLink>
   </WelcomeItem>
 </template>

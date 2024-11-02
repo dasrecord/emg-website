@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import ConsultancyView from '../views/ConsultancyView.vue'
 import IntakeView from '../views/IntakeView.vue'
+import SongwritingCampsView from '../views/SongwritingCampsView.vue'
 import DemosView from '../views/DemosView.vue'
 import TeamView from '../views/TeamView.vue'
 import ContactView from '../views/ContactView.vue'
@@ -73,6 +74,11 @@ const router = createRouter({
       beforeEnter() {
         location.href = 'https://dasrecord.typeform.com/to/N79PIVG9'
       }
+    },
+    {
+      path: '/songwritingcamps',
+      name: 'songwritingcamps',
+      component: SongwritingCampsView
     },
     {
       path: '/twitch',
