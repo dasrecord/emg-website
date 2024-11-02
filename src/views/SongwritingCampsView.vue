@@ -10,13 +10,13 @@
     <div class="camp">
       <h2>Miami</h2>
       <h3>April 18th - 21st, 2025</h3>
-      <p>Tickets Coming Soon></p>
+      <p>Tickets Coming Soon</p>
       <!-- <a href=""> Buy Passes</a> -->
     </div>
     <div class="camp">
       <h2>Ibiza</h2>
       <h3>April 19th - 22nd, 2025</h3>
-      <p>Tickets Coming Soon></p>
+      <p>Tickets Coming Soon</p>
       <!-- <a href=""> Buy Passes</a> -->
     </div>
   </div>
