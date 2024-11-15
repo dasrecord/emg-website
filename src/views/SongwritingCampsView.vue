@@ -1,8 +1,7 @@
 <template>
+  <h1>Songwriting Camps</h1>
+  <h1>2025</h1>
   <div class="camps">
-    <h1>Songwriting Camps</h1>
-    <h1>2025</h1>
-
     <div class="camp">
       <h2>Texas</h2>
       <h3>USA</h3>
@@ -123,26 +122,27 @@ export default {
 h2 {
   margin-bottom: 0.5rem;
 }
+
+h1 {
+  text-align: center;
+  margin: 1rem;
+}
 .camps {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  height: 100%;
-  width: 100%;
+  gap: 1rem;
+  margin: 1rem;
 }
-
 .camp {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 100%;
+  width: 300px;
   padding: 1rem;
-  margin: 1rem;
   border: 1px solid var(--color-text);
   border-radius: 25px;
-  background-color: var(--color-background);
 }
 </style>
