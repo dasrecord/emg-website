@@ -111,7 +111,7 @@ nav a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     /* place-items: center; */
     padding: 1rem;
   }
@@ -125,11 +125,10 @@ nav a {
   nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 0.25rem;
     align-items: center;
     text-align: center;
-    font-size: 1rem;
     /* margin-top: 1rem; */
   }
 
@@ -139,7 +138,6 @@ nav a {
     justify-content: center;
     padding: 0.2rem 0.1rem 0.2rem 0.1rem;
     margin: 0.25rem;
-    font-size: small;
     border-radius: 5px;
   }
   nav a:first-of-type {
